@@ -295,6 +295,8 @@ class Life_Client_Core
         class ticketPaid {};
         class showArrestDialog {}; //Time Jail
         class arrestDialog_Arrest {}; //Time Jail
+		class copShowLicense {};
+		class copLicenseShown {};
     };
 	
 	class Gangs
