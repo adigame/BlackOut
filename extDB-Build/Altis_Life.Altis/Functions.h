@@ -267,33 +267,35 @@ class Life_Client_Core
 		class addVehicle2Chain {};
 	};
 	
-	class Cop
-	{
-		file = "core\cop";
-		class copMarkers {};
-		class copLights {};
-		class vehInvSearch {};
-		class copSearch {};
-		class bountyReceive {};
-		class searchClient {};
-		class restrain {};
-		class ticketGive {};
-		class ticketPay {};
-		class ticketPrompt {};
-		class copSiren {};
-		class spikeStripEffect {};
-		class radar {};
-		class questionDealer {};
-		class copInteractionMenu {};
-		class sirenLights {};
-		class licenseCheck {};
-		class licensesRead {};
-		class repairDoor {};
-		class doorAnimate {};
-		class fedCamDisplay {};
-		class copLoadout {};
-		class ticketPaid {};
-	};
+    class Cop
+    {
+        file = "core\cop";
+        class copMarkers {};
+        class copLights {};
+        class vehInvSearch {};
+        class copSearch {};
+        class bountyReceive {};
+        class searchClient {};
+        class restrain {};
+        class ticketGive {};
+        class ticketPay {};
+        class ticketPrompt {};
+        class copSiren {};
+        class spikeStripEffect {};
+        class radar {};
+        class questionDealer {};
+        class copInteractionMenu {};
+        class sirenLights {};
+        class licenseCheck {};
+        class licensesRead {};
+        class repairDoor {};
+        class doorAnimate {};
+        class fedCamDisplay {};
+        class copLoadout {};
+        class ticketPaid {};
+        class showArrestDialog {}; //Time Jail
+        class arrestDialog_Arrest {}; //Time Jail
+    };
 	
 	class Gangs
 	{
