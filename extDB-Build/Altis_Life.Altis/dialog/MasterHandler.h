@@ -25,3 +25,5 @@
 #include "settings.h"
 #include "federalReserve.h"
 #include "jail_time.hpp"
+#include "common_EditorWrapper.hpp"
+#include "market.hpp"

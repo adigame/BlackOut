@@ -6,13 +6,19 @@
 	Description:
 	Sell a virtual item to the store / shop
 */
-private["_type","_index","_price","_var","_amount","_name"];
+private["_type","_index","_price","_var","_amount","_name","_marketprice"];
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
 _index = [_type,__GETC__(sell_array)] call TON_fnc_index;
 if(_index == -1) exitWith {};
 _price = (__GETC__(sell_array) select _index) select 1;
 _var = [_type,0] call life_fnc_varHandle;
+    _marketprice = [_type] call life_fnc_marketGetSellPrice;
+    if(_marketprice != -1) then
+{
+    _price = _marketprice;
+};
+
 
 _amount = ctrlText 2405;
 if(!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
