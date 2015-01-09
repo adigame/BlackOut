@@ -238,14 +238,16 @@ switch (_code) do
 						} else {
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};
-						systemChat localize "STR_MISC_VehUnlock";
+						systemChat "Vous avez déverrouiller votre véhicule.";
+						player say3D "unlock";
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
 						} else {
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};	
-						systemChat localize "STR_MISC_VehLock";
+						systemChat "Vous avez verrouiller votre véhicule.";
+						player say3D "car_lock";
 					};
 				};
 			};
