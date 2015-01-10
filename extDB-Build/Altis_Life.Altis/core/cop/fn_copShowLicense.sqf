@@ -23,13 +23,13 @@ _coplevel = call life_coplevel;
 
 switch ( _coplevel ) do
 {
-	case 1: { _rang = "Rang 1"; };
-	case 2: { _rang = "Rang 2"; };
-	case 3: { _rang = "Rang 3"; };
-	case 4: { _rang = "Rang 4"; };
-	case 5: { _rang = "Rang 5"; };
-	case 6: { _rang = "Rang 6"; };
-	case 7: { _rang = "Rang 7"; };
+	case 1: { _rang = "Hommes du rang"; };
+	case 2: { _rang = "Hommes du rang"; };
+	case 3: { _rang = "Sous-Officiers"; };
+	case 4: { _rang = "Officiers subalternes"; };
+	case 5: { _rang = "Officiers supérieurs"; };
+	case 6: { _rang = "Officiers généraux"; };
+	case 7: { _rang = "Officiers généraux"; };
 	default {_rank =  "Erreur";};
 };
 
