@@ -43,7 +43,7 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 	};
 	true;
 };
-
+/*
 switch (_code) do
 {
 	//Space key for Jumping
@@ -57,7 +57,7 @@ switch (_code) do
 			_handled = true;
 		};
 	};
-	
+*/
 	//Map Key
 	case _mapKey:
 	{
