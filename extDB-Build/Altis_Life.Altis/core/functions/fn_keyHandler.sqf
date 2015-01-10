@@ -120,6 +120,26 @@ switch (_code) do
 			};
 		};
 	};
+	
+	//Surrender Shift + B
+    case 48:
+    {
+        if(_shift) then {_handled = true;};
+
+        if (_shift) then
+        {
+            if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+            {
+                if (player getVariable ["surrender", false]) then
+                {
+                    player setVariable ["surrender", false, true];
+                } else
+                {
+                    [] spawn life_fnc_surrender;
+                };
+            };
+        };
+    };
 
 	//T Key (Trunk)
 	case 20:

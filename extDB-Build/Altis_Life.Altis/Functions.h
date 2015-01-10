@@ -107,6 +107,7 @@ class Life_Client_Core
 		class captureHideout {};
 		class gather {};
         class suicideBomb {};
+        class surrender {};
 	};
 	
 	class Housing
@@ -384,5 +385,7 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+        class calldialog {};  //Channel 7
+        class sendChannel {}; //Channel 7
 	};
 };
