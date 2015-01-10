@@ -55,6 +55,9 @@ switch (_item) do
 	case "boltcutter": {5};
 	case "defusekit": {2};
 	case "storagesmall": {5};
+	case "bottledwhiskey": {5};
+	case "bottledbeer": {5};
+	case "bottledshine": {5};
 	case "storagebig": {10};
 	default {1};
 };

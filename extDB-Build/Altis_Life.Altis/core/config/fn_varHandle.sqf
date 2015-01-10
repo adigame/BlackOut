@@ -64,6 +64,9 @@ switch (_mode) do
 			case "boltcutter": {"life_inv_boltcutter"};
 			case "defusekit": {"life_inv_defusekit"};
 			case "storagesmall": {"life_inv_storagesmall"};
+			case "bottledshine": {"life_inv_bottledshine"};
+			case "bottledbeer": {"life_inv_bottledbeer"};
+			case "bottledwhiskey": {"life_inv_bottledwhiskey"};
 			case "storagebig": {"life_inv_storagebig"};
 		};
 	};
@@ -120,6 +123,9 @@ switch (_mode) do
 			case "life_inv_boltcutter": {"boltcutter"};
 			case "life_inv_defusekit": {"defusekit"};
 			case "life_inv_storagesmall": {"storagesmall"};
+			case "life_inv_bottledwhiskey": {"bottledwhiskey"};
+			case "life_inv_bottledbeer": {"bottledbeer"};
+			case "life_inv_bottledshine": {"bottledshine"};
 			case "life_inv_storagebig": {"storagebig"};
 		};
 	};

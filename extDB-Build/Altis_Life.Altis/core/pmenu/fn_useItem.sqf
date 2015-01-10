@@ -87,6 +87,43 @@ switch (true) do
 		[] spawn life_fnc_pickAxeUse;
 	};
 	
+		case (_item =="bottledwhiskey"):
+	{
+		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			if(isNil "life_drink") then {life_drink = 0;};
+			life_drink = life_drink + 0.06;
+			if (life_drink < 0.07) exitWith {};
+			[] spawn life_fnc_drinkwhiskey;
+		};
+	};
+	
+	case (_item =="bottledshine"):
+	{
+		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			if(isNil "life_drink") then {life_drink = 0;};
+			life_drink = life_drink + 0.08;
+			if (life_drink < 0.09) exitWith {};
+			[] spawn life_fnc_drinkmoonshine;
+		};
+	};
+	
+	case (_item =="bottledbeer"):
+	{
+		
+		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			if(isNil "life_drink") then {life_drink = 0;};
+			life_drink = life_drink + 0.02;
+			if (life_drink < 0.06) exitWith {};
+			[] spawn life_fnc_drinkbeer;
+		};
+	};
+	
 	default
 	{
 		hint localize "STR_ISTR_NotUsable";

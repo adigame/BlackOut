@@ -299,6 +299,7 @@ class Life_Client_Core
         class arrestDialog_Arrest {}; //Time Jail
 		class copShowLicense {};
 		class copLicenseShown {};
+        class breathalyzer {}; // Alcool
     };
 	
 	class Gangs
@@ -354,6 +355,10 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+        class weed {};
+        class drinkbeer {};
+        class drinkmoonshine {};
+        class drinkwhiskey {};
 	};
 	
 	class Dialog_Controls

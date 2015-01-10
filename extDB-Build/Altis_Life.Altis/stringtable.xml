@@ -2502,6 +2502,34 @@
 			<Italian>Il veicolo non contiene così tanti oggetti.</Italian>
 			<Portuguese>A mala não tem toda essa contidade de items.</Portuguese>
 		</Key>
+		<Key ID="STR_MISC_StPubIntox">
+			<Original>%1 has passed out drunk in public!</Original>
+			<English>%1 has passed out drunk in public!</English>
+			<German>%1 hat sich betrunken im öffentlichen bestanden!</German>
+			<French>%1 a trop bu et s'est évanouie !</French>
+		</Key>
+		<Key ID="STR_MISC_AlreadyDrinking">
+			<Original>You are already drinking some booze</Original>
+			<English>You are already drinking some booze</English>
+			<German>Du bist schon etwas trinken Alkohol</German>
+			<French>Tu es déjà en train de boire du lourd</French>
+		</Key>
+		<Key ID="STR_MISC_WestIndNoNo">
+			<Original>No drinking on duty</Original>
+			<English>No drinking on duty</English>
+			<German>Kein Trinkwasser im Dienst</German>
+			<French>Ne pas boire pendant le travail</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut">
+			<Original>You have passed out</Original>
+			<English>You have passed out</English>
+			<French>Tu t'es évanouie</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut1">
+			<Original>What the hell happened to me??</Original>
+			<English>What the hell happened to me??</English>
+			<French>Quoi?? Que m'est-il arrivé?</French>
+		</Key>
 	</Package>
 	<Package name="Housing_Strings">
 		<Key ID="STR_House_ContainerError">
