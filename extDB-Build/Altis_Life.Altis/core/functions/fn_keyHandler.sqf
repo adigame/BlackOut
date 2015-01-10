@@ -184,6 +184,24 @@ switch (_code) do
 		
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
+	//C Key + shift
+    case 46:
+    {    
+        if(_shift && (!life_action_inUse) && (vehicle player == player) ) then
+        {
+            {
+                _str = [_x] call life_fnc_varToStr;
+                _val = missionNameSpace getVariable _x;
+                if(_val > 0 ) then
+                {
+                    if( _str == "Spitzhacke" || _str == "pickaxe" || _str == "pioche" ) then
+                    {
+                        [] spawn life_fnc_pickAxeUse;
+                    };
+                };
+            } foreach life_inv_items;
+        }
+    };
 	//Y Player Menu
 	case 21:
 	{
