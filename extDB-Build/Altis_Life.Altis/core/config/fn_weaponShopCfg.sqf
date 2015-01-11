@@ -24,24 +24,24 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Vous n'êtes pas Recrue!"};
 			default
 			{
-				["Altis Cop Shop",
+				["Armurie Recrue",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
-						["HandGrenade_Stone","Flashbang",1700],
+						["hgun_P07_snds_F","Tazer",2000],
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
-						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
+						["Binocular",nil,150],						
 						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+				        ["Chemlight_red",nil,300],
+				        ["Chemlight_yellow",nil,300],
+				        ["Chemlight_green",nil,300],
+				        ["Chemlight_blue",nil,300]				
 					]
 				];
 			};
@@ -52,10 +52,13 @@ switch(_shop) do
 	{
 		switch (true) do 
 		{
-			case (playerSide != independent): {"You are not an EMS Medic"};
+			case (playerSide != independent): {"Vous n'êtes pas Médecin"};
 			default {
 				["Hospital EMS Shop",
 					[
+					    ["hgun_Pistol_Signal_F","Pistolet Lumière",10000],
+						["6Rnd_GreenSignal_F","Munitions verte",250],
+						["6Rnd_RedSignal_F","Munitions rouge",250],
 						["ItemGPS",nil,100],
 						["Binocular",nil,150],
 						["ToolKit",nil,250],
@@ -74,58 +77,280 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
+			case (__GETC__(life_coplevel) < 2): {"Vous n'êtes pas Gendarme!"};
 			default
 			{
-				["Altis Patrol Officer Shop",
+				["Armurie Gendarme",
 					[
-						["arifle_MX_F",nil,35000],
-						["SMG_02_ACO_F",nil,30000],
-						["HandGrenade_Stone","Flashbang",1700],
-						["MineDetector",nil,1000],
-						["acc_flashlight",nil,750],
-						["optic_Holosight",nil,1200],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,130],
-						["30Rnd_9x21_Mag",nil,250]
+						["arifle_TRG21_F",nil,20000],
+						["hgun_P07_snds_F","Tazer",2000],
+						["acc_pointer_IR",nil,150],
+						["acc_flashlight",nil,150],
+						["optic_Holosight",nil,150],						
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["30Rnd_556x45_Stanag",nil,125],					
+				        ["Chemlight_red",nil,300],
+				        ["Chemlight_yellow",nil,300],
+				        ["Chemlight_green",nil,300],
+				        ["Chemlight_blue",nil,300]						
 					]
 				];
 			};
 		};
 	};
 
-	case "cop_sergeant":
+	case "cop_adjudant":
 	{
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
+			case (__GETC__(life_coplevel) < 3): {"Vous n'êtes pas Adjudant!"};
 			default
 			{
-				["Altis Sergeant Officer Shop",
+				["Armurie Adjudant",
 					[
-						["SMG_02_ACO_F",nil,15000],
-						["hgun_ACPC2_F",nil,17500],
-						["HandGrenade_Stone","Flashbang",1700],
-						["arifle_MXC_F",nil,30000],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_9x21_Mag",nil,60],
-						["9Rnd_45ACP_Mag",nil,200]
+						["arifle_Mk20_F",nil,20000],
+						["hgun_P07_snds_F","Tazer",2000],
+						["acc_pointer_IR",nil,150],
+						["acc_flashlight",nil,150],
+						["optic_Holosight",nil,150],
+						["optic_Aco_smg",nil,150],
+						["muzzle_snds_M",nil,150],								
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["30Rnd_556x45_Stanag",nil,125],						
+				        ["Chemlight_red",nil,300],
+				        ["Chemlight_yellow",nil,300],
+				        ["Chemlight_green",nil,300],
+				        ["Chemlight_blue",nil,300]	
 					]
 				];
 			};
 		};
 	};
 	
+	case "cop_lieutenant":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 4): {"Vous n'êtes pas Lieutenant!"};
+			default
+			{
+				["Armurie Lieutenant",
+					[
+						["arifle_MX_F",nil,20000],
+						["srifle_EBR_F",nil,20000],						
+						["hgun_P07_snds_F","Tazer",2000],
+						["acc_pointer_IR",nil,150],
+						["acc_flashlight",nil,150],
+						["optic_Holosight",nil,150],
+						["optic_Aco_smg",nil,150],
+						["optic_Arco",nil,150],
+						["muzzle_snds_B",nil,150],						
+						["muzzle_snds_H",nil,150],								
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["30Rnd_65x39_caseless_mag",nil,125],
+						["20Rnd_762x51_Mag",nil,125],							
+				        ["Chemlight_red",nil,300],
+				        ["Chemlight_yellow",nil,300],
+				        ["Chemlight_green",nil,300],
+				        ["Chemlight_blue",nil,300]	
+					]
+				];
+			};
+		};
+	};
+
+	case "cop_Major":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 5): {"Vous n'êtes pas Major!"};
+			default
+			{
+				["Armurie Major",
+					[
+						["arifle_MX_F",nil,20000],
+						["arifle_MXM_F",nil,20000],						
+						["srifle_EBR_F",nil,20000],
+						["LMG_Mk200_F",nil,20000],								
+						["hgun_P07_snds_F","Tazer",2000],
+						["acc_pointer_IR",nil,150],
+						["acc_flashlight",nil,150],
+						["optic_Holosight",nil,150],
+						["optic_Aco_smg",nil,150],
+						["optic_Hamr",nil,150],	
+						["optic_MRCO",nil,150],						
+						["optic_Arco",nil,150],
+						["muzzle_snds_B",nil,150],						
+						["muzzle_snds_H",nil,150],
+						["muzzle_snds_H_MG",nil,150],						
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["200Rnd_65x39_cased_Box",nil,150],						
+						["30Rnd_65x39_caseless_mag",nil,125],
+						["20Rnd_762x51_Mag",nil,125],							
+				        ["Chemlight_red",nil,300],
+				        ["Chemlight_yellow",nil,300],
+				        ["Chemlight_green",nil,300],
+				        ["Chemlight_blue",nil,300]	
+					]
+				];
+			};
+		};
+	};		
+	
+		case "cop_capitaine":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 6): {"Vous n'êtes pas Capitaine!"};
+			default
+			{
+				["Armurie Capitaine",
+					[
+						["hgun_ACPC2_snds_F",nil,5000],					
+						["arifle_MX_F",nil,20000],
+						["srifle_LRR_F",nil,20000],
+						["arifle_MX_SW_F",nil,20000],						
+						["arifle_MXM_F",nil,20000],						
+						["srifle_EBR_F",nil,20000],
+						["LMG_Mk200_F",nil,20000],
+						["launch_NLAW_F",nil,50000],						
+						["hgun_P07_snds_F","Tazer",2000],
+						["acc_pointer_IR",nil,150],
+						["acc_flashlight",nil,150],
+						["optic_Holosight",nil,150],
+						["optic_Aco_smg",nil,150],
+						["optic_Hamr",nil,150],
+						["optic_SOS",nil,150],
+						["optic_Nightstalker",nil,150],							
+						["optic_MRCO",nil,150],						
+						["optic_Arco",nil,150],
+						["muzzle_snds_B",nil,150],						
+						["muzzle_snds_H",nil,150],
+						["muzzle_snds_H_MG",nil,150],						
+						["Binocular",nil,150],
+						["B_UavTerminal",nil,1000],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["7Rnd_408_Mag",nil,50],					
+						["100Rnd_65x39_caseless_mag",nil,50],
+						["9Rnd_45ACP_Mag",nil,50],							
+						["200Rnd_65x39_cased_Box",nil,150],						
+						["30Rnd_65x39_caseless_mag",nil,125],
+						["20Rnd_762x51_Mag",nil,125],
+						["NLAW_F",nil,50000],							
+				        ["Chemlight_red",nil,300],
+				        ["Chemlight_yellow",nil,300],
+				        ["Chemlight_green",nil,300],
+				        ["Chemlight_blue",nil,300]
+					]
+				];
+			};
+		};
+	};
+
+    case "cop_chef":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 7): {"Vous n'êtes pas Général!"};
+			default
+			{
+				["Armurie Général / Colonel",
+					[
+						["hgun_ACPC2_snds_F",nil,5000],					
+						["arifle_MX_F",nil,20000],
+						["srifle_LRR_F",nil,20000],
+						["arifle_MX_SW_F",nil,20000],						
+						["arifle_MXM_F",nil,20000],
+						["arifle_MX_GL_F",nil,20000],							
+						["srifle_EBR_F",nil,20000],
+						["LMG_Mk200_F",nil,20000],
+						["srifle_GM6_F",nil,20000],						
+						["launch_NLAW_F",nil,50000],
+						["launch_Titan_F",nil,50000],						
+						["hgun_P07_snds_F","Tazer",2000],
+						["acc_pointer_IR",nil,150],
+						["acc_flashlight",nil,150],
+						["optic_Holosight",nil,150],
+						["optic_Aco_smg",nil,150],
+						["optic_Hamr",nil,150],
+						["optic_SOS",nil,150],
+						["optic_Nightstalker",nil,150],							
+						["optic_MRCO",nil,150],						
+						["optic_Arco",nil,150],
+						["optic_tws",nil,150],							
+						["optic_NVS",nil,150],
+						["B_UavTerminal",nil,1000],						
+						["muzzle_snds_B",nil,150],						
+						["muzzle_snds_H",nil,150],
+						["muzzle_snds_H_MG",nil,150],						
+						["Binocular","Jumelles",150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["7Rnd_408_Mag",nil,50],					
+						["100Rnd_65x39_caseless_mag",nil,50],
+						["9Rnd_45ACP_Mag",nil,50],
+						["5Rnd_127x108_Mag",nil,50],
+						["3Rnd_UGL_FlareRed_F",nil,50],
+						["1Rnd_SmokeRed_Grenade_shell",nil,50],						
+						["200Rnd_65x39_cased_Box",nil,150],						
+						["30Rnd_65x39_caseless_mag",nil,125],
+						["20Rnd_762x51_Mag",nil,125],
+						["NLAW_F",nil,50000],
+						["Titan_AA",nil,50000],						
+				        ["Chemlight_red",nil,300],
+				        ["Chemlight_yellow",nil,300],
+				        ["Chemlight_green",nil,300],
+				        ["SmokeShell",nil,300]	
+					]
+				];
+			};
+		};
+	};	
+	
 	case "rebel":
 	{
 		switch(true) do
 		{
 			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
+			case (!license_civ_rebel): {"Il faut acheter la licence pour négocier avec Mohammed"};
 			default
 			{
 				["Mohammed's Jihadi Shop",
