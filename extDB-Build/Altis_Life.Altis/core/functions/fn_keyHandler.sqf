@@ -284,7 +284,7 @@ switch (_code) do
 						} else {
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};	
-						systemChat "Vous avez verrouiller votre véhicule.";
+						systemChat "Vous avez vérrouiller votre véhicule.";
 						player say3D "car_lock";
 					};
 				};
