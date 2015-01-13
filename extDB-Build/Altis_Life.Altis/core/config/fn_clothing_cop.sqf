@@ -29,6 +29,11 @@ switch (_filter) do
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam_worn",nil,550];
 		};
+		
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret pushBack ["U_bombsuit",nil,1200];
+		};
 	};
 	
 	//Hats
@@ -43,6 +48,11 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_ret pushBack ["H_MilCap_mcamo",nil,100];
+		};
+		
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret pushBack ["H_Bombsuit_Helmet",nil,1200];
 		};
 	};
 	
@@ -83,7 +93,10 @@ switch (_filter) do
 			["B_FieldPack_cbr",nil,500],
 			["B_AssaultPack_cbr",nil,700],
 			["B_Bergen_sgg",nil,2500],
-			["B_Carryall_cbr",nil,3500]
+			["B_Carryall_cbr",nil,3500],
+			["",""],
+			["I_HMG_01_support_F",nil,15000],
+			["I_HMG_01_weapon_F",nil,35000]
 		];
 	};
 };
