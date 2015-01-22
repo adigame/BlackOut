@@ -1,6 +1,5 @@
-author = "Tonic";
-onLoadName = "Altis Life RPG v3.1.4.8";
-onLoadMission = "A RPG game mode developed by Tonic";
+author = "Jordan, OKAN & Niko";
+onLoadName = "BlackOut v1";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
@@ -30,6 +29,7 @@ class RscTitles
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.h"
+	#include "statusBar.hpp"
 };
 
 class CfgFunctions
@@ -47,6 +47,13 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	class MedicSiren
+	{
+		name = "MedicSiren";
+		sound[] = {"\sounds\MedicSiren.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
 	class tazersound
 	{
 		name = "Tazersound";
@@ -58,6 +65,20 @@ class CfgSounds
 	{
 		name = "flashbang";
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class nightclub_music
+	{
+		name = "nightclub_music";
+		sound[] = {"\sounds\nightclub_music.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class nigga
+	{
+		name = "nigga";
+		sound[] = {"\sounds\nigga.ogg", 1.0, 1};
 		titles[] = {};
 	};
 	

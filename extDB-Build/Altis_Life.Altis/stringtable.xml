@@ -1325,6 +1325,18 @@
 		</Key>
 	</Package>
 	<Package name="Notifications">
+	<Key ID="STR_NOTF_Frozen">
+            <Original>You have been frozen by an administrator</Original>
+            <English>You have been frozen by an administrator</English>
+			<French>Tu as été gêlé par un Administrateur</French>
+            <German>To Be Changed</German>
+        </Key>
+        <Key ID="STR_NOTF_Unfrozen">
+            <Original>You have been unfrozen by an administrator</Original>
+            <English>You have been unfrozen by an administrator</English>
+			<French>Tu as été gêlé par un Administrateur</French>
+            <German>To Be Changed</German>
+        </Key>
 		<Key ID="STR_NOTF_NE_1">
 			<Original>You do not have $%1 for a %2</Original>
 			<German>Du hast keine $%1 für einen %2</German>
@@ -2696,7 +2708,7 @@
 		<Key ID="STR_House_StorageLock">
 			<Original>House storage locked</Original>
 			<German>Lagerplatz des Hauses geschlossen</German>
-			<French>Stockage de Maison verrouillé</French>
+			<French>Stockage de maison verrouillé</French>
 			<Italian>Contenitori della casa bloccati</Italian>
 			<Portuguese>Armário da casa trancado</Portuguese>
 		</Key>
@@ -2926,6 +2938,7 @@
 			<French>Filet de Mulet</French>
 			<Italian>Carne di Triglia</Italian>
 			<Portuguese>Peixe Mullet</Portuguese>
+		</Key> 
 		</Key> 
 		<Key ID="STR_Item_MulletFried">
 			<Original>Fried Mullet</Original>

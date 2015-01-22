@@ -48,11 +48,19 @@ class Life_Client_Core
 	class Admin
 	{
 		file = "core\admin";
-		class admininfo {};
-		class adminid {};
-		class admingetID {};
-		class adminMenu {};
-		class adminQuery {};
+        class admininfo {};
+        class adminid {};
+        class admingetID {};
+        class adminMenu {};
+        class adminQuery {};
+        class adminSpectate {};
+        class adminTeleport {};
+        class adminTpHere {};
+        class adminDebugCon {};
+        class adminCompensate {};
+        class adminGodMode {};
+        class adminFreeze {};
+        class adminMarkers {};
 	};
 	
 	class Medical_System
@@ -71,6 +79,7 @@ class Life_Client_Core
 		class medicSirenLights {};
 		class medicLights {};
 		class medicSiren {};
+        class teamMarkers {};
 	};
 	
 	class Actions
@@ -252,6 +261,11 @@ class Life_Client_Core
 		class demoChargeTimer {};
 		class civLoadout {};
         class civInteractionMenu {};
+        class freezePlayer {};
+        class gangMarkers{};
+        class civIdentity {};
+        class civIdentityShown {};
+        class thug {};
 	};
 	
 	class Vehicle
@@ -301,6 +315,7 @@ class Life_Client_Core
 		class copShowLicense {};
 		class copLicenseShown {};
         class breathalyzer {}; // Alcool
+        class copOpener {};
     };
 	
 	class Gangs

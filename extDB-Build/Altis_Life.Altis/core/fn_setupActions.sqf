@@ -8,16 +8,22 @@ switch (playerSide) do
 {
 	case civilian:
 	{
+		//Identité
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Carte d'identité</t>",life_fnc_civIdentity,"",1,false,true,"",'playerSide == civilian && !isNull cursorTarget && (isPlayer _x) && player distance cursorTarget < 3.5 && cursorTarget isKindOf "Man" ']];
+		
 		//Drop fishing net
 		life_actions = [player addAction[localize "STR_pAct_DropFishingNet",life_fnc_dropFishingNet,"",0,false,false,"",'
 		(surfaceisWater (getPos vehicle player)) && (vehicle player isKindOf "Ship") && life_carryWeight < life_maxWeight && speed (vehicle player) < 2 && speed (vehicle player) > -1 && !life_net_dropped ']];
 		
-		//Rob person
+		//Rob person KNOCKOUT
 		life_actions = life_actions + [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",'
-        !isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget in ["Incapacitated","amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"] && !(cursorTarget getVariable["robbed",FALSE]) ']];
+        !isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable["robbed",FALSE]) ']];
+		//Rob person SURRENDER
+		life_actions = life_actions + [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",'
+        !isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" && !(cursorTarget getVariable["robbed",FALSE]) ']];
 		
 		// Suicide Bomb
-		life_actions = life_actions + [player addAction["Se faire éxploser",life_fnc_suicideBomb,"",0,false,false,"",
+		life_actions = life_actions + [player addAction["Activer la veste",life_fnc_suicideBomb,"",0,false,false,"",
 		'vest player == "V_HarnessOGL_gry" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
 		
 		//Kidnapping KNOCKOUT
@@ -30,6 +36,6 @@ switch (playerSide) do
 	case west:
 	{	
 		//Insigne de police
-		life_actions = life_actions + [player addAction["<t color='#00FF00'>Insigne de police</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" ']];
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Insigne de police</t>",life_fnc_copShowLicense,"",1,false,true,"",'playerSide == west && !isNull cursorTarget && (isPlayer _x) && player distance cursorTarget < 3.5 && cursorTarget isKindOf "Man" ']];
 	};
 };

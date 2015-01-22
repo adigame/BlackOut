@@ -43,21 +43,9 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 	};
 	true;
 };
-/*
+
 switch (_code) do
 {
-	//Space key for Jumping
-	case 57:
-	{
-		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
-		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
-			jumpActionTime = time; //Update the time.
-			[player,true] spawn life_fnc_jumpFnc; //Local execution
-			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution 
-			_handled = true;
-		};
-	};
-*/
 	//Map Key
 	case _mapKey:
 	{
@@ -65,6 +53,7 @@ switch (_code) do
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+			case civilian: {if(!visibleMap) then {[] spawn life_fnc_gangMarkers;}};
 		};
 	};
 	
@@ -165,12 +154,13 @@ switch (_code) do
 			};
 		};
 	};
-	//L Key?
+	
+	//Shift + L in vehicle Cop/Medic lights
 	case 38: 
 	{
 		//If cop run checks for turning lights on.
 		if(_shift && playerSide in [west,independent]) then {
-			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"]) then {
+			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","B_Heli_Light_01_F","B_Heli_Transport_01_F","I_Heli_light_03_unarmed_F","O_MRAP_02_F","cl3_suv_black","demian2435_swat_offroad","demian2435_swat_hunter","demian2435_police_car","demian2435_police_helicopter"]) then {
 				if(!isNil {vehicle player getVariable "lights"}) then {
 					if(playerSide == west) then {
 						[vehicle player] call life_fnc_sirenLights;
@@ -184,7 +174,8 @@ switch (_code) do
 		
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
-	//C Key + shift
+	
+	//C + Shift
     case 46:
     {    
         if(_shift && (!life_action_inUse) && (vehicle player == player) ) then
@@ -208,6 +199,46 @@ switch (_code) do
 		if(!_alt && !_ctrlKey && !dialog) then
 		{
 			[] call life_fnc_p_openMenu;
+		};
+	};
+	
+	// O, Police Gate Opener
+    case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player)) then {
+			[] call life_fnc_copOpener;
+		};
+	};
+	
+	//TAB Vehicle Key
+	case 15:
+	{
+		if(playerSide in [civilian] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
+		{
+			[] spawn
+			{
+				life_siren_active = true;
+				sleep 29.670;
+				life_siren_active = false;
+			};
+			_veh = vehicle player;
+			if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
+			if((_veh getVariable "siren")) then
+			{
+				titleText ["Radio OFF","PLAIN"];
+				_veh setVariable["siren",false,true];
+			}
+				else
+			{
+				titleText ["Radio ON","PLAIN"];
+				_veh setVariable["siren",true,true];
+				if(playerSide == civilian) then {
+					[[_veh],"life_fnc_thug",nil,true] spawn life_fnc_MP;
+				} else {
+					//I do not have a custom sound for this and I really don't want to go digging for one, when you have a sound uncomment this and change medicSiren.sqf in the medical folder.
+					//[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
+				};
+			};
 		};
 	};
 	
@@ -236,8 +267,7 @@ switch (_code) do
 				if(playerSide == west) then {
 					[[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
 				} else {
-					//I do not have a custom sound for this and I really don't want to go digging for one, when you have a sound uncomment this and change medicSiren.sqf in the medical folder.
-					//[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
+					[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
 				};
 			};
 		};
@@ -292,5 +322,4 @@ switch (_code) do
 		};
 	};
 };
-
 _handled;

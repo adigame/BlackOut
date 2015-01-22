@@ -1,3 +1,4 @@
+/*
 waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
 
@@ -20,7 +21,7 @@ player createDiarySubject ["controls","Controls"];
 				"
 		]
 	];
-*/
+	
 	player createDiaryRecord["changelog",
 		[
 			"Official Change Log",
@@ -560,4 +561,4 @@ player createDiarySubject ["controls","Controls"];
 				Left Shift + H: Holster's your pistol<br/>
 				"
 		]
-	];
+	];*/

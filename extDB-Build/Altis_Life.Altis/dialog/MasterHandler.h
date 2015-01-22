@@ -26,3 +26,4 @@
 #include "federalReserve.h"
 #include "jail_time.hpp"
 #include "channel.hpp"
+#include "compensate.hpp"
