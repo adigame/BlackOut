@@ -2184,7 +2184,7 @@ if (_obj_main_type in IL_Supported_Vehicles_CHINOOK) then
 	};
 	
 	_obj_main addAction [
-	"<t color=""#0000ff"">Enable loading for Co-Pilot</t>",
+	"<t color=""#0000ff"">Ouvrir la porte Co-Pilot</t>",
 	{
 		(_this select 0) setVariable["can_copilot", true, true];;
 	},[],IL_Action_S_Priority,false,true,"",
@@ -2192,7 +2192,7 @@ if (_obj_main_type in IL_Supported_Vehicles_CHINOOK) then
 	];
 
 	_obj_main addAction [
-	"<t color=""#0000ff"">Disable loading for Co-Pilot</t>",
+	"<t color=""#0000ff"">Fermer la porte Co-Pilot</t>",
 	{
 		(_this select 0) setVariable["can_copilot", false, true];;
 	},[],IL_Action_S_Priority,false,true,"",
@@ -2200,7 +2200,7 @@ if (_obj_main_type in IL_Supported_Vehicles_CHINOOK) then
 	];
 	
 	_obj_main addAction [
-	"<t color=""#0000ff"">Enable loading from outside</t>",
+	"<t color=""#0000ff"">Autoriser les véhicules</t>",
 	{
 		(_this select 0) setVariable["can_outside", true, true];;
 	},[],IL_Action_S_Priority,false,true,"",
@@ -2208,7 +2208,7 @@ if (_obj_main_type in IL_Supported_Vehicles_CHINOOK) then
 	];
 
 	_obj_main addAction [
-	"<t color=""#0000ff"">Disable loading from outside</t>",
+	"<t color=""#0000ff"">Empecher les véhicules</t>",
 	{
 		(_this select 0) setVariable["can_outside", false, true];;
 	},[],IL_Action_S_Priority,false,true,"",
