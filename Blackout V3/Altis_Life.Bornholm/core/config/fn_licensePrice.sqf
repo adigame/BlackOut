@@ -18,7 +18,7 @@ switch (_type) do
 	case "dive": {5000}; //Diving license cost
 	case "oil": {10000}; //Oil processing license cost
 	case "cair": {15000}; //Cop Pilot License cost
-	case "swat": {35000}; //Swat License cost
+	case "gign": {999999}; //GIGN License cost
 	case "cg": {8000}; //Coast guard license cost
 	case "heroin": {300000}; //Heroin processing license cost
 	case "marijuana": {280000}; //Marijuana processing license cost
