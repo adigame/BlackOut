@@ -95,7 +95,7 @@ switch (true) do
 		[] spawn life_fnc_pickAxeUse;
 	};
 	
-		case (_item =="bottledwhiskey"):
+	case (_item =="bottledwhiskey"):
 	{
 		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
 		if(([false,_item,1] call life_fnc_handleInv)) then

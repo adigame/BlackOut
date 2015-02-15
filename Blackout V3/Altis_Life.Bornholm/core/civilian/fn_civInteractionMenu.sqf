@@ -7,11 +7,11 @@
     Kidnapping
 */
 #define Btn1 37450  //Démenotter
-#define Btn4 37453  //Escorter
-#define Btn7 37456  //Mettre dans le véhicule
+#define Btn2 37451  //Escorter
+#define Btn3 37452  //Mettre dans le véhicule
 #define Title 37401
 
-private["_display","_curTarget","_Btn1","_Btn4","_Btn7"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3"];
 if(!dialog) then {
     createDialog "pInteraction_Menu";
 };
@@ -21,29 +21,22 @@ if(isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
 if(!isPlayer _curTarget && side _curTarget == civilian) exitWith {closeDialog 0;}; //Bad side check?
 _display = findDisplay 37400;
 _Btn1 = _display displayCtrl Btn1;
-_Btn4 = _display displayCtrl Btn4;
-_Btn7 = _display displayCtrl Btn7;
+_Btn2 = _display displayCtrl Btn2;
+_Btn3 = _display displayCtrl Btn3;
 life_pInact_curTarget = _curTarget;
 
 //Set Unrestrain Button
 _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
+_Btn1 buttonSetAction hint "Utilise des outils de crochetage afin de crocheter les menottes de cette personne.";
 
 //Set Escort Button
 if((_curTarget getVariable["Escorting",false])) then {
-    _Btn4 ctrlSetText localize "STR_pInAct_StopEscort";
-    _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_civInteractionMenu;";
+    _Btn2 ctrlSetText localize "STR_pInAct_StopEscort";
+    _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_civInteractionMenu;";
 } else {
-    _Btn4 ctrlSetText localize "STR_pInAct_Escort";
-    _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
+    _Btn2 ctrlSetText localize "STR_pInAct_Escort";
+    _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
 };
 //Set Put in Vehicle
-_Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
-_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
-
-if(playerSide == civilian) then {
-    _Btn2 ctrlShow false;
-    _Btn3 ctrlShow false;
-    _Btn5 ctrlShow False;
-    _Btn6 ctrlShow False;
-};
+_Btn3 ctrlSetText localize "STR_pInAct_PutInCar";
+_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";

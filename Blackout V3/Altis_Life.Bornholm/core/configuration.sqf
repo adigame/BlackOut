@@ -278,6 +278,9 @@ buy_array =
 	["boltcutter",7500],
 	["defusekit",2500],
 	["storagesmall",75000],
+	["bottledshine",3000], 
+	["bottledwhiskey",1500], 
+	["bottledbeer",500], 
 	["storagebig",150000]
 ];
 __CONST__(buy_array,buy_array);

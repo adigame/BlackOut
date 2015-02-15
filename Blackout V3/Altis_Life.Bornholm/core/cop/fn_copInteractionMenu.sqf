@@ -95,9 +95,6 @@ _Btn6 buttonSetAction "closeDialog 0; [] call life_fnc_showArrestDialog;";
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
-_Btn8 ctrlSetText localize "STR_pInAct_Breathalyzer";
-_Btn8 buttonSetAction "[[player],""life_fnc_breathalyzer"",life_pInact_curTarget,FALSE] spawn life_fnc_MP;closeDialog 0";
-
 _Btn9 ctrlSetText localize "STR_pInAct_Breathalyzer";
 _Btn9 buttonSetAction "[[player],""life_fnc_breathalyzer"",life_pInact_curTarget,FALSE] spawn life_fnc_MP;closeDialog 0";
 

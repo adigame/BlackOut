@@ -91,7 +91,7 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [west,civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			[] call life_fnc_restrainAction;
 		};
@@ -116,8 +116,6 @@ switch (_code) do
 		if((_code in (actionKeys "SelectAll") || _code in (actionKeys "ForceCommandingMode"))) then 
 		{
 			[] call life_fnc_p_openIphone;
-			player setDamage ((getDammage player) + 0.15);
-			hint parseText format["!!! LA TRICHE EST INTERDITE !!!<br/> Le MetaGaming c'est MAL<br/> Ou ça fait MAL...<br/><t size='1.4'><t color='#FF0000'>Tu viens de perdre 15 points de vie !</t></t>"];
 		};
 	};
 	
@@ -127,10 +125,10 @@ switch (_code) do
 		private ["_player"];
 		_player = player;
 		
-		if(_alt && !_shift) then 
+		if(_alt && !_shift && {!alive player}) then 
 		{
 			diag_log format ["SERVER: %1 ALT+F4 to disconnect (report it)",_player getVariable["realname",name _player]];
-			[[1,format["SERVER: %1 a utilisé ALT+F4 pour déconnecter (merci de le signaler à un Admin.)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			[[1,format["SERVER: %1 a utilisé ALT+F4 pour se déconnecter étant mort.\n(Merci de le signaler à un Admin.)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 		};
     };
 	
@@ -254,26 +252,26 @@ switch (_code) do
 	};
 	
 	//TAB Vehicle Key
-	case 15:
+	case 73:
 	{
 		if(playerSide in [civilian] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
 		{
 			[] spawn
 			{
 				life_siren_active = true;
-				sleep 29.670;
+				sleep 28;
 				life_siren_active = false;
 			};
 			_veh = vehicle player;
 			if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
 			if((_veh getVariable "siren")) then
 			{
-				titleText ["Radio OFF","PLAIN"];
+				titleText ["Musique stoppée.","PLAIN"];
 				_veh setVariable["siren",false,true];
 			}
 				else
 			{
-				titleText ["Radio ON","PLAIN"];
+				titleText ["Thug life","PLAIN"];
 				_veh setVariable["siren",true,true];
 				if(playerSide == civilian) then {
 					[[_veh],"life_fnc_thug",nil,true] spawn life_fnc_MP;
@@ -284,6 +282,62 @@ switch (_code) do
 			};
 		};
 	};
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//                                                                     Tentative de                                                                      //
+	//                                                                        CHEAT                                                                          //
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//Peut-être un cheateur? [F1]
+	case 59:
+	{
+		[[profileName,format["a appuié sur F1, c'est peut-être pour ouvrir un menu de cheat.",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+	};
+
+	//Peut-être un cheateur? [F2]
+	case 59:
+	{
+		[[profileName,format["a appuié sur F2, ça correspond peut-être à un menu de cheat.",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+	};
+	
+	//Peut-être un cheateur? [F3]
+	case 61:
+	{
+		[[profileName,format["a appuié sur F3, ça correspond peut-être à un menu de cheat.",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+	};
+	
+	//Peut-être un cheateur? [F4]
+	case 62:
+	{
+		[[profileName,format["a appuié sur F4, ça correspond peut-être à un menu de cheat.",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+	};
+	
+	//Peut-être un cheateur? [F5]
+	case 63:
+	{
+		[[profileName,format["a appuié sur F5, ça correspond peut-être à un menu de cheat.",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+	};
+	
+	//Peut-être un cheateur? [F6]
+	case 64:
+	{
+		[[profileName,format["a appuié sur F6, ça correspond peut-être à un menu de cheat.",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+	};
+	
+	//Peut-être un cheateur? [F7]
+	case 65:
+	{
+		[[profileName,format["a appuié sur F7, ça correspond peut-être à un menu de cheat.",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+	};
+	
+	//Peut-être un cheateur? [F8]
+	case 66:
+	{
+		[[profileName,format["a appuié sur F8, ça correspond peut-être à un menu de cheat.",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+	};
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//                                                                     Tentative de                                                                      //
+	//                                                                        CHEAT                                                                          //
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	//F Key
 	case 33:
@@ -426,7 +480,7 @@ switch (_code) do
 		{
 			cutText [format["POMPES SHEGUEY!!!!!!"], "PLAIN DOWN"];
 			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
-						player say3D "pompes";
+			player say3D "pompes";
 		};
 	};
 };

@@ -269,6 +269,9 @@ class Life_Client_Core
         class civIdentity {};
         class civIdentityShown {};
         class thug {};
+        class drinkbeer {};
+        class drinkmoonshine {};
+        class drinkwhiskey {};
 	};
 	
 	class Vehicle
