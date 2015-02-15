@@ -34,8 +34,8 @@ switch (_side) do
 			["civ_spawn_2","Aakirbeby","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["civ_spawn_3","Nexoe","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["civ_spawn_4","Svaneke","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
-		];
-	
+			];
+			
 		if(license_civ_rebel) then
 		{
 			_return = [

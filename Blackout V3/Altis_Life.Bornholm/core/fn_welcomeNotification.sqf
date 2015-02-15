@@ -10,8 +10,7 @@ format["Bonjour %1, Veuillez lire ce message",profileName] hintC
 	"Si vous rencontrez des bugs veuillez le signaler",
 	"Les Fondateurs sont : Jordanx59x , Okan ",
 	"Les Admins sont : Bryan Kenneway , Alberto Parrachini ",
-	"Les Modos sont : Julien Burn , Niko Dink ",
-	"Attention les personnes no rp seront passible d'un ban",",
-	"",
+	"Les Modos sont : Julien Burn , MrBlackAngel ",
+	"Attention les personnes no rp seront passible d'un ban",
 	"Bon jeu !"
 ];

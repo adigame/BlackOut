@@ -54,6 +54,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `cash` int(100) NOT NULL DEFAULT '0',
   `bankacc` int(100) NOT NULL DEFAULT '0',
   `coplevel` enum('0','1','2','3','4','5','6','7') NOT NULL DEFAULT '0',
+  `gign` enum('0','1') NOT NULL DEFAULT '0',
   `cop_licenses` text,
   `civ_licenses` text,
   `med_licenses` text,

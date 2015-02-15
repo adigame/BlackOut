@@ -89,8 +89,6 @@ switch (_shop) do
 			["cl3_458_black",850000],
 			["cl3_458_blue",850000],
 			["cl3_458_burgundy",850000],
-			["cl3_458_camo",850000],
-			["cl3_458_camo_urban",850000],
 			["cl3_458_cardinal",850000],
 			["cl3_458_dark_green",850000],
 			["cl3_458_flame",850000],
@@ -113,67 +111,60 @@ switch (_shop) do
 			["cl3_458_violet",850000],
 			["cl3_458_white",850000],
 			["cl3_458_yellow",850000],
-			["cl3_arielatom_aqua",75000],
-			["cl3_arielatom_babyblue",75000],
-			["cl3_arielatom_babypink",75000],
-			["cl3_arielatom_black",75000],
-			["cl3_arielatom_blue",75000],
-			["cl3_arielatom_burgundy",75000],
-			["cl3_arielatom_camo",75000],
-			["cl3_arielatom_camo_urban",75000],
-			["cl3_arielatom_cardinal",75000],
-			["cl3_arielatom_dark_green",75000],
-			["cl3_arielatom_gold",75000],
-			["cl3_arielatom_green",75000],
-			["cl3_arielatom_grey",75000],
-			["cl3_arielatom_lavender",75000],
-			["cl3_arielatom_light_blue",75000],
-			["cl3_arielatom_light_yellow",75000],
-			["cl3_arielatom_lime",75000],
-			["cl3_arielatom_marina_blue",75000],
-			["cl3_arielatom_navy_blue",75000],
-			["cl3_arielatom_orange",75000],
-			["cl3_arielatom_purple",75000],
-			["cl3_arielatom_race_aqua",85000],
-			["cl3_arielatom_race_babyblue",85000],
-			["cl3_arielatom_race_babypink",85000],
-			["cl3_arielatom_race_black",85000],
-			["cl3_arielatom_race_blue",85000],
-			["cl3_arielatom_race_burgundy",85000],
-			["cl3_arielatom_race_camo",85000],
-			["cl3_arielatom_race_camo_urban",85000],
-			["cl3_arielatom_race_dark_green",85000],
-			["cl3_arielatom_race_gold",85000],
-			["cl3_arielatom_race_green",85000],
-			["cl3_arielatom_race_grey",85000],
-			["cl3_arielatom_race_lavender",85000],
-			["cl3_arielatom_race_light_blue",85000],
-			["cl3_arielatom_race_light_yellow",85000],
-			["cl3_arielatom_race_lime",85000],
-			["cl3_arielatom_race_marina_blue",85000],
-			["cl3_arielatom_race_navy_blue",85000],
-			["cl3_arielatom_race_orange",85000],
-			["cl3_arielatom_race_purple",85000],
-			["cl3_arielatom_race_red",85000],
-			["cl3_arielatom_race_sand",85000],
-			["cl3_arielatom_race_silver",85000],
-			["cl3_arielatom_race_violet",85000],
-			["cl3_arielatom_race_white",85000],
-			["cl3_arielatom_race_yellow",85000],
-			["cl3_arielatom_red",75000],
-			["cl3_arielatom_sand",75000],
-			["cl3_arielatom_silver",75000],
-			["cl3_arielatom_violet",75000],
-			["cl3_arielatom_white",75000],
-			["cl3_arielatom_yellow",75000],
+			["cl3_arielatom_aqua",250000],
+			["cl3_arielatom_babyblue",250000],
+			["cl3_arielatom_babypink",250000],
+			["cl3_arielatom_black",250000],
+			["cl3_arielatom_blue",250000],
+			["cl3_arielatom_burgundy",250000],
+			["cl3_arielatom_cardinal",250000],
+			["cl3_arielatom_dark_green",250000],
+			["cl3_arielatom_gold",250000],
+			["cl3_arielatom_green",250000],
+			["cl3_arielatom_grey",250000],
+			["cl3_arielatom_lavender",250000],
+			["cl3_arielatom_light_blue",250000],
+			["cl3_arielatom_light_yellow",250000],
+			["cl3_arielatom_lime",250000],
+			["cl3_arielatom_marina_blue",250000],
+			["cl3_arielatom_navy_blue",250000],
+			["cl3_arielatom_orange",250000],
+			["cl3_arielatom_purple",250000],
+			["cl3_arielatom_race_aqua",300000],
+			["cl3_arielatom_race_babyblue",300000],
+			["cl3_arielatom_race_babypink",300000],
+			["cl3_arielatom_race_black",300000],
+			["cl3_arielatom_race_blue",300000],
+			["cl3_arielatom_race_dark_green",300000],
+			["cl3_arielatom_race_gold",300000],
+			["cl3_arielatom_race_green",300000],
+			["cl3_arielatom_race_grey",300000],
+			["cl3_arielatom_race_lavender",300000],
+			["cl3_arielatom_race_light_blue",300000],
+			["cl3_arielatom_race_light_yellow",300000],
+			["cl3_arielatom_race_lime",300000],
+			["cl3_arielatom_race_marina_blue",300000],
+			["cl3_arielatom_race_navy_blue",300000],
+			["cl3_arielatom_race_orange",300000],
+			["cl3_arielatom_race_purple",300000],
+			["cl3_arielatom_race_red",300000],
+			["cl3_arielatom_race_sand",300000],
+			["cl3_arielatom_race_silver",300000],
+			["cl3_arielatom_race_violet",300000],
+			["cl3_arielatom_race_white",300000],
+			["cl3_arielatom_race_yellow",300000],
+			["cl3_arielatom_red",250000],
+			["cl3_arielatom_sand",250000],
+			["cl3_arielatom_silver",250000],
+			["cl3_arielatom_violet",250000],
+			["cl3_arielatom_white",250000],
+			["cl3_arielatom_yellow",250000],
 			["cl3_carrera_gt_aqua",1200000],
 			["cl3_carrera_gt_babyblue",1200000],
 			["cl3_carrera_gt_babypink",1200000],
 			["cl3_carrera_gt_black",1200000],
 			["cl3_carrera_gt_blue",1200000],
 			["cl3_carrera_gt_burgundy",1200000],
-			["cl3_carrera_gt_camo",1200000],
-			["cl3_carrera_gt_camo_urban",1200000],
 			["cl3_carrera_gt_cardinal",1200000],
 			["cl3_carrera_gt_dark_green",1200000],
 			["cl3_carrera_gt_gold",1200000],
@@ -199,8 +190,6 @@ switch (_shop) do
 			["cl3_civic_vti_black",30000],
 			["cl3_civic_vti_blue",30000],
 			["cl3_civic_vti_burgundy",30000],
-			["cl3_civic_vti_camo",30000],
-			["cl3_civic_vti_camo_urban",30000],
 			["cl3_civic_vti_cardinal",30000],
 			["cl3_civic_vti_dark_green",30000],
 			["cl3_civic_vti_gold",30000],
@@ -225,8 +214,6 @@ switch (_shop) do
 			["cl3_dbs_volante_babypink",700000],
 			["cl3_dbs_volante_black",700000],
 			["cl3_dbs_volante_blue",700000],
-			["cl3_dbs_volante_camo",700000],
-			["cl3_dbs_volante_camo_urban",700000],
 			["cl3_dbs_volante_cardinal",700000],
 			["cl3_dbs_volante_dark_green",700000],
 			["cl3_dbs_volante_flame",700000],
@@ -249,14 +236,11 @@ switch (_shop) do
 			["cl3_dbs_volante_silver",700000],
 			["cl3_dbs_volante_violet",700000],
 			["cl3_dbs_volante_white",700000],
-			["cl3_dbs_volante_yellow",700000],
 			["cl3_defender_1100_cammo",25000],
 			["cl3_defender_1100_red",25000],
 			["cl3_defender_1100_yellow",25000],
 			["cl3_dodge_charger_f_black",125000],
 			["cl3_dodge_charger_f_blue",125000],
-			["cl3_dodge_charger_f_camo",125000],
-			["cl3_dodge_charger_f_camourban",125000],
 			["cl3_dodge_charger_f_darkgreen",125000],
 			["cl3_dodge_charger_f_darkred",125000],
 			["cl3_dodge_charger_f_green",125000],
@@ -274,8 +258,6 @@ switch (_shop) do
 			["cl3_e60_m5_black",185000],
 			["cl3_e60_m5_blue",185000],
 			["cl3_e60_m5_burgundy",185000],
-			["cl3_e60_m5_camo",185000],
-			["cl3_e60_m5_camo_urban",185000],
 			["cl3_e60_m5_cardinal",185000],
 			["cl3_e60_m5_gold",185000],
 			["cl3_e60_m5_green",185000],
@@ -300,8 +282,6 @@ switch (_shop) do
 			["cl3_e63_amg_black",325000],
 			["cl3_e63_amg_blue",325000],
 			["cl3_e63_amg_burgundy",325000],
-			["cl3_e63_amg_camo",325000],
-			["cl3_e63_amg_camo_urban",325000],
 			["cl3_e63_amg_cardinal",325000],
 			["cl3_e63_amg_dark_green",325000],
 			["cl3_e63_amg_gold",325000],
@@ -327,8 +307,6 @@ switch (_shop) do
 			["cl3_golf_mk2_black",17500],
 			["cl3_golf_mk2_blue",17500],
 			["cl3_golf_mk2_burgundy",17500],
-			["cl3_golf_mk2_camo",17500],
-			["cl3_golf_mk2_camo_urban",17500],
 			["cl3_golf_mk2_cardinal",17500],
 			["cl3_golf_mk2_dark_green",17500],
 			["cl3_golf_mk2_gold",17500],
@@ -353,8 +331,6 @@ switch (_shop) do
 			["cl3_insignia_black",35000],
 			["cl3_insignia_blue",35000],
 			["cl3_insignia_burgundy",35000],
-			["cl3_insignia_camo",35000],
-			["cl3_insignia_camo_urban",35000],
 			["cl3_insignia_cardinal",35000],
 			["cl3_insignia_dark_green",35000],
 			["cl3_insignia_gold",35000],
@@ -388,9 +364,6 @@ switch (_shop) do
 			["cl3_lamborghini_gt1_black",900000],
 			["cl3_lamborghini_gt1_blue",900000],
 			["cl3_lamborghini_gt1_burgundy",900000],
-			["cl3_lamborghini_gt1_camo",900000],
-			["cl3_lamborghini_gt1_camo_urban",900000],
-			["cl3_lamborghini_gt1_camo_urban",900000],
 			["cl3_lamborghini_gt1_cardinal",900000],
 			["cl3_lamborghini_gt1_dark_green",900000],
 			["cl3_lamborghini_gt1_flame",900000],
@@ -414,7 +387,7 @@ switch (_shop) do
 			["cl3_lamborghini_gt1_violet",900000],
 			["cl3_lamborghini_gt1_white",900000],
 			["cl3_lamborghini_gt1_yellow",900000],
-			["cl3_murcielago_2tone1",1200000],
+			["cl3_murcielago_2tone1",1250000],
 			["cl3_murcielago_2tone2",1250000],
 			["cl3_murcielago_2tone3",1250000],
 			["cl3_murcielago_2tone4",1250000],
@@ -425,7 +398,6 @@ switch (_shop) do
 			["cl3_murcielago_black",1250000],
 			["cl3_murcielago_blue",1250000],
 			["cl3_murcielago_burgundy",1250000],
-			["cl3_murcielago_camo",1250000],
 			["cl3_murcielago_cardinal",1250000],
 			["cl3_murcielago_dark_green",1250000],
 			["cl3_murcielago_flame",1250000],
@@ -452,8 +424,6 @@ switch (_shop) do
 			["cl3_polo_gti_black",19000],
 			["cl3_polo_gti_blue",19000],
 			["cl3_polo_gti_burgundy",19000],
-			["cl3_polo_gti_camo",19000],
-			["cl3_polo_gti_camo_urban",19000],
 			["cl3_polo_gti_cardinal",19000],
 			["cl3_polo_gti_dark_green",19000],
 			["cl3_polo_gti_gold",19000],
@@ -483,8 +453,6 @@ switch (_shop) do
 			["cl3_r8_spyder_black",700000],
 			["cl3_r8_spyder_blue",700000],
 			["cl3_r8_spyder_burgundy",700000],
-			["cl3_r8_spyder_camo",700000],
-			["cl3_r8_spyder_camo_urban",700000],
 			["cl3_r8_spyder_cardinal",700000],
 			["cl3_r8_spyder_dark_green",700000],
 			["cl3_r8_spyder_dark_green",700000],
@@ -513,8 +481,6 @@ switch (_shop) do
 			["cl3_range_rover_black",55000],
 			["cl3_range_rover_blue",55000],
 			["cl3_range_rover_burgundy",55000],
-			["cl3_range_rover_camo",55000],
-			["cl3_range_rover_camo_urban",55000],
 			["cl3_range_rover_cardinal",55000],
 			["cl3_range_rover_dark_green",55000],
 			["cl3_range_rover_green",55000],
@@ -542,8 +508,6 @@ switch (_shop) do
 			["cl3_reventon_babypink",1000000],
 			["cl3_reventon_black",1000000],
 			["cl3_reventon_blue",1000000],
-			["cl3_reventon_camo",1000000],
-			["cl3_reventon_camo_urban",1000000],
 			["cl3_reventon_cardinal",1000000],
 			["cl3_reventon_dark_green",1000000],
 			["cl3_reventon_flame",1000000],
@@ -572,8 +536,6 @@ switch (_shop) do
 			["cl3_taurus_black",125000],
 			["cl3_taurus_blue",125000],
 			["cl3_taurus_burgundy",125000],
-			["cl3_taurus_camo",125000],
-			["cl3_taurus_camo_urban",125000],
 			["cl3_taurus_cardinal",125000],
 			["cl3_taurus_dark_green",125000],
 			["cl3_taurus_gold",125000],
@@ -608,8 +570,6 @@ switch (_shop) do
 			["cl3_z4_2008_black",140000],
 			["cl3_z4_2008_blue",140000],
 			["cl3_z4_2008_burgundy",140000],
-			["cl3_z4_2008_camo",140000],
-			["cl3_z4_2008_camo_urban",140000],
 			["cl3_z4_2008_cardinal",140000],
 			["cl3_z4_2008_dark_green",140000],
 			["cl3_z4_2008_gold",140000],
@@ -629,12 +589,11 @@ switch (_shop) do
 			["cl3_z4_2008_violet",140000],
 			["cl3_z4_2008_white",140000],
 			["cl3_z4_2008_yellow",140000],
-			["DAR_ChallengerCivWhite",200000]
-			/* 
-			["DAR_ChallengerCivBlack",45000],
-			["DAR_ChallengerCivRed",45000], 
-			["DAR_ChallengerCivOrange",45000],
-			*/ 
+			["DAR_TahoeCivBlack",200000],
+			["DAR_TahoeCivBlue",200000],
+			["DAR_TahoeCivRed",200000],
+			["DAR_TahoeCivSilver",200000],
+			["DAR_TahoeCiv",200000]
 		];
 	};
 	
@@ -661,13 +620,16 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
 			["O_MRAP_02_F",1000000],
+			["O_MRAP_02_hmg_F",3500000],		
 			["B_Heli_Light_01_F",325000],
+			["O_Heli_Attack_02_F",9000000],
+			["B_G_Offroad_01_armed_F",950000],
 			["cl3_458_camo",1500000],
 			["cl3_458_camo_urban",1500000],
-			["cl3_arielatom_camo",75000],
-			["cl3_arielatom_camo_urban",75000],
-			["cl3_arielatom_race_camo",85000],
-			["cl3_arielatom_race_camo_urban",85000],
+			["cl3_arielatom_camo",250000],
+			["cl3_arielatom_camo_urban",250000],
+			["cl3_arielatom_race_camo",300000],
+			["cl3_arielatom_race_camo_urban",300000],
 			["cl3_carrera_gt_camo",1200000],
 			["cl3_carrera_gt_camo_urban",1200000],
 			["cl3_civic_vti_camo",69500],
@@ -705,8 +667,6 @@ switch (_shop) do
 		
 		if(license_civ_rebel) then
 		{
-			_return pushBack
-			["B_G_Offroad_01_armed_F",950000];
 		};
 	};
 	
@@ -715,29 +675,37 @@ switch (_shop) do
 		_return pushBack
 		["C_Offroad_01_F",5000];
 		_return pushBack
-		["C_SUV_01_F",20000];
+		["C_SUV_01_F",4000];
+		if(__GETC__(life_coplevel) > 1) then
+		{
+			_return set[count _return,
+			["DAR_ExplorerPolice",7500]];
+			_return set[count _return,
+			["DAR_CVPIAux",5000]];
+		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return set[count _return,
-			["C_SUV_01_F",0]];
+			["DAR_TaurusPolice",35000]];
 			_return set[count _return,
-			["B_MRAP_01_hmg_F",0]];
+			["DAR_TahoePolice",35000]];
 			_return set[count _return,
-			["DAR_TaurusPolice",0]];
+			["DAR_TahoePoliceDet",35000]];
 			_return set[count _return,
-			["DAR_TahoePolice",0]];
+			["DAR_TaurusPoliceState",35000]];
 			_return set[count _return,
-			["DAR_TahoePoliceDet",0]];
+			["DAR_ChargerPolice",50000]];
 			_return set[count _return,
-			["DAR_TaurusPoliceState",0]];
+			["DAR_ExplorerPoliceStealth",30000]];
 			_return set[count _return,
-			["DAR_ExplorerPolice",0]];
+			["DAR_ChargerPoliceState",50000]];
+		};	
+		if(__GETC__(life_coplevel) > 5) then
+		{	
 			_return set[count _return,
-			["DAR_ExplorerPoliceStealth",0]];
+			["cl3_reventon_clpd",500000]];
 			_return set[count _return,
-			["DAR_ChargerPoliceState",0]];
-			_return set[count _return,
-			["cl3_reventon_clpd",0]];
+			["B_MRAP_01_hmg_F",3500000]];
 		};
 	};
 	
@@ -757,7 +725,12 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_return pushBack
-			["B_Heli_Transport_01_F",200000];
+			["B_Heli_Transport_01_F",300000];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_return pushBack
+			["I_Heli_light_03_F",2500000];
 		};
 	};
 	

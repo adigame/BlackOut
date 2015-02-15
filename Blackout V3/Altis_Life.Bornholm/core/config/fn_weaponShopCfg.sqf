@@ -79,17 +79,22 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Vous n'êtes pas Gendarme!"};
 			case (__GETC__(life_coplevel) < 2): {"Vous n'êtes pas Gendarme!"};
 			default
 			{
 				["Armurie Gendarme",
 					[
 						["arifle_TRG21_F",nil,20000],
+						["AG_MP9_sidearm","MP9",30000],
+						["30Rnd_45ACP_Mag_SMG_01","Chargeur MP9",100000],
+						["arifle_MX_F",nil,25000],
 						["hgun_P07_snds_F","Tazer",2000],
 						["acc_pointer_IR",nil,150],
 						["acc_flashlight",nil,150],
-						["optic_Holosight",nil,150],						
+						["optic_Holosight",nil,150],	
+						["FHQ_optic_AIM","AIMPOINT",300],	
+						["muzzle_snds_H",nil,100],			
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
@@ -97,7 +102,8 @@ switch(_shop) do
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
 						["16Rnd_9x21_Mag",nil,50],
-						["30Rnd_556x45_Stanag",nil,125],					
+						["30Rnd_556x45_Stanag",nil,125],
+						["30Rnd_65x39_caseless_mag",nil,125],						
 				        ["Chemlight_red",nil,300],
 				        ["Chemlight_yellow",nil,300],
 				        ["Chemlight_green",nil,300],
@@ -114,13 +120,19 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Vous n'êtes pas Adjudant!"};
 			case (__GETC__(life_coplevel) < 3): {"Vous n'êtes pas Adjudant!"};
 			default
 			{
 				["Armurie Adjudant",
 					[
 						["arifle_Mk20_F",nil,20000],
+						["FHQ_M4A1_M203_BLK","M4A1",20000],
+						["30Rnd_556x45_Stanag","Chargeur M4A1",500],
+						["hlc_rifle_akmgl","AKM",20000],
+						["hlc_30Rnd_762x39_b_ak","Chargeur AKM",500],
+						["hlc_rifle_aks74_GL","AKS74",20000],
+						["hlc_30Rnd_545x39_B_AK","Chargeur AKS74",500],
 						["hgun_P07_snds_F","Tazer",2000],
 						["acc_pointer_IR",nil,150],
 						["acc_flashlight",nil,150],
@@ -149,13 +161,15 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Vous n'êtes pas Lieutenant!"};
 			case (__GETC__(life_coplevel) < 4): {"Vous n'êtes pas Lieutenant!"};
 			default
 			{
 				["Armurie Lieutenant",
 					[
 						["arifle_MX_F",nil,20000],
+						["Cha_PK","PKM",30000],
+						["Cha_100Rnd_762x54_PK","Chargeur PKM",2500],
 						["srifle_EBR_F",nil,20000],						
 						["hgun_P07_snds_F","Tazer",2000],
 						["acc_pointer_IR",nil,150],
@@ -188,7 +202,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Vous n'êtes pas Major!"};
 			case (__GETC__(life_coplevel) < 5): {"Vous n'êtes pas Major!"};
 			default
 			{
@@ -197,7 +211,9 @@ switch(_shop) do
 						["arifle_MX_F",nil,20000],
 						["arifle_MXM_F",nil,20000],						
 						["srifle_EBR_F",nil,20000],
-						["LMG_Mk200_F",nil,20000],								
+						["LMG_Mk200_F",nil,20000],	
+						["R3F_HK417L","H417",20000],
+						["hlc_30Rnd_762x39_b_ak","Chargeur AK47",500],						
 						["hgun_P07_snds_F","Tazer",2000],
 						["acc_pointer_IR",nil,150],
 						["acc_flashlight",nil,150],
@@ -233,7 +249,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Vous n'êtes pas Capitaine!"};
 			case (__GETC__(life_coplevel) < 6): {"Vous n'êtes pas Capitaine!"};
 			default
 			{
@@ -283,33 +299,17 @@ switch(_shop) do
 						["10Rnd_127x99_as50","Chargeur AS50",1000],
 						["R3F_Famas_surb_M203","FAMAS G2 M203",15000],
 						["R3F_30Rnd_556x45_FAMAS","Chargeur FAMAS G2 M203",500],
-						["R3F_HK417L","H417",20000],
-						["R3F_20Rnd_762x51_HK417","Chargeur H417",500],
-						["hlc_rifle_ak47","AK47",20000],
-						["hlc_30Rnd_762x39_b_ak","Chargeur AK47",500],
-						["hlc_rifle_akmgl","AKM",20000],
-						["hlc_30Rnd_762x39_b_ak","Chargeur AKM",500],
-						["hlc_rifle_aks74_GL","AKS74",20000],
-						["hlc_30Rnd_545x39_B_AK","Chargeur AKS74",500],
 						["hlc_rifle_saiga12k","SAIGA 12K",25000],
 						["hlc_10rnd_12g_buck_S12","Chargeur SAIGA 12K",500],
-						["FHQ_M4A1_M203_BLK","M4A1",20000],
-						["30Rnd_556x45_Stanag","Chargeur M4A1",500],
 						["R3F_Minimi","MINIMI PARA",30000],
 						["R3F_200Rnd_556x45_MINIMI","Chargeur MINIMI PARA",2500],
 						["C1987_MP7_nwu","MP7",15000],
 						["C1987_40Rnd_46x30_mp7","Chargeur MP7",500],
-						["Cha_PK","PKM",30000],
-						["Cha_100Rnd_762x54_PK","Chargeur PKM",2500],
 						["Cha_Pecheneg","PKP PECHENEG",30000],
 						["Cha_100Rnd_762x54_PK","Chargeur PKP PECHENEG",2500],
-						["SMG_02_F","SMG",15000],
-						["30Rnd_9x21_Mag","Chargeur SMG",500],
 						["hlc_rifle_aek971","ZID",20000],
 						["hlc_30Rnd_545x39_B_AK","Chargeur ZID",100000],
 						["Orel_Matraque","MATRAQUE",50000],
-						["AG_MP9_sidearm","MP9",30000],
-						["30Rnd_45ACP_Mag_SMG_01","Chargeur MP9",100000],
 						["R3F_PAMAS","PAMAS",5000],
 						["R3F_15Rnd_9x19_PAMAS","Chargeur PAMAS",500],
 						["hgun_Pistol_heavy_02_F","RHINO",5000],
@@ -339,7 +339,7 @@ switch(_shop) do
 						["hlc_optic_goshawk","GOSHAWK",100],
 						["hlc_optic_kobra","KOBRA",100],
 						["HLC_Optic_PSO1","PSO",100],
-						["optic_DMS","PSO",100]
+						["optic_DMS","PSO",100]	
 					]
 				];
 			};
@@ -350,13 +350,15 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Vous n'êtes pas Général!"};
 			case (__GETC__(life_coplevel) < 7): {"Vous n'êtes pas Général!"};
 			default
 			{
 				["Armurie Général / Colonel",
 					[
-						["hgun_ACPC2_snds_F",nil,5000],					
+						["hgun_ACPC2_snds_F",nil,5000],	
+						["R3F_20Rnd_762x51_HK417","Chargeur H417",500],
+						["hlc_rifle_ak47","AK47",20000],						
 						["arifle_MX_F",nil,20000],
 						["srifle_LRR_F",nil,20000],
 						["arifle_MX_SW_F",nil,20000],						
@@ -404,12 +406,81 @@ switch(_shop) do
 				        ["Chemlight_red",nil,300],
 				        ["Chemlight_yellow",nil,300],
 				        ["Chemlight_green",nil,300],
-				        ["SmokeShell",nil,300]	
+				        ["SmokeShell",nil,300],
+						["AS50","AS50",100000],
+						["10Rnd_127x99_as50","Chargeur AS50",1000],
+						["R3F_Famas_surb_M203","FAMAS G2 M203",15000],
+						["R3F_30Rnd_556x45_FAMAS","Chargeur FAMAS G2 M203",500],
+						["hlc_rifle_saiga12k","SAIGA 12K",25000],
+						["hlc_10rnd_12g_buck_S12","Chargeur SAIGA 12K",500],
+						["R3F_Minimi","MINIMI PARA",30000],
+						["R3F_200Rnd_556x45_MINIMI","Chargeur MINIMI PARA",2500],
+						["C1987_MP7_nwu","MP7",15000],
+						["C1987_40Rnd_46x30_mp7","Chargeur MP7",500],
+						["Cha_Pecheneg","PKP PECHENEG",30000],
+						["Cha_100Rnd_762x54_PK","Chargeur PKP PECHENEG",2500],
+						["hlc_rifle_aek971","ZID",20000],
+						["hlc_30Rnd_545x39_B_AK","Chargeur ZID",100000],
+						["Orel_Matraque","MATRAQUE",50000],
+						["R3F_PAMAS","PAMAS",5000],
+						["R3F_15Rnd_9x19_PAMAS","Chargeur PAMAS",500],
+						["hgun_Pistol_heavy_02_F","RHINO",5000],
+						["6Rnd_45ACP_Cylinder","Chargeur RHINO",500],
+						["FHQ_optic_AC11704","AC11707",300],
+						["FHQ_optic_AC12136","AC12136",300],
+						["FHQ_optic_ACOG","ACOG",300],
+						["FHQ_optic_AIM","AIMPOINT",300],
+						["FHQ_optic_HWS_G33","G33",300],
+						["FHQ_optic_HWS","HWS 533",300],
+						["FHQ_optic_MARS","MARS",100],
+						["FHQ_optic_MicroCCO","CCO",100],
+						["FHQ_optic_MicroCCO_low","CCO Low",100],
+						["FHQ_optic_TWS3050","TWS",100],
+						["FHQ_optic_VCOG","VCOG",100],
+						["R3F_AIMPOINT","Lunette AIMPOINT",100],
+						["R3F_EOTECH","EOTECH",100],
+						["R3F_FELIN_FRF2","FELIN",100],
+						["R3F_NF","NIGHT FORCE X15",100],
+						["R3F_NF42","NIGHT FORCE X42",100],
+						["R3F_J10","J10",100],
+						["R3F_J10_MILDOT","J10 MILDOT",100],
+						["R3F_J4","J4",100],
+						["R3F_J8","J8",100],
+						["R3F_J8_MILDOT","J8 MILDOT",100],
+						["R3F_ZEISS","ZEISS",100],
+						["hlc_optic_goshawk","GOSHAWK",100],
+						["hlc_optic_kobra","KOBRA",100],
+						["HLC_Optic_PSO1","PSO",100],
+						["optic_DMS","PSO",100]
 					]
 				];
 			};
 		};
 	};	
+	
+	case "cop_gign":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Vous n'êtes pas du GIGN!"};
+			case (__GETC__(life_coplevel) < 7): {"Vous n'êtes pas du GIGN!"};
+			default
+			{
+				["Armurie GIGN",
+					[
+						["R3F_HK416M_HG","HK416",30000],
+						["R3F_30Rnd_556x45_HK416","Chargeur HK416",150],
+						["srifle_LRR_F","M320",50000],	
+						["FHQ_acc_ANPEQ15_black",nil,150],
+						["muzzle_snds_H",nil,100],						
+						["7Rnd_408_Mag","Chargeur M320",200],
+						["optic_SOS","Viseur SOS",500],
+						["gign_shield","Bouclier GIGN",5000]
+					]
+				];
+			};
+		};
+	};		
 	
 	case "rebel":
 	{
@@ -422,10 +493,15 @@ switch(_shop) do
 				["Mohammed's Jihadi Shop",
 					[
 						["FirstAidKit",nil,150],
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
 						["arifle_TRG20_F","TRG20",25000],
 						["arifle_Katiba_F","Katiba",30000],
 						["srifle_DMR_01_F",nil,50000],
 						["arifle_SDAR_F","SDAR",20000],
+						["launch_RPG32_F",nil,125000],
+						["RPG32_F",nil,2500],
 						["optic_ACO_grn","Viseur ACO",3500],
 						["optic_Holosight","Viseur Holographique",3600],
 						["acc_flashlight",nil,1000],
@@ -447,8 +523,8 @@ switch(_shop) do
 						["20Rnd_762x51_Mag","Chargeur FNFAL",2500],
 						["R3F_FRF2_DES","F2",50000],
 						["R3F_10Rnd_762x51_FRF2","Chargeur F2",2500],
-						["R3F_HK416M_DES","HK416",30000],
-						["R3F_30Rnd_556x45_HK416","Chargeur HK416",1000],
+						["R3F_HK417S_HG","HK417",30000],
+						["R3F_20Rnd_762x51_HK417","Chargeur HK417",1000],
 						["M110","M110",50000],
 						["20Rnd_762x51_Mag","Chargeur M110",2500],
 						["SLTS_M27","M27 IAR",30000],

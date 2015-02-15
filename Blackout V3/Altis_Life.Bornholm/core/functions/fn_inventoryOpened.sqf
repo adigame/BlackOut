@@ -40,7 +40,6 @@ if(_container isKindOf "LandVehicle" OR _container isKindOf "Ship" OR _container
 };
 
 //Allow alive players who've been knocked out to be looted, just not the dead ones
-/*
 if(_container isKindOf "Man" && !alive _container) exitWith {
 	hint localize "STR_NOTF_NoLootingPerson";
 	[] spawn {
@@ -48,4 +47,3 @@ if(_container isKindOf "Man" && !alive _container) exitWith {
 		closeDialog 0;
 	};
 };
-*/

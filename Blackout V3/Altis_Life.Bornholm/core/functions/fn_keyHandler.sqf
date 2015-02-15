@@ -110,6 +110,48 @@ switch (_code) do
 		};
 	};
 	
+	// ANTI ² 
+	case 41:
+    {
+		if((_code in (actionKeys "SelectAll") || _code in (actionKeys "ForceCommandingMode"))) then 
+		{
+			[] call life_fnc_p_openIphone;
+			player setDamage ((getDammage player) + 0.15);
+			hint parseText format["!!! LA TRICHE EST INTERDITE !!!<br/> Le MetaGaming c'est MAL<br/> Ou ça fait MAL...<br/><t size='1.4'><t color='#FF0000'>Tu viens de perdre 15 points de vie !</t></t>"];
+		};
+	};
+	
+	//report alt + f4
+	case 62:
+    {
+		private ["_player"];
+		_player = player;
+		
+		if(_alt && !_shift) then 
+		{
+			diag_log format ["SERVER: %1 ALT+F4 to disconnect (report it)",_player getVariable["realname",name _player]];
+			[[1,format["SERVER: %1 a utilisé ALT+F4 pour déconnecter (merci de le signaler à un Admin.)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+		};
+    };
+	
+	// SHIFT+M pour mettre ou retirer les boules quiès
+	case 51:
+	{
+		if(_shift) then
+		{
+			if (soundVolume != 1) then 
+			{
+				1 fadeSound 1;
+				titleText ["Vous avez enlevé vos boules quiès.", "PLAIN"];
+			}
+			else
+			{
+				1 fadeSound 0.1;
+				titleText ["Vous avez mis vos boules quiès.", "PLAIN"];
+			};
+		};	
+    };
+	
 	//Surrender Shift + B
     case 48:
     {

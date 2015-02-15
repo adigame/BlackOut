@@ -18,13 +18,13 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["U_IG_Guerilla1_1",nil,5000],
-			["U_I_G_Story_Protagonist_F",nil,7500],
-			["U_I_G_resistanceLeader_F",nil,11500],
-			["U_O_SpecopsUniform_ocamo",nil,17500],
-			["U_O_PilotCoveralls",nil,15610],
-			["U_IG_leader","Guerilla Leader",15340],
-			["U_O_GhillieSuit",nil,50000]
+			["U_IG_Guerilla1_1",nil,1000],
+			["U_I_G_Story_Protagonist_F",nil,1500],
+			["U_I_G_resistanceLeader_F",nil,3000],
+			["U_O_SpecopsUniform_ocamo",nil,5000],
+			["U_O_PilotCoveralls",nil,6000],
+			["U_IG_leader","Guerilla Leader",6500],
+			["U_O_GhillieSuit",nil,8000]
 		];
 	};
 	
@@ -64,7 +64,7 @@ switch (_filter) do
 			["V_TacVest_khk",nil,12500],
 			["V_BandollierB_cbr",nil,4500],
 			["V_HarnessO_brn",nil,7500],
-			["V_HarnessOGL_gry","Veste Explosive",100000]
+			["V_HarnessOGL_gry","Veste Explosive",500000]
 		];
 	};
 	

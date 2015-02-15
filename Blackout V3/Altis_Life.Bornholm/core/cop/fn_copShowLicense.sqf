@@ -30,9 +30,10 @@ switch ( _coplevel ) do
 	case 5: { _rang = "Officiers supérieurs"; };
 	case 6: { _rang = "Officiers généraux"; };
 	case 7: { _rang = "Officiers généraux"; };
+	case 8: { _rang = "GIGN"; };
 	default {_rank =  "Erreur";};
 };
 
-_message = format["<img size='10' color='#FFFFFF' image='textures\insigne.paa'/><br/><br/><t size='2.5'>%1</t><br/><t size='1.8'>%2</t><br/><t size='1'>Policier d'Altis</t>", name player, _rang];
+_message = format["<img size='10' color='#FFFFFF' image='textures\insigne.paa'/><br/><br/><t size='2.5'>%1</t><br/><t size='1.8'>%2</t><br/><t size='1'>Gendarme de Bornholm</t>", name player, _rang];
 
 [[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;

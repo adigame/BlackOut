@@ -19,7 +19,7 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["U_Rangemaster","Cop Uniform",25];
+			_ret pushBack ["U_Rangemaster","Cop Uniform",25];
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,350];
@@ -32,6 +32,11 @@ switch (_filter) do
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam_worn",nil,550];
 		};
+		if(__GETC__(life_coplevel) > 7) then
+		{
+			_ret pushBack ["U_C_GIGN","Uniforme GIGN noire",550];
+			_ret pushBack ["gign_uniform","Uniforme GIGN bleue",550];
+		};
 	};
 	
 	//Hats
@@ -42,11 +47,17 @@ switch (_filter) do
 			_ret pushBack ["H_HelmetB_plain_mcamo",nil,75];
 			_ret pushBack ["H_Booniehat_mcamo",nil,120];
 		};
-		
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_ret pushBack ["H_MilCap_mcamo",nil,100];
-			_ret pushBack ["H_Beret_blk","Beret de Quentin",100];
+			_ret pushBack ["H_Beret_blk","Beret",100];
+		};
+		if(__GETC__(life_coplevel) > 7) then
+		{
+			_ret pushBack ["gign_Balaclava","Cagoule GIGN",100];
+			_ret pushBack ["gign_helm","Casque GIGN",100];
+			_ret pushBack ["gign_helm3","Casque GIGN 2",100];
+			_ret pushBack ["gign_helm4","Casque GIGN 3",100];
 		};
 	};
 	
@@ -75,6 +86,12 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret pushBack ["V_PlateCarrier2_rgr",nil,1500];
+		};
+		if(__GETC__(life_coplevel) > 7) then
+		{
+			_ret pushBack ["gign_HeavyVest","Veste GIGN",800];
+			_ret pushBack ["gign_BlackVest","Veste tactique GIGN",600];
+			_ret pushBack ["V_TacVest_GIGN2","Veste tactique GIGN 2",600];
 		};
 	};
 	

@@ -156,6 +156,7 @@ class Life_Client_Core
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
+		class seizeCfg {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};
@@ -231,6 +232,7 @@ class Life_Client_Core
 		class saveGear {};
 		class loadGear {};
 		class stripDownPlayer {};
+		class randomRound {};
 	};
 	
 	class Network
@@ -317,6 +319,8 @@ class Life_Client_Core
 		class copLicenseShown {};
         class breathalyzer {}; // Alcool
         class copOpener {};
+		class seizePlayerWeapon {};
+		class seizePlayerWeaponAction {};
     };
 	
 	class Gangs
@@ -404,4 +408,23 @@ class Life_Client_Core
         class calldialog {};  //Channel 7
         class sendChannel {}; //Channel 7
 	};
+	
+	class Market
+	{
+		file = "core\market";
+		
+		class openMarketView {};
+		class refreshMarketView {};
+		class marketShortView {};
+		class marketBuy {};
+		class marketSell {};
+		class marketGetBuyPrice {};
+		class marketGetSellPrice {};
+		class marketconfiguration {};
+		class marketReset {};
+		class marketChange {};
+		class marketGetRow {};
+		class marketGetPriceRow {};
+		class marketSetPriceRow {};
+	}; 
 };
