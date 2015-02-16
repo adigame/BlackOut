@@ -39,5 +39,7 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["<t color='#00FF00'>Insigne de police</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == west && !isNull cursorTarget && (player distance cursorTarget) < 6 && cursorTarget isKindOf "Man" ']];
 		//Saisir Armes et Chargeurs
 		life_actions = life_actions + [player addAction["<t color='#ED7F10'>Saisir Arme</t>",life_fnc_seizePlayerWeapon,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "restrained")']];
+		//Mur
+		life_actions = life_actions + [player addAction["Prendre Mur",life_fnc_packupWall,"",0,false,false,"",' _wall = nearestObjects[getPos player,["Land_Concrete_SmallWall_4m_F"],8] select 0; !isNil "_wall" && !isNil {(_wall getVariable "item")}']];
 	};
 };

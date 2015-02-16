@@ -63,6 +63,7 @@ switch (_var) do
 	case "life_inv_bottledwhiskey": {"Sky"};
 	case "life_inv_bottledbeer": {"Biere"};
 	case "life_inv_bottledshine": {"Moonshine"};
+	case "life_inv_wall": {"Mur"};
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
 	
 	//License Block

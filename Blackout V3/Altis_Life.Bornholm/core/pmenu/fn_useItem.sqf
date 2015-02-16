@@ -132,6 +132,15 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "wall"):
+	{
+		if(!isNull life_wall) exitWith {hint "Vous n'avez pas de mur !"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_wall;
+		};
+	};
+	
 	default
 	{
 		hint localize "STR_ISTR_NotUsable";

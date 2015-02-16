@@ -24,6 +24,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
+life_wall = ObjNull;
 life_respawn_timer = 2; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
@@ -169,6 +170,7 @@ life_inv_items =
 	"life_inv_bottledshine",
 	"life_inv_bottledbeer",
 	"life_inv_bottledwhiskey",
+	"life_inv_wall",
 	"life_inv_storagebig"
 ];
 
@@ -248,7 +250,8 @@ sell_array =
 	["fuelF",500],
 	["spikeStrip",1200],
 	["cement",1950],
-	["goldbar",95000]
+	["wall",2500],
+	["goldbar",150000]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -280,7 +283,8 @@ buy_array =
 	["storagesmall",75000],
 	["bottledshine",3000], 
 	["bottledwhiskey",1500], 
-	["bottledbeer",500], 
+	["bottledbeer",500],
+	["wall",6500],
 	["storagebig",150000]
 ];
 __CONST__(buy_array,buy_array);

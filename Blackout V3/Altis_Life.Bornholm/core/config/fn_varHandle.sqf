@@ -67,6 +67,7 @@ switch (_mode) do
 			case "bottledshine": {"life_inv_bottledshine"};
 			case "bottledbeer": {"life_inv_bottledbeer"};
 			case "bottledwhiskey": {"life_inv_bottledwhiskey"};
+			case "wall": {"life_inv_wall"};
 			case "storagebig": {"life_inv_storagebig"};
 		};
 	};
@@ -126,6 +127,7 @@ switch (_mode) do
 			case "life_inv_bottledwhiskey": {"bottledwhiskey"};
 			case "life_inv_bottledbeer": {"bottledbeer"};
 			case "life_inv_bottledshine": {"bottledshine"};
+			case "life_inv_wall": {"wall"};
 			case "life_inv_storagebig": {"storagebig"};
 		};
 	};

@@ -117,6 +117,7 @@ class Life_Client_Core
 		class gather {};
         class suicideBomb {};
         class surrender {};
+        class packupWall {};
 	};
 	
 	class Housing
@@ -323,7 +324,7 @@ class Life_Client_Core
         class breathalyzer {}; // Alcool
         class copOpener {};
 		class seizePlayerWeapon {};
-		class seizePlayerWeaponAction {};
+        class seizePlayerWeaponAction {};
     };
 	
 	class Gangs
@@ -383,6 +384,7 @@ class Life_Client_Core
         class drinkbeer {};
         class drinkmoonshine {};
         class drinkwhiskey {};
+        class wall {};
 	};
 	
 	class Dialog_Controls

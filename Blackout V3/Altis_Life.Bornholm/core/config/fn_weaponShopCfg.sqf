@@ -16,7 +16,6 @@
 */
 private["_shop"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
-_donateuruidlist = ["76561198052435402"];
 if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
 switch(_shop) do
@@ -645,8 +644,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"Vous devez etre un civil pour acceder au magasin"};
-			case (!((getPlayerUID player) in _donateuruidlist)): {"Vous n'êtes pas donateur !"};
+			case (playerSide != civilian): {"Tu n'es pas civil !"};
+			case (__GETC__(life_donatorlevel) < 0): {"Vous n'êtes pas donateur !"};
 			default
 			{
 				["Magasin Donateur",

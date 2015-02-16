@@ -58,6 +58,7 @@ switch (_item) do
 	case "bottledwhiskey": {5};
 	case "bottledbeer": {5};
 	case "bottledshine": {5};
+	case "wall": {23};
 	case "storagebig": {10};
 	default {1};
 };
