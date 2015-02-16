@@ -14,18 +14,7 @@ closeDialog 0;
 sleep 0.01;
 };
 };
-AH_AdminCheck = {
-	_object = _this;
-};
 
-AH_DoTP = {
-	_pos = _this select 1;
-	_object = _this select 0;
-
-	if(_object call AH_AdminCheck) then {
-		_object setpos _pos;
-	};
-};
 
 tele={
     _pos = [_this select 0, _this select 1, _this select 2];
@@ -34,4 +23,4 @@ tele={
     openMap [false, false];
 };
 openMap [true, false];
-onMapSingleClick '[[player,_pos],"AH_DoTP",false,fale] call life_fnc_MP;openMap[false,false];onMapSingleClick "";false';
+onMapSingleClick "[_pos select 0, _pos select 1, _pos select 2] call tele";

@@ -246,7 +246,6 @@ if(_life_fnc_MP) then {
 
 [] spawn {
 	while{true} do {
-		onMapSingleClick '';
 		player allowDamage true;
 		vehicle player allowDamage true;
 	};
