@@ -12,6 +12,20 @@
 */
 private["_binConfigPatches","_cfgPatches","_endM"];
 if(isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
+_life_fnc_MP = true;
+
+_toCompilableString = {
+	_code = _this select 0;
+	_string = "";
+	if(typename _code == "CODE") then {
+		_string = str(_code);
+		_arr = toArray(_string);
+		_arr set[0,32];
+		_arr set[count(_arr)-1,32];
+		_string = toString(_arr);
+	};
+	_string;
+};
 
 CONST(W_O_O_K_I_E_ANTI_ANTI_HAX,"false");
 CONST(W_O_O_K_I_E_FUD_ANTI_ANTI_HAX,"false");
@@ -206,6 +220,37 @@ foreach [
 	["RscDisplayVehicleMsgBox","[""onLoad"",_this,""RscDisplayVehicleMsgBox"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayVehicleMsgBox"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')"],
 	["RscDisplayInsertMarker","[""onLoad"",_this,""RscDisplayInsertMarker"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayInsertMarker"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')"]
 ];
+
+//Protect BIS_fnc_MP
+BIS_fnc_MP = compileFinal ([BIS_fnc_MP] call _toCompilableString);
+BIS_fnc_MPExec = compileFinal ([BIS_fnc_MPExec] call _toCompilableString);
+
+//Protect AH_fnc_MP
+if(_life_fnc_MP) then {
+	Life_fnc_MP = compileFinal ([Life_fnc_MP] call _toCompilableString);
+	AH_fnc_MP = compileFinal ([Life_fnc_MP] call _toCompilableString);
+	life_fnc_tazed = compileFinal ([life_fnc_tazed] call _toCompilableString);
+} else {
+	AH_fnc_MP = compileFinal ([BIS_fnc_MP] call _toCompilableString);
+};
+
+[] spawn {
+	while{true} do {
+		{
+			_x hideObjectGlobal false;
+		} forEach playableUnits;
+		_time = time + 2;
+		waitUntil{time >= _time};
+	};
+};	
+
+[] spawn {
+	while{true} do {
+		onMapSingleClick '';
+		player allowDamage true;
+		vehicle player allowDamage true;
+	};
+};
 
 [] execVM "SpyGlass\fn_cmdMenuCheck.sqf";
 [] execVM "SpyGlass\fn_variableCheck.sqf";
