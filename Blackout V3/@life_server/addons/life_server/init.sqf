@@ -55,18 +55,16 @@ if (!_extDB) exitWith {
 life_adminlevel = 0;
 life_medicLevel = 0;
 life_coplevel = 0;
-life_gign = 0;
 
 //Null out harmful things for the server.
 __CONST__(JxMxE_PublishVehicle,"No");
 
 //[] execVM "\life_server\fn_initHC.sqf";
 
-/*
-life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-ife_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-*/
+
+//life_radio_west = radioChannelCreate [[0.8,0.01,0,1], "Radio", "%UNIT_NAME", []];
+//life_radio_civ = radioChannelCreate [[0.8,0.01,0,1], "Radio", "%UNIT_NAME", []];
+//life_radio_indep = radioChannelCreate [[0.8,0.01,0,1], "Radio", "%UNIT_NAME", []];
 
 serv_sv_use = [];
 
@@ -124,8 +122,8 @@ client_session_list = [];
 
 //Lockup the dome
 private["_dome","_rsb"];
-_dome = nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"];
-_rsb = nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"];
+_dome = nearestObject [[8159.32,3776.08,37.5858],"Land_Dome_Big_F"];
+_rsb = nearestObject [[8159.32,3776.08,37.5858],"Land_Research_house_V1_F"];
 
 for "_i" from 1 to 3 do {_dome setVariable[format["bis_disabled_Door_%1",_i],1,true]; _dome animate [format["Door_%1_rot",_i],0];};
 _rsb setVariable["bis_disabled_Door_1",1,true];
