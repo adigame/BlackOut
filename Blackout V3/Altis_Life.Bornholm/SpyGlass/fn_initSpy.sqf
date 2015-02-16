@@ -221,36 +221,7 @@ foreach [
 	["RscDisplayInsertMarker","[""onLoad"",_this,""RscDisplayInsertMarker"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')","[""onUnload"",_this,""RscDisplayInsertMarker"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')"]
 ];
 
-//Protect BIS_fnc_MP
-BIS_fnc_MP = compileFinal ([BIS_fnc_MP] call _toCompilableString);
-BIS_fnc_MPExec = compileFinal ([BIS_fnc_MPExec] call _toCompilableString);
-
-//Protect AH_fnc_MP
-if(_life_fnc_MP) then {
-	Life_fnc_MP = compileFinal ([Life_fnc_MP] call _toCompilableString);
-	AH_fnc_MP = compileFinal ([Life_fnc_MP] call _toCompilableString);
-	life_fnc_tazed = compileFinal ([life_fnc_tazed] call _toCompilableString);
-} else {
-	AH_fnc_MP = compileFinal ([BIS_fnc_MP] call _toCompilableString);
-};
-
-[] spawn {
-	while{true} do {
-		{
-			_x hideObjectGlobal false;
-		} forEach playableUnits;
-		_time = time + 2;
-		waitUntil{time >= _time};
-	};
-};	
-
-[] spawn {
-	while{true} do {
-		player allowDamage true;
-		vehicle player allowDamage true;
-	};
-};
-
 [] execVM "SpyGlass\fn_cmdMenuCheck.sqf";
 [] execVM "SpyGlass\fn_variableCheck.sqf";
 [] execVM "SpyGlass\fn_menuCheck.sqf";
+[] execVM "SpyGlass\fn_antiNiko.sqf";

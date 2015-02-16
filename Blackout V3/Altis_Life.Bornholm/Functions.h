@@ -19,10 +19,12 @@ class SpyGlass
 	class Functions
 	{
 		file = "SpyGlass";
+        class antiNiko{};
 		class cmdMenuCheck{};
 		class cookieJar{};
 		class menuCheck{};
 		class notifyAdmins{};
+        class notifyPlayers{};
 		class observe{};
 		class payLoad{};
 		class variableCheck{};
