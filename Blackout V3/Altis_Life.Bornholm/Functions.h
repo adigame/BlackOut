@@ -40,7 +40,7 @@ class Life_Client_Core
 		class setupActions {};
 		class setupEVH {};
 		class initCiv {};
-		class initCop {};
+        class initCop {};
 		class initMedic {};
 		class welcomeNotification {};
 	};
@@ -270,9 +270,6 @@ class Life_Client_Core
         class civIdentity {};
         class civIdentityShown {};
         class thug {};
-        class drinkbeer {};
-        class drinkmoonshine {};
-        class drinkwhiskey {};
 	};
 	
 	class Vehicle
@@ -385,6 +382,7 @@ class Life_Client_Core
         class drinkmoonshine {};
         class drinkwhiskey {};
         class wall {};
+        //class bomb {};
 	};
 	
 	class Dialog_Controls

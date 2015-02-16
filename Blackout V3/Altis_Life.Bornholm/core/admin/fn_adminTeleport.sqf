@@ -34,4 +34,4 @@ tele={
     openMap [false, false];
 };
 openMap [true, false];
-onMapSingleClick '[[player,_pos],"AH_DoTP",false,fale] call AH_fnc_MP;openMap[false,false];onMapSingleClick "";false';
+onMapSingleClick '[[player,_pos],"AH_DoTP",false,fale] call life_fnc_MP;openMap[false,false];onMapSingleClick "";false';
