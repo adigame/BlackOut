@@ -21,7 +21,7 @@ class Logs
         file = "logs";
         class cashLogs{};
         class recieveCashLogs{};
-        class licencesLogs{};
+        class licenceLogs{};
     };
 };
 
