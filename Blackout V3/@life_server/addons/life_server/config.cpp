@@ -81,6 +81,12 @@ class CfgFunctions
 		{
 			file = "\life_server\Functions\Client";
 		};
+
+        class Misc
+        {
+            file = "\life_server\Functions\MISC";
+            class initSafeCode {postInit=1;};
+        };
 	};
 	
 	class TON_System

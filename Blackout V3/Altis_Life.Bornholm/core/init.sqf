@@ -6,6 +6,11 @@ life_firstSpawn = true;
 life_session_completed = false;
 private["_handle","_timeStamp"];
 0 cutText["Chargement des sauvegardes joueurs...","BLACK FADED"];
+waitUntil {(!isNil {fnc_setupFuncs})};
+
+
+_handle = [] spawn fnc_setupFuncs;
+waitUntil {scriptDone _handle;};
 0 cutFadeOut 9999999;
 _timeStamp = diag_tickTime;
 diag_log "------------------------------------------------------------------------------------------------------";
