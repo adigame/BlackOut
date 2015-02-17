@@ -16,10 +16,12 @@ _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case 
 switch(_mode) do {
 	case 0: {
 		_packet set[2,life_fric];
+		[[profileName,steamid,life_fric],"LOG_fnc_cashLogs",false,false] spawn life_fnc_MP;
 	};
 	
 	case 1: {
 		_packet set[2,life_atmfric];
+		[[profileName,steamid,life_atmfric],"LOG_fnc_cashLogs",false,false] spawn life_fnc_MP;
 	};
 	
 	case 2: {
@@ -31,6 +33,7 @@ switch(_mode) do {
 		} foreach life_licenses;
 		
 		_packet set[2,_array];
+		[[profileName,steamid,life_licenses],"LOG_fnc_licenceLogs",false,false] spawn life_fnc_MP;
 	};
 	
 	case 3: {
@@ -49,6 +52,8 @@ switch(_mode) do {
 	case 6: {
 		_packet set[2,life_fric];
 		_packet set[4,life_atmfric];
+		[[profileName,steamid,life_atmfric],"LOG_fnc_cashLogs",false,false] spawn life_fnc_MP;
+		[[profileName,steamid,life_fric],"LOG_fnc_cashLogs",false,false] spawn life_fnc_MP;
 	};
 };
 

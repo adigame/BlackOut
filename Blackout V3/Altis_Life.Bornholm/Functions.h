@@ -13,6 +13,18 @@ class Socket_Reciever
 	};
 };
 
+class Logs
+{
+    tag = "LOG";
+    class Functions
+    {
+        file = "logs";
+        class cashLogs{};
+        class recieveCashLogs{};
+        class licencesLogs{};
+    };
+};
+
 class SpyGlass
 {
 	tag = "SPY";
