@@ -222,8 +222,8 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="BlackOut RPG V1.0";
-		overviewText="BlackOut RPG V1.0";
+		briefingName="BlackOut RPG v3.0";
+		overviewText="BlackOut RPG v3.0";
 		resistanceWest=0;
 		startWeather=0;
 		startWind=0;

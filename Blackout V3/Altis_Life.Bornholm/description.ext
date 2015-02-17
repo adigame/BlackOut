@@ -1,5 +1,5 @@
 author = "Jordanx59x & Okan";
-onLoadName = "BlackOut RPG";
+onLoadName = "BlackOut RPG v3";
 onLoadMission = "BlackOut par Jordanx59x et Okan";
 joinUnassigned = 1;
 respawn = BASE;
@@ -122,9 +122,9 @@ class CfgDebriefing
 	
 	class SpyGlass
 	{
-		title = "The SpyGlass sees you";
-		subTitle = "You were detected by the SpyGlass";
-		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
+		title = "Anti-Cheat";
+		subTitle = "Tu as été détecté par l'Anti-Cheat";
+		description = "Le serveur a détecté un cheat. Tu as été reporté aux admins.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
