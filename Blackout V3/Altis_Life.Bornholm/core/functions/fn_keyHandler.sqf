@@ -115,11 +115,11 @@ switch (_code) do
     {
 		if((_code in (actionKeys "SelectAll") || _code in (actionKeys "ForceCommandingMode"))) then 
 		{
-			[] call life_fnc_p_openIphone;
+			[] call life_fnc_p_openMenu;
 		};
 	};
 	
-	//report alt + f4
+	//Report Alt + F4
 	case 62:
     {
 		private ["_player"];
@@ -251,8 +251,8 @@ switch (_code) do
 		};
 	};
 	
-	//TAB Vehicle Key
-	case 73:
+	//Num 9 Vehicle
+	/*case 73:
 	{
 		if(playerSide in [civilian] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
 		{
@@ -281,7 +281,7 @@ switch (_code) do
 				};
 			};
 		};
-	};
+	};*/
 
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//                                                                     Tentative de                                                                      //
@@ -294,7 +294,7 @@ switch (_code) do
 	};
 
 	//Peut-être un cheateur? [F2]
-	case 59:
+	case 60:
 	{
 		[[profileName,format["a appuié sur F2, ça correspond peut-être à un menu de cheat.",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
 	};
