@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_antiNiko.sqf
 	Author: Wawixs
@@ -6,7 +7,7 @@
 	Anti-Cheat | BlackOut v3
 */
 
-if (__GETC__(life_adminlevel) > 3) then //Tu as cru pouvoir cheater ? :|
+if (__GETC__(life_adminlevel) > 3) then
 {
 	//CheatEngine Injection Scan
 	{
@@ -176,15 +177,6 @@ if (__GETC__(life_adminlevel) > 3) then //Tu as cru pouvoir cheater ? :|
 	};
 
 	//Wow wtf, illuminati detected
-	[] spawn {
-		while{true} do {
-		if (vehicle player setDamage 0;) then
-			player disableAI;
-			failMission "SpyGlass"
-		};
-	};
-
-	//Wow wtf, illuminati detected another time
 	[] spawn {
 		while{true} do {
 		if (vehicle player setDamage 0;) then
