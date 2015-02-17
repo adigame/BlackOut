@@ -346,7 +346,7 @@ class Life_Client_Core
 	class Shops
 	{
 		file = "core\shops";
-		class atmMenu {};
+        class atmMenu {};
 		class buyClothes {};
 		class changeClothes {};
 		class clothingMenu {};

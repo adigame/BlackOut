@@ -7,7 +7,7 @@ waitUntil { time > 0 };
 IL_EV_Count = 0;
 IL_Veh_Array = [];
 
-cutText ["Chargement des addons & scripts...","PLAIN",2];
+//cutText ["Chargement des addons & scripts...","PLAIN",2];
 sleep (random 30);
 
 //cutText [Format ["IgiLoad init Player: %1", Player],"PLAIN",2];
@@ -26,7 +26,7 @@ sleep (random (IL_Check_Veh_Max - IL_Check_Veh_Min));
 	};
 } forEach (vehicles);
 
-cutText ["Addons & Scripts chargés, bon jeu !","PLAIN",2];
+//cutText ["Addons & Scripts chargés, bon jeu !","PLAIN",2];
 
 while {true} do 
 {

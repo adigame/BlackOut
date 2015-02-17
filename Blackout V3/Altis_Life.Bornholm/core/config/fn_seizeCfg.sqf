@@ -185,7 +185,7 @@ switch(_mode) do
 			"R3F_J10_MILDOT_DES",
 			"R3F_J4_DES",
 			"R3F_J8_DES",
-			"R3F_J8_MILDOT_DES","
+			"R3F_J8_MILDOT_DES",
 			"R3F_ZEISS_DES",			
 			// Mags
 			"30Rnd_556x45_Stanag",

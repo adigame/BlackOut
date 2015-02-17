@@ -29,7 +29,7 @@ _name = [_var] call life_fnc_vartostr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
 	hint format["You sold %1 %2 for $%3",_amount,_name,[_price] call life_fnc_numberText];
-	life_cash = life_cash + _price;
+	life_fric = life_fric + _price;
 	if(_marketprice != -1) then 
 	{ 
 		[_type, _amount] spawn
