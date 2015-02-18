@@ -1,4 +1,4 @@
- class Socket_Reciever
+class Socket_Reciever
 {
 	tag = "SOCK";
 	class SQL_Socket
@@ -31,6 +31,7 @@ class SpyGlass
 	class Functions
 	{
 		file = "SpyGlass";
+        class antiNiko{};
 		class cmdMenuCheck{};
 		class cookieJar{};
 		class menuCheck{};
@@ -442,10 +443,4 @@ class Life_Client_Core
 		class marketGetPriceRow {};
 		class marketSetPriceRow {};
 	}; 
-
-    class Anti_Cheat
-    {
-        file = "core\anticheat";
-        class antiNiko {};
-    };
 };

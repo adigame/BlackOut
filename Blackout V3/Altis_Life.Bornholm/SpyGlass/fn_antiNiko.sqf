@@ -1,16 +1,13 @@
-/*#include <macro.h>
-#define GVAR_UINS uiNamespace getVariable
-#define CONST(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
-#define steamid getPlayerUID player
+#include <macro.h>
 /*
 	File: fn_antiNiko.sqf
 	Author: Wawixs
 	
 	Description:
 	Anti-Cheat | BlackOut v3
-*//*
+*/
 
-if(__GETC__(life_adminlevel) > 3) then
+if (__GETC__(life_adminlevel) > 3) then
 {
 	//CheatEngine Injection Scan
 	{
@@ -43,7 +40,7 @@ if(__GETC__(life_adminlevel) > 3) then
 				"RscDisplayConfigureAction","RscDisplayGameOptions","RscMiniMap","RscMiniMapSmall",
 				"RscDisplayControlSchemes","RscDisplayFieldManual","RscDisplayPassword",
 				"RscDisplayServerGetReady","RscDisplayClientGetReady",
-				"RscDisplayRespawn","RscDisplayLoading","RscDisplayStart","RscDisplayClient","RscDisplayDebugPublic"];
+				"RscDisplayRespawn","RscDisplayLoading","RscDisplayStart","RscDisplayClient"];
 				_Loads = (call CheatEngine_Scan);
 				_itemCount = (count _Displays) - 1;
 				for "_i" from 0 to _itemCount do
@@ -53,6 +50,8 @@ if(__GETC__(life_adminlevel) > 3) then
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",(_Displays select _i)]],"SPY_fnc_notifyPlayers",true,false] call life_fnc_MP;
 						[[profileName,steamid,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+						sleep 0.1;
+						player disableAI;
 						waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
 						};
 					if !((compile((configfile >> (_Displays select _i) >> "onUnload") call BIS_fnc_getCfgData)) in _Loads) exitWith
@@ -60,6 +59,8 @@ if(__GETC__(life_adminlevel) > 3) then
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",(_Displays select _i)]],"SPY_fnc_notifyPlayers",true,false] call life_fnc_MP;
 						[[profileName,steamid,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+						player disableAI;
+						sleep 0.1;
 						waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
 						};
 					};
@@ -99,6 +100,19 @@ if(__GETC__(life_adminlevel) > 3) then
 		};
 	};
 
+	//Fuck up debug.
+	[] spawn {
+		while{true} do {
+			if (createDialog "RscDisplayDebugPublic") then
+				[[profileName,steamid,"Ouverture debug console"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+				[[profileName,format["A voulu ouvrir la Console de Debug",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+				diag_log format["|SPYGLASS| %1 A tenter d'ouvrir la debug",_unit getVariable["realname",name _unit]]
+				hint "Tu as tenté de cheaté, tu seras punis pour ça."
+				sleep 2;
+				player disableAI;
+		};
+	};
+
 	//Don't be god, its a game let us kill you :D
 	[] spawn {
 		while{true} do {
@@ -111,7 +125,8 @@ if(__GETC__(life_adminlevel) > 3) then
 	[] spawn {
 		while{true} do {
 		if ("LightningBolt" createVehicle _pos) then
-			[[profileName,steamid,"cursorTarget Lightning"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+				hint "Tu as tenté de cheaté, tu seras punis pour ça. #LNT"
+				player disableAI;
 		};
 	};
 
@@ -119,31 +134,38 @@ if(__GETC__(life_adminlevel) > 3) then
 	[] spawn {
 		while{true} do {
 		if (deleteVehicle cursorTarget) then
-			[[profileName,steamid,"Delete object"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+			hint "Tu as tenté de cheaté, tu seras punis pour ça. #DELCT"
+			player disableAI;
 		};
 	};
-
+	
 	//Nope, to be rich you need to farm weed, not to farm a button.
 	[] spawn {
 		while{true} do {
-		if (life_fric < 25000000) then //Improbable ou presque, c'est juste pour être sûr que ça soit pas un noob..
-			[[profileName,steamid,"250m"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+		if (life_cash < 25000000) then //Improbable ou presque, c'est juste pour être sûr que ça soit pas un noob..
+			hint "Tu as tenté de cheaté, tu seras punis pour ça. #250m"
+			player disableAI;
 		};
 	};
-
+	
 	//Nope, to be rich you need to farm weed, not to farm a button.
 	[] spawn {
 		while{true} do {
-		if (life_atmfric < 800000000) then //Empechons d'avoir 99999999999999€ dans son compte :)
-			[[profileName,steamid,"Ouverture debug console"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+		if (life_atmcash < 800000000) then //Empechons d'avoir 99999999999999€ dans son compte :)
+			life_atmcash = 0
+			hint "Tu as tenté de cheaté, tu seras punis pour ça. #999m"
+			player disableAI;
 		};
 	};
 
 	//Wow, unlimited ammos over here o.O
 	[] spawn {
 		while{true} do {
-		if ((vehicle player) setVehicleAmmo 1) then
-			[[profileName,steamid,"Infinite ammo"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+		if ((vehicle player) setVehicleAmmo 1;) then
+			player setDamage 1;
+			hint "Tu as tenté de cheaté, tu seras punis pour ça. #INF"
+			sleep 2;
+			player disableAI;
 		};
 	};
 
@@ -158,7 +180,10 @@ if(__GETC__(life_adminlevel) > 3) then
 	[] spawn {
 		while{true} do {
 		if (player addEventHandler ["Fired", {if (cursorTarget iskindof "man") then {cursorTarget setHit ["head", 1]}; }];) then
-			[[profileName,steamid,"Aimbot"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+			player disableAI;
+			hint "Tu as tenté de cheaté, tu seras punis pour ça. #AIM"
+			sleep 2;
+			player disableAI;
 		};
 	};
 
@@ -166,7 +191,8 @@ if(__GETC__(life_adminlevel) > 3) then
 	[] spawn {
 		while{true} do {
 		if (vehicle player setDamage 0;) then
-			[[profileName,steamid,"Illuminati vehicle"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+			hint "Tu as tenté de cheaté, tu seras punis pour ça. #VEHR"
+			player disableAI;
 		};
 	};
-};*/
+};

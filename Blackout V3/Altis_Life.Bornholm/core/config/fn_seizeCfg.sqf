@@ -113,7 +113,7 @@ switch(_mode) do
 			"R3F_NF42",
 			"R3F_J10",
 			"R3F_J10_MILDOT",
-			"R3F_J4",
+			"R3F_J4",,
 			"R3F_J8",
 			"R3F_J8_MILDOT",
 			"R3F_ZEISS",
@@ -270,7 +270,7 @@ switch(_mode) do
 			"G_Bandanna_blkt",
 			"G_Bandanna_oli",
 			"G_Bandanna_shades",
-			"G_Bandanna_sport",
+			"G_Bandanna_sport"
 			"G_Shades_Black",
 			"G_Shades_Blue",
 			"G_Sport_Blackred",
