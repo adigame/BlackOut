@@ -13,6 +13,7 @@ class Socket_Reciever
 	};
 };
 
+<<<<<<< HEAD
 class Logs
 {
     tag = "LOG";
@@ -25,6 +26,8 @@ class Logs
     };
 };
 
+=======
+>>>>>>> parent of 569f335... Logs + AntiCheat
 class SpyGlass
 {
 	tag = "SPY";

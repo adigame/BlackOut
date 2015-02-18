@@ -13,7 +13,4 @@ _pReason = [_this,2,"",[""]] call BIS_fnc_param;
 
 if(_pName == "" OR _pUID == "" OR _pReason == "") exitWith {}; //Bad params passed..
 
-
-diag_log format["-----------------------------------------|SPYGLASS_LOG|-----------------------------------------"];
-diag_log format["                              Pseudo : %1 | UID : %2 | Raison : %3                              ",_pName,_pUID,_pReason]; //Outputs to RPT for external programs to parse,log,react to.
-diag_log format["--------------------------------------____|SPFLAG_END|____--------------------------------------"];
+diag_log format["SPYGLASS-FLAG:%1:%2:%3",_pName,_pUID,_pReason]; //Outputs to RPT for external programs to parse,log,react to.

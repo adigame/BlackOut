@@ -104,16 +104,19 @@ if (__GETC__(life_adminlevel) > 3) then
 	[] spawn {
 		while{true} do {
 			if (createDialog "RscDisplayDebugPublic") then
-				[[profileName,steamid,"Ouverture debug console"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 				[[profileName,format["A voulu ouvrir la Console de Debug",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
 				diag_log format["|SPYGLASS| %1 A tenter d'ouvrir la debug",_unit getVariable["realname",name _unit]]
 <<<<<<< HEAD
 				hint "Tu as tenté de cheaté, tu seras punis pour ça."
 				sleep 2;
+<<<<<<< HEAD
 				player disableAI;
 =======
 				failMission "SpyGlass";
 >>>>>>> parent of 7b017e0... Fix bugs
+=======
+				player setDamage 1;
+>>>>>>> parent of 569f335... Logs + AntiCheat
 		};
 	};
 
