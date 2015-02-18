@@ -50,8 +50,8 @@ if (__GETC__(life_adminlevel) > 3) then
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",(_Displays select _i)]],"SPY_fnc_notifyPlayers",true,false] call life_fnc_MP;
 						[[profileName,steamid,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
-						sleep 0.1;
 						player disableAI;
+						sleep 0.1;
 						waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
 						};
 					if !((compile((configfile >> (_Displays select _i) >> "onUnload") call BIS_fnc_getCfgData)) in _Loads) exitWith
