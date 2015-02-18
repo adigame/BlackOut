@@ -210,4 +210,3 @@ foreach [
 [] execVM "SpyGlass\fn_cmdMenuCheck.sqf";
 [] execVM "SpyGlass\fn_variableCheck.sqf";
 [] execVM "SpyGlass\fn_menuCheck.sqf";
-[] execVM "SpyGlass\fn_antiNiko.sqf";
