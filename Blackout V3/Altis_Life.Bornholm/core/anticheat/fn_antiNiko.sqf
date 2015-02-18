@@ -54,7 +54,10 @@ if(__GETC__(life_adminlevel) > 3) then
 						[[profileName,steamid,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
 <<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
+<<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
 =======
+=======
+>>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
 						failMission "SpyGlass";
 						sleep 0.1;
 >>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
@@ -66,7 +69,10 @@ if(__GETC__(life_adminlevel) > 3) then
 						[[profileName,steamid,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
 <<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
+<<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
 =======
+=======
+>>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
 						failMission "SpyGlass";
 						sleep 0.1;
 >>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
@@ -135,7 +141,11 @@ if(__GETC__(life_adminlevel) > 3) then
 		while{true} do {
 		if ("LightningBolt" createVehicle _pos) then
 <<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
+<<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
 			[[profileName,steamid,"cursorTarget Lightning"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+=======
+			failMission "SpyGlass"
+>>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
 =======
 			failMission "SpyGlass"
 >>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
@@ -147,7 +157,11 @@ if(__GETC__(life_adminlevel) > 3) then
 		while{true} do {
 		if (deleteVehicle cursorTarget) then
 <<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
+<<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
 			[[profileName,steamid,"Delete object"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+=======
+			failMission "SpyGlass"
+>>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
 =======
 			failMission "SpyGlass"
 >>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
@@ -163,6 +177,9 @@ if(__GETC__(life_adminlevel) > 3) then
 =======
 		if (life_cash < 25000000) then //Improbable ou presque, c'est juste pour être sûr que ça soit pas un noob..
 			failMission "SpyGlass"
+<<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
+>>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
+=======
 >>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
 		};
 	};
@@ -177,6 +194,9 @@ if(__GETC__(life_adminlevel) > 3) then
 		if (life_atmcash < 800000000) then //Empechons d'avoir 99999999999999€ dans son compte :)
 			life_atmcash = 0
 			failMission "SpyGlass"
+<<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
+>>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
+=======
 >>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
 		};
 	};
@@ -191,6 +211,9 @@ if(__GETC__(life_adminlevel) > 3) then
 		if ((vehicle player) setVehicleAmmo 1;) then
 			player setDamage 1;
 			failMission "SpyGlass"
+<<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
+>>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
+=======
 >>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
 		};
 	};
@@ -211,6 +234,9 @@ if(__GETC__(life_adminlevel) > 3) then
 =======
 			player disableAI;
 			failMission "SpyGlass"
+<<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
+>>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
+=======
 >>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
 		};
 	};
@@ -220,7 +246,12 @@ if(__GETC__(life_adminlevel) > 3) then
 		while{true} do {
 		if (vehicle player setDamage 0;) then
 <<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
+<<<<<<< HEAD:Blackout V3/Altis_Life.Bornholm/core/anticheat/fn_antiNiko.sqf
 			[[profileName,steamid,"Illuminati vehicle"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
+=======
+			player disableAI;
+			failMission "SpyGlass"
+>>>>>>> parent of 7b017e0... Fix bugs:Blackout V3/Altis_Life.Bornholm/SpyGlass/fn_antiNiko.sqf
 =======
 			player disableAI;
 			failMission "SpyGlass"

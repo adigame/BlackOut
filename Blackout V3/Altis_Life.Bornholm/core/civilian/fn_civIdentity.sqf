@@ -18,7 +18,11 @@ if( isNull _target) then {_target = player;};
 if( !(_target isKindOf "Man") ) then {_target = player;};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 if( !(alive _target) ) then {_target = player;};
+=======
+if( !(alive _target) ) then exitWith{};
+>>>>>>> parent of 7b017e0... Fix bugs
 =======
 if( !(alive _target) ) then exitWith{};
 >>>>>>> parent of 7b017e0... Fix bugs
