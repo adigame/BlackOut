@@ -50,7 +50,7 @@ if (__GETC__(life_adminlevel) > 3) then
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",(_Displays select _i)]],"SPY_fnc_notifyPlayers",true,false] call life_fnc_MP;
 						[[profileName,steamid,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
-						player disableAI;
+						failMission "SpyGlass";
 						sleep 0.1;
 						waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
 						};
@@ -59,7 +59,7 @@ if (__GETC__(life_adminlevel) > 3) then
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",(_Displays select _i)]],"SPY_fnc_notifyPlayers",true,false] call life_fnc_MP;
 						[[profileName,steamid,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 						[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
-						player disableAI;
+						failMission "SpyGlass";
 						sleep 0.1;
 						waitUntil {!(isNull(findDisplay 46))}; (findDisplay 46) closeDisplay 0;
 						};
@@ -107,9 +107,13 @@ if (__GETC__(life_adminlevel) > 3) then
 				[[profileName,steamid,"Ouverture debug console"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 				[[profileName,format["A voulu ouvrir la Console de Debug",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
 				diag_log format["|SPYGLASS| %1 A tenter d'ouvrir la debug",_unit getVariable["realname",name _unit]]
+<<<<<<< HEAD
 				hint "Tu as tenté de cheaté, tu seras punis pour ça."
 				sleep 2;
 				player disableAI;
+=======
+				failMission "SpyGlass";
+>>>>>>> parent of 7b017e0... Fix bugs
 		};
 	};
 
@@ -125,8 +129,7 @@ if (__GETC__(life_adminlevel) > 3) then
 	[] spawn {
 		while{true} do {
 		if ("LightningBolt" createVehicle _pos) then
-				hint "Tu as tenté de cheaté, tu seras punis pour ça. #LNT"
-				player disableAI;
+			failMission "SpyGlass"
 		};
 	};
 
@@ -134,8 +137,7 @@ if (__GETC__(life_adminlevel) > 3) then
 	[] spawn {
 		while{true} do {
 		if (deleteVehicle cursorTarget) then
-			hint "Tu as tenté de cheaté, tu seras punis pour ça. #DELCT"
-			player disableAI;
+			failMission "SpyGlass"
 		};
 	};
 	
@@ -143,8 +145,7 @@ if (__GETC__(life_adminlevel) > 3) then
 	[] spawn {
 		while{true} do {
 		if (life_cash < 25000000) then //Improbable ou presque, c'est juste pour être sûr que ça soit pas un noob..
-			hint "Tu as tenté de cheaté, tu seras punis pour ça. #250m"
-			player disableAI;
+			failMission "SpyGlass"
 		};
 	};
 	
@@ -153,8 +154,7 @@ if (__GETC__(life_adminlevel) > 3) then
 		while{true} do {
 		if (life_atmcash < 800000000) then //Empechons d'avoir 99999999999999€ dans son compte :)
 			life_atmcash = 0
-			hint "Tu as tenté de cheaté, tu seras punis pour ça. #999m"
-			player disableAI;
+			failMission "SpyGlass"
 		};
 	};
 
@@ -163,9 +163,7 @@ if (__GETC__(life_adminlevel) > 3) then
 		while{true} do {
 		if ((vehicle player) setVehicleAmmo 1;) then
 			player setDamage 1;
-			hint "Tu as tenté de cheaté, tu seras punis pour ça. #INF"
-			sleep 2;
-			player disableAI;
+			failMission "SpyGlass"
 		};
 	};
 
@@ -181,9 +179,7 @@ if (__GETC__(life_adminlevel) > 3) then
 		while{true} do {
 		if (player addEventHandler ["Fired", {if (cursorTarget iskindof "man") then {cursorTarget setHit ["head", 1]}; }];) then
 			player disableAI;
-			hint "Tu as tenté de cheaté, tu seras punis pour ça. #AIM"
-			sleep 2;
-			player disableAI;
+			failMission "SpyGlass"
 		};
 	};
 
@@ -191,8 +187,8 @@ if (__GETC__(life_adminlevel) > 3) then
 	[] spawn {
 		while{true} do {
 		if (vehicle player setDamage 0;) then
-			hint "Tu as tenté de cheaté, tu seras punis pour ça. #VEHR"
 			player disableAI;
+			failMission "SpyGlass"
 		};
 	};
 };

@@ -101,7 +101,7 @@ switch(_mode) do
 			"FHQ_optic_AIM",
 			"FHQ_optic_HWS_G33",
 			"FHQ_optic_HWS",
-			"FHQ_optic_MARS",
+			"FHQ_optic_MARS",,
 			"FHQ_optic_MicroCCO",
 			"FHQ_optic_MicroCCO_low",
 			"FHQ_optic_TWS3050",
@@ -297,7 +297,7 @@ switch(_mode) do
 			"V_HarnessO_gry",
 			"V_PlateCarrierIA1_dgtl",
 			"V_PlateCarrierIA2_dgtl",
-			"V_HarnessOGL_gry",
+			"V_HarnessOGL_gry"
 			"V_BandollierB_cbr"
 		];
 	};
