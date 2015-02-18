@@ -12,7 +12,6 @@
 */
 private["_binConfigPatches","_cfgPatches","_endM"];
 if(isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
-_life_fnc_MP = true;
 
 _toCompilableString = {
 	_code = _this select 0;
