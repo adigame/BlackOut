@@ -43,7 +43,7 @@ switch(_shop) do
 				        ["Chemlight_green",nil,300],
 				        ["Chemlight_blue",nil,300],
 						["C1987_MP7_nwu","MP7",15000],
-						["C1987_40Rnd_46x30_mp7","Chargeur MP7",500]					
+						["C1987_40Rnd_46x30_mp7","Chargeur MP7",500]				
 					]
 				];
 			};

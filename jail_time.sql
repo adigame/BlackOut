@@ -1,1 +1,0 @@
-ALTER TABLE `players` ADD `jail_time` int(11) NOT NULL DEFAULT '0'

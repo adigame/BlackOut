@@ -13,21 +13,6 @@ class Socket_Reciever
 	};
 };
 
-<<<<<<< HEAD
-class Logs
-{
-    tag = "LOG";
-    class Functions
-    {
-        file = "logs";
-        class cashLogs{};
-        class recieveCashLogs{};
-        class licenceLogs{};
-    };
-};
-
-=======
->>>>>>> parent of 569f335... Logs + AntiCheat
 class SpyGlass
 {
 	tag = "SPY";
