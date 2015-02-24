@@ -1,1 +1,0 @@
-ALTER TABLE `vehicles` MODIFY `inventory` text NOT NULL

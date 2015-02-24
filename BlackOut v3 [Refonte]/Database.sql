@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `playerid` varchar(50) NOT NULL,
   `cash` int(100) NOT NULL DEFAULT '0',
   `bankacc` int(100) NOT NULL DEFAULT '0',
-  `coplevel` enum('0','1','2','3','4','5','6','7') NOT NULL DEFAULT '0',
+  `coplevel` enum('0','1','2','3','4','5','6','7','8') NOT NULL DEFAULT '0',
   `cop_licenses` text,
   `civ_licenses` text,
   `med_licenses` text,
@@ -62,10 +62,12 @@ CREATE TABLE IF NOT EXISTS `players` (
   `mediclevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `arrested` tinyint(1) NOT NULL DEFAULT '0',
   `aliases` text NOT NULL,
-  `adminlevel` enum('0','1','2','3') NOT NULL DEFAULT '0',
+  `adminlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `donatorlvl` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `civ_gear` text NOT NULL,
   `blacklist` tinyint(1) NOT NULL DEFAULT '0',
+  `rebel` tinyint(1) NOT NULL DEFAULT '0',
+  `job` varchar(255),
   PRIMARY KEY (`uid`),
   UNIQUE KEY `playerid` (`playerid`),
   KEY `name` (`name`),
@@ -88,7 +90,8 @@ CREATE TABLE IF NOT EXISTS `vehicles` (
   `active` tinyint(1) NOT NULL DEFAULT '0',
   `plate` int(20) NOT NULL,
   `color` int(20) NOT NULL,
-  `inventory` varchar(500) NOT NULL,
+  `inventory` text NOT NULL,
+  `gear` text NOT NULL,
   PRIMARY KEY (`id`),
   KEY `side` (`side`),
   KEY `pid` (`pid`),
@@ -131,7 +134,20 @@ CREATE TABLE IF NOT EXISTS `gangs` (
   UNIQUE KEY `name_UNIQUE` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- ----------------------------
+-- Table structure for `wanted`
+-- ----------------------------
+
+CREATE TABLE IF NOT EXISTS `wanted` (
+  `wantedID` varchar(50) NOT NULL,
+  `wantedName` varchar(52) NOT NULL,
+  `wantedCrimes` text NOT NULL,
+  `wantedBounty` int(100) NOT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`wantedID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-

@@ -62,6 +62,9 @@ life_thirst = 100;
 life_hunger = 100;
 CASH = 0;
 
+life_job = "";
+life_rebel = false;
+
 life_istazed = false;
 life_vehicles = [];
 
