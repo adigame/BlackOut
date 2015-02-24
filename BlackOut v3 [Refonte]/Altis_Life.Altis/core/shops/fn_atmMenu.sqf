@@ -20,15 +20,15 @@ disableSerialization;
 _units = CONTROL(2700,2703);
 
 lbClear _units;
-CONTROL(2700,2701) ctrlSetStructuredText parseText format["<img size='1.7' image='icons\bank.paa'/> $%1<br/><img size='1.6' image='icons\money.paa'/> $%2",[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+CONTROL(2700,2701) ctrlSetStructuredText parseText format["<img size='1.7' image='icons\bank.paa'/> %1€<br/><img size='1.6' image='icons\money.paa'/> %2€",[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
 
 {
 	_name = _x GVAR ["realname",name _x];
 	if(alive _x && (!(EQUAL(_name,profileName)))) then {
 		switch (side _x) do {
-			case west: {_type = "Cop"};
+			case west: {_type = "Gen"};
 			case civilian: {_type = "Civ"};
-			case independent: {_type = "EMS"};
+			case independent: {_type = "INF"};
 		};
 		_units lbAdd format["%1 (%2)",_x GVAR ["realname",name _x],_type];
 		_units lbSetData [(lbSize _units)-1,str(_x)];

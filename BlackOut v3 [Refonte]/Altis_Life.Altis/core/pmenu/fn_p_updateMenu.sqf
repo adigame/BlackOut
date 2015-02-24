@@ -38,8 +38,8 @@ _near_units = [];
 	};
 } foreach _near_units;
 
-_mstatus ctrlSetStructuredText parseText format["<img size='1.3' image='icons\bank.paa'/> <t size='0.8px'>$%1</t><br/><img size='1.2' image='icons\money.paa'/> <t size='0.8'>$%2</t>",[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
-ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
+_mstatus ctrlSetStructuredText parseText format["<img size='1.3' image='icons\bank.paa'/> <t size='0.8px'>%1€</t><br/><img size='1.2' image='icons\money.paa'/> <t size='0.8'>%2€</t>",[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+ctrlSetText[2009,format["Place: %1 / %2", life_carryWeight, life_maxWeight]];
 
 {
 	if(ITEM_VALUE(configName _x) > 0) then {
@@ -61,7 +61,7 @@ ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
 } foreach (format["getText(_x >> 'side') isEqualTo '%1'",_side] configClasses (missionConfigFile >> "Licenses"));
 
 if(EQUAL(_struct,"")) then {
-	_struct = "No Licenses";
+	_struct = "Aucune Licence";
 };
 
 _lic ctrlSetStructuredText parseText format["

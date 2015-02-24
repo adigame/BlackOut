@@ -380,7 +380,7 @@
 		<Key ID="STR_ATM_GreaterThan">
 			<Original>You can't deposit more then $999,999 at a time</Original>
 			<German>Du kannst nicht mehr als $999,999 gleichzeitig einzahlen</German>
-			<French>Vous ne pouvez pas déposer plus de $999,999</French>
+			<French>Vous ne pouvez pas déposer plus de 999,999€</French>
 			<Italian>Non puoi depositare più di €999,999 alla volta</Italian>
 			<Portuguese>Você não pode transferir mais de R$999,999 em uma transação</Portuguese>
 		</Key>
@@ -394,7 +394,7 @@
 		<Key ID="STR_ATM_DepositMSG">
  			<Original>You have deposited $%1 into your bank account</Original>
 			<German>Du hast $%1 auf dein Bankkonto überwiesen</German>
- 			<French>Vous avez déposé $%1 dans votre compte bancaire</French>
+ 			<French>Vous avez déposé %1€ dans votre compte bancaire</French>
 			<Italian>Hai despositato €%1 nel tuo conto bancario</Italian>
 			<Portuguese>Você depositou R$%1 na sua conta bancária</Portuguese>
  		</Key>
@@ -414,7 +414,7 @@
  		<Key ID="STR_ATM_TransferMax">
  			<Original>You can't transfer more then $999,999</Original>
 			<German>Du kannst nicht mehr als $999,999 überweisen</German>
- 			<French>Vous ne pouvez pas transférer plus de $999,999</French>
+ 			<French>Vous ne pouvez pas transférer plus de 999,999€</French>
 			<Italian>Non puoi trasferire più di €999.000 alla volta</Italian>
 			<Portuguese>Você pode trasferir no máximo R$999.999.</Portuguese>
  		</Key>
@@ -667,7 +667,7 @@
 		<Key ID="STR_GNOTF_CreateGang">
 			<Original>You must create a gang first before capturing it!</Original>
 			<German>Du musst erst in einer Gang sein, um einzunehmen zu können!</German>
-			<French>Vous devez créer un gang avant de le capturer!</French>
+			<French>Vous devez créer un gang avant de capturer une base!</French>
 			<Italian>Devi creare una gang prima di catturarla!</Italian>
 			<Portuguese>Você precisa criar uma gangue antes de tentar capturar esse esconderijo!</Portuguese>
 		</Key>
@@ -737,14 +737,14 @@
 		<Key ID="STR_GNOTF_NotEnoughMoney">
 			<Original>You do not have enough money in your bank account.\n\nYou lack: $%1</Original>
 			<German>Du hast nicht genug Geld auf deinem Bankkonto.\n\nDir fehlen: $%1</German>
-			<French>Vous n'avez pas assez d'argent dans votre compte bancaire.\n\nVous manquez de: $%1</French>
+			<French>Vous n'avez pas assez d'argent dans votre compte bancaire.\n\nVous manquez de: %1€</French>
 			<Italian>Non hai abbastanza fondi nel tuo conto in banca.\n\nTi mancano: €%1</Italian>
 			<Portuguese>Você não tem dinheiro suficiente na sua conta bancária.\n\nFaltam: R$%1</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_CreateSuccess">
 			<Original>You have created the gang %1 for $%2</Original>
 			<German>Du hast die Gang %1 für $%2 erstellt</German>
-			<French>Vous avez créé la bande %1 pour $%2</French>
+			<French>Vous avez créé la bande %1 pour %2€</French>
 			<Italian>Hai creato la Gang %1 al costo di €%2</Italian>
 			<Portuguese>Você criou a gangue %1 por R$%2</Portuguese>
 		</Key>
@@ -779,14 +779,14 @@
 		<Key ID="STR_GNOTF_InviteMSG">
 			<Original>%1 has invited you to a gang called %2&lt;br/&gt;If you accept the invitation you will be a part of their gang and will have access to the gang funds and controlled gang hideouts.</Original>
 			<German>%1 hat dich zu einer Gang namens %2 eingeladen &lt;br/&gt; Wenn Du die Einladung annimmst, wirst du ein Teil der Gang und bekommst Zugang zu den Gang-Konten und kontrollierten Gang Verstecken.</German>
-			<French>%1 vous a invité à un gang appelé %2&lt;br/&gt;Si vous acceptez l'invitation que vous serez une partie de leur gang et aurez accès à des fonds de gangs et des cachettes de gangs contrôlés.</French>
+			<French>%1 vous a invité à un gang appelé %2&lt;br/&gt;Si vous acceptez l'invitation que vous ferez alors partie de leur gang et aurez accès à des fonds de gangs et des cachettes de gangs contrôlées.</French>
 			<Italian>%1 ti ha invitato nella Gang: %2&lt;br/&gt;Se vuoi accettarai l'invito entrerai a far parte della loro Gang ed avrai accesso ai loro fondi e ai loro Covi.</Italian>
 			<Portuguese>%1 convidou você para a gangue %2&lt;br/&gt;Se você aceitar você terá acesso aos recursos da gangue e os esconderijos.</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_InvitePlayerMSG">
 			<Original>You are about to invite %1 to your gang, if they accept the invite they will have access to the gang's funds.</Original>
 			<German>Du bist dabei, %1 in deine Gang einzuladen. Wenn die Einladung angenommen wird, hat der Spieler Zugang zu den Mitteln der Gang.</German>
-			<French>Vous êtes sur le point d'inviter %1 à votre gang, s'ils acceptent l'invitation, ils auront accès à des fonds du gang.</French>
+			<French>Vous êtes sur le point d'inviter %1 dans votre gang, si il accepte l'invitation, il aura accès aux fonds du Gang.</French>
 			<Italian>Stai per invitare %1 nella tua Gang, se accetterà l'invito avrà accesso ai fondi della Gang.</Italian>
 			<Portuguese>Você vai convidar %1 para a gangue, ele terá acesso aos recursos da gangue.</Portuguese>
 		</Key>
@@ -807,7 +807,7 @@
 		<Key ID="STR_GNOTF_InviteCancel">
 			<Original>Invitation Cancelled</Original>
 			<German>Einladung abgebrochen</German>
-			<French>Invitation Annulées</French>
+			<French>Invitation Annulé</French>
 			<Italian>Invito Annullato</Italian>
 			<Portuguese>Convite Cancelado</Portuguese>
 		</Key>
@@ -821,7 +821,7 @@
 		<Key ID="STR_GNOTF_MaxSlot">
 			<Original>Your gang has reached its maximum allowed slots, please upgrade your gangs slot limit.</Original>
 			<German>Deine Gang hat die maximale Anzahl an Plätzen erreicht, bitte erhöhe das Limit deiner Gang.</German>
-			<French>Votre gang à atteint le nombre de membre maximum, veuillez augmenter cette limite.</French>
+			<French>Votre gang a atteint le nombre de membre maximum, veuillez augmenter cette limite.</French>
 			<Italian>la tua Gang ha raggiungo il numero massimo di posti consentiti, aumentane il limite.</Italian>
 			<Portuguese>Sua gangue está lotada, você deve aumentar o número máximo de jogadores.</Portuguese>
 		</Key>
@@ -835,7 +835,7 @@
 		<Key ID="STR_GNOTF_LeaderLeave">
 			<Original>You cannot leave the gang without appointing a new leader first!</Original>
 			<German>Du kannst die Gang nicht verlassen, ohne einen neuen Anführer zu ernennen!</German>
-			<French>Vous ne pouvez pas quitter le gang sans la nomination d'un nouveau chef d'abord!</French>
+			<French>Vous ne pouvez pas quitter le gang sans la nomination d'un nouveau chef!</French>
 			<Italian>Non puoi abbandonare la Gang prima di aver selezionato un nuovo Capo!</Italian>
 			<Portuguese>Você não pode sair da gangue sem transferir a liderança antes!</Portuguese>
 		</Key>
@@ -870,21 +870,21 @@
 		<Key ID="STR_GNOTF_MaxMemberMSG">
 			<Original>You are about to upgrade the maximum members allowed for your gang.</Original>
 			<German>Du bist dabei, die maximale Anzahl an Mitgliedern zu erhöhen.</German>
-			<French>Vous êtes sur le point de mettre à niveau la limite de membre autorisées pour votre gang.</French>
+			<French>Vous êtes sur le point de mettre à niveau la limite de membre autorisés pour votre gang.</French>
 			<Italian>Stai aumentando il numero massimo di membri consentiti all'interno della tua Gang</Italian>
 			<Portuguese>Você vai atualizar o limite de membros da gangue.</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_CurrentMax">
 			<Original>Current Max: %1</Original>
 			<German>Aktuelles Maximum: %1</German>
-			<French>Max actuelle: %1</French>
+			<French>Max actuel: %1</French>
 			<Italian>Attuali Max: %1</Italian>
 			<Portuguese>Número máximo atual: %1</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_UpgradeMax">
 			<Original>Upgraded Max: %2</Original>
 			<German>Maximum erhöhen: %2</German>
-			<French>Mise à niveau Max: %2</French>
+			<French>Mise à niveau max: %2</French>
 			<Italian>Aumento Max: %2</Italian>
 			<Portuguese>Novo número máximo: %2</Portuguese>
 		</Key>
@@ -919,7 +919,7 @@
 		<Key ID="STR_GNOTF_UpgradeSuccess">
 			<Original>You have upgraded from %1 to %2 maximum slots for &lt;t color='#8cff9b'&gt;$%3&lt;/t&gt;</Original>
 			<German>Du hast für &lt;t color='#8cff9b'&gt;$%3&lt;/t&gt; von %1 auf %2 Plätze erhöht</German>
-			<French>Vous avez mis à niveau à partir de %1 à %2 membres maximum for &lt;t color='#8cff9b'&gt;$%3&lt;/t&gt;</French>
+			<French>Vous avez mis à niveau à partir de %1 à %2 membres maximum for &lt;t color='#8cff9b'&gt;%3€&lt;/t&gt;</French>
 			<Italian>Hai aumentato i posti massimi da %1 a %2 per &lt;t color='#8cff9b'&gt;€%3&lt;/t&gt;</Italian>
 			<Portuguese>Limite de membros atualizado de %1 para %2 por &lt;t color='#8cff9b'&gt;R$%3&lt;/t&gt;</Portuguese>
 		</Key>
@@ -940,7 +940,7 @@
 		<Key ID='STR_GNOTF_GangLeader'>
 			<Original>(Gang Leader)</Original>
 			<German>(Anführer)</German>
-			<French>(Gang Leader)</French>
+			<French>"La tête"</French>
 			<Italian>(Capo Gang)</Italian>
 			<Portuguese>(Lider da Gangue)</Portuguese>
 		</Key>
@@ -984,14 +984,14 @@
 		<Key ID="STR_Garage_NoVehicles">
 			<Original>No vehicles found in garage.</Original>
 			<German>Keine Fahrzeuge in der Garage gefunden.</German>
-			<French>Aucuns Vehicules.</French>	
+			<French>Aucun véhicules trouvés.</French>	
 			<Italian>Non hai veicoli nel Garage.</Italian>			
 			<Portuguese>Nenhum veiculo encontrado na garagem.</Portuguese>
 		</Key>
 		<Key ID="STR_Garage_CashError">
 			<Original>You don't have $%1 in your bank account</Original>
 			<German>Du hast keine $%1 auf deinem Bankkonto</German>
-			<French>Tu n'as pas %1$ sur ton compte en banque.</French>
+			<French>Tu n'as pas %1€ sur ton compte en banque.</French>
 			<Italian>Non hai €%1 nel tuo conto in banca</Italian>
 			<Portuguese>Você não tem R$%1 na sua conta bancária</Portuguese>
 		</Key>
@@ -1026,7 +1026,7 @@
 		<Key ID="STR_Garage_SoldCar">
 			<Original>You sold that vehicle for $%1</Original>
 			<German>Du verkaufst dein Fahrzeug für $%1</German>
-			<French>Vous avez vendu votre véhicule pour $%1</French>
+			<French>Vous avez vendu votre véhicule pour %1€</French>
 			<Italian>Hai venduto il veicolo per €%1</Italian>
 			<Portuguese>Você vendeu um veículo por R$%1</Portuguese>
 		</Key>
@@ -1054,7 +1054,7 @@
 		<Key ID="STR_Garage_Store_Server">
 			<Original>The server is trying to store the vehicle...</Original>
 			<German>Der Server versucht, das Fahrzeug zu speichern...</German>	
-			<French>Le serveur tente de stocker le véhicule ...</French>
+			<French>Votre véhicule s'entrepose dans le garage...</French>
 			<Italian>Il server cercando di depositare il veicolo...</Italian>
 			<Portuguese>O servidor está guardando o veiculo...</Portuguese>
 		</Key>
@@ -1100,14 +1100,14 @@
 		<Key ID="STR_PM_Title">
 			<Original>Player Menu</Original>
 			<German>Spieler Menü</German>
-			<French>Menu du Joueur</French>
+			<French>Menu</French>
 			<Italian>Menu Giocatore</Italian>
 			<Portuguese>Menu do Jogador</Portuguese>
 		</Key>
 		<Key ID="STR_PM_cItems">
 			<Original>Current Items</Original>
 			<German>aktuelle Items</German>
-			<French>Objets Actuels</French>
+			<French>Objets actuels</French>
 			<Italian>Oggetti Attuali</Italian>
 			<Portuguese>Items Atuais</Portuguese>
 		</Key>
@@ -1149,7 +1149,7 @@
 		<Key ID="STR_PM_KeyChain">
 			<Original>Key Chain</Original>
 			<German>Schlüsselbund</German>
-			<French>Porte-clés</French>
+			<French>Clés</French>
 			<Italian>Portachiavi</Italian>
 			<Portuguese>Chaves</Portuguese>
 		</Key>
@@ -1163,7 +1163,7 @@
 		<Key ID="STR_PM_SyncData">
 			<Original>Sync Data</Original>
 			<German>Daten speichern</German>
-			<French>Sync Data</French>
+			<French>Sauver</French>
 			<Italian>Salva Dati</Italian>
 			<Portuguese>Sincronizar Dados</Portuguese>
 		</Key>
@@ -2513,7 +2513,7 @@
 		<Key ID="STR_MISC_Backpack">
 			<Original>You are not allowed to look into someone's backpack!</Original>
 			<German>Du bist nicht berechtigt, in fremde Rucksäcke zu schauen!</German>
-			<French>Vous n'êtes pas autorisé à regarder dans le sac à dos de quelqu'un!</French>
+			<French>La personne pourrait vous voir le fouiller, c'est trop dangereux</French>
 			<Italian>Non sei autorizzato a guardare negli zaini altrui!</Italian>
 			<Portuguese>Você não está permitido a olhar na mochila dos outros!</Portuguese>
 		</Key>
@@ -4673,7 +4673,7 @@
 		<Key ID="STR_Shop_Virt_Gang_Funds">
 			<Original>Gang Funds:</Original>
 			<German>Geld der Gang:</German>
-			<French>Fonds du gang:</French>
+			<French>Fonds du Gang:</French>
 			<Italian>Fondi Gang:</Italian>
 			<Portuguese>Recurso da Gangue:</Portuguese>
 		</Key>
@@ -4708,21 +4708,21 @@
 		<Key ID="STR_Shop_Virt_BoughtGang">
 			<Original>You bought %1 %2 for $%3 with the gangs funds</Original>
 			<German>Du kaufst %1 %2 für $%3 mit dem Geld der Gang</German>
-			<French>Vous avez acheté %1 %2 pour $%3 avec les fonds gangs</French>
+			<French>Vous avez acheté %1 %2 pour %3€ avec les fonds gangs</French>
 			<Italian>Hai comprato %1 %2 al costo di €%3 con i fondi della Gang</Italian>
 			<Portuguese>Você comprou %1 %2 por R$%3 com o dinheiro de gague</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Virt_BoughtItem">
 			<Original>You bought %1 %2 for $%3</Original>
 			<German>Du kaufst %1 %2 für $%3</German>
-			<French>Vous avez acheté %1 %2 pour $%3</French>
+			<French>Vous avez acheté %1 %2 pour %3€</French>
 			<Italian>Hai comprato %1 %2 al costo di €%3</Italian>
 			<Portuguese>Voce comprou %1 %2 por R$%3</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Virt_SellItem">
 			<Original>You sold %1 %2 for $%3</Original>
 			<German>Du verkaufst %1 %2 für $%3</German>
-			<French>Vous avez vendu %1 %2 pour $%3</French>
+			<French>Vous avez vendu %1 %2 pour %3€</French>
 			<Italian>Hai venduto %1 %2 al prezzo di €%3</Italian>
 			<Portuguese>Você vendeu %1 %2 por R$%3</Portuguese>
 		</Key>
@@ -4736,7 +4736,7 @@
 		<Key ID="STR_Shop_Weapon_Sold">
 			<Original>You sold a %1 for &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt;</Original>
 			<German>Du hast eine %1 für &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; verkauft</German>
-			<French>Vous avez vendu un %1 pour &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt;</French>
+			<French>Vous avez vendu un %1 pour &lt;t color='#8cff9b'&gt;%2€&lt;/t&gt;</French>
 			<Italian>Hai venduto un %1 al prezzo di &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt;</Italian>
 			<Portuguese>Você vendeu %1 por &lt;t color='#8cff9b'&gt;R$%2&lt;/t&gt;</Portuguese>
 		</Key>
@@ -4787,7 +4787,7 @@
 		<Key ID="STR_FSM_ReceivedPay">
 			<Original>You have received a paycheck of $%1</Original>
 			<German>Du hast deinen Gehaltscheck in Höhe von $%1 erhalten</German>
-			<French>Vous avez reçu un salaire de $%1</French>
+			<French>Vous avez reçu un salaire de %1€</French>
 			<Italian>Hai ricevuto uno stipendio di €%1</Italian>
 			<Portuguese>Você recebeu seu pagamento de R$%1</Portuguese>
 		</Key>
@@ -4803,7 +4803,7 @@
 		<Key ID="STR_pAct_RobPerson">
 			<Original>Rob Person</Original>
 			<German>Person ausrauben</German>
-			<French>Rob Person</French>
+			<French>Voler</French>
 			<Italian>Rob Person</Italian>		
 			<Portuguese>Roubar Jogador</Portuguese>
 		</Key>

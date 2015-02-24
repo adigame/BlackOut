@@ -24,3 +24,8 @@ if(life_is_arrested) then
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 };
 player addRating 9999999;
+
+//Show Ranks
+player setVariable["coplevel", __GETC__(life_coplevel), true];
+player setVariable["medlevel", __GETC__(life_medicLevel), true];
+player setVariable["adminlevel", __GETC__(life_adminlevel), true];

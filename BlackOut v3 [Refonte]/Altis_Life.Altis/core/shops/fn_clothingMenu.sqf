@@ -82,7 +82,7 @@ if(isClass(missionConfigFile >> "Licenses" >> life_clothing_store)) then {
 
 //initialize camera view
 life_shop_cam = "CAMERA" camCreate getPos player;
-showCinemaBorder false;
+showCinemaBorder true;
 life_shop_cam cameraEffect ["Internal", "Back"];
 life_shop_cam camSetTarget (player modelToWorld [0,0,1]);
 life_shop_cam camSetPos (player modelToWorld [1,4,2]);
