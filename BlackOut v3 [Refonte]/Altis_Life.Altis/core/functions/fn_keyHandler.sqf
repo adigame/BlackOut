@@ -248,37 +248,5 @@ switch (_code) do {
 			};
 		};
 	};
-
-	//FilmTweak, Insert
-	case 210:
-	{
-	if (isnil("FilmTweak")) then {
-				FilmTweak = 0;
-			};
-			if (FilmTweak == 0) then {
-				FilmTweak = 1;
-				hint "FilmTweak\nON";
-			} else {
-				FilmTweak = 0;
-				hint "FilmTweak\nOFF";
-			};
-
-			if (FilmTweak == 1) then {
-					"chromAberration" ppEffectEnable true;
-					"radialBlur" ppEffectEnable true;
-					"colorCorrections" ppEffectEnable true;
-					"colorInversion" ppEffectEnable true;
-
-					"RadialBlur" ppEffectAdjust[0.02, 0.06, 0.2, 0.26]
-					"colorCorrections" ppEffectAdjust[ 0.91, 0.76, 0.18, [-2.7, 0.82, 0.32, -0.05],[1.8, 1.8, 0.3, 0.7],[0.2, 0.59, 0.11, 0]]
-					"ColorInversion" ppEffectAdjust[0.01, 0.14, 0.09]
-					"ChromAberration" ppEffectAdjust[0.01, 0, true]
-			} else {
-					"chromAberration" ppEffectEnable false;
-					"radialBlur" ppEffectEnable false;
-					"colorCorrections" ppEffectEnable false;
-					"colorInversion" ppEffectEnable false;
-			};
-		};
 };
 _handled;

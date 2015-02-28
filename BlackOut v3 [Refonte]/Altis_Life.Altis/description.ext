@@ -1,6 +1,6 @@
 author = "Jordanx59x & OKAN";
 onLoadName = "BlackOut RPG v3";
-onLoadMission = "Developpé par: Jordanx59x, OKAN & Niko Dink";
+onLoadMission = "Developpé par: Jordanx59x, OKAN et Niko Dink";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;

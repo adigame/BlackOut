@@ -9,7 +9,7 @@ switch (playerSide) do
 	case civilian:
 	{
 		//Identité
-		life_actions = life_actions + [player addAction["<t size'0.8'>Carte d'identité</t>",life_fnc_civIdentity,"",1,false,true,"",' playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 6 && cursorTarget isKindOf "Man" ']];
+		life_actions = life_actions + [player addAction["Carte d'identité",life_fnc_civIdentity,"",1,false,true,"",' playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 6 && cursorTarget isKindOf "Man" ']];
 		
 		//Drop fishing net
 		life_actions = [player addAction[localize "STR_pAct_DropFishingNet",life_fnc_dropFishingNet,"",0,false,false,"",'
