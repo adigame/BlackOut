@@ -60,9 +60,9 @@ CREATE TABLE IF NOT EXISTS `players` (
   `gouv_licenses` text,
   `cop_gear` text NOT NULL,
   `med_gear` text NOT NULL,
-  `gouv_gear` text NOT NULL
+  `gouv_gear` text NOT NULL,
   `mediclevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
-  `gouvlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0'
+  `gouvlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `arrested` tinyint(1) NOT NULL DEFAULT '0',
   `aliases` text NOT NULL,
   `adminlevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
