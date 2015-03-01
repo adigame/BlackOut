@@ -18,10 +18,11 @@ _escSync = {
 		disableSerialization;
 		private["_abortButton","_timeStamp"];
 		_abortButton = CONTROL(49,104);
-		_timeStamp = time + 10;
+		_timeStamp = time + 1;
 		
 		waitUntil {
-			_abortButton ctrlSetText format[localize "STR_NOTF_AbortESC",[(_timeStamp - time),"SS.MS"] call BIS_fnc_secondsToString];
+			disableSerialization;
+			_abortButton ctrlSetText format[localize "STR_NOTF_AbortESC",[(_timeStamp - time),"SS"] call BIS_fnc_secondsToString];
 			_abortButton ctrlCommit 0;
 			round(_timeStamp - time) <= 0 || isNull (findDisplay 49)
 		};
@@ -54,7 +55,7 @@ while {true} do
 	_fieldManual = CONTROL(49,122);
 	
 	//Block off our buttons first.
-	//_abortButton ctrlEnable false;
+	_abortButton ctrlEnable false;
 	_respawnButton ctrlEnable false;
 	_fieldManual ctrlEnable false; //Never re-enable, blocks an old script executor.
 	

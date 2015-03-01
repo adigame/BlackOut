@@ -18,6 +18,10 @@ if(EQUAL(count _itemArray,0)) exitWith {
         case west: {
             [] call life_fnc_copLoadout;
         };
+		
+		case east: {
+			[] call life_fnc_gouvLoadout;
+		};
         
         case civilian: {
             [] call life_fnc_civLoadout;

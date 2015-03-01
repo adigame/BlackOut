@@ -57,6 +57,12 @@ switch (playerSide) do {
 		_handle = [] spawn life_fnc_initCop;
 		waitUntil {scriptDone _handle};
 	};
+	case east:
+	{
+		//Initialize Gouv
+		_handle = [] spawn life_fnc_initGouv;
+		waitUntil {scriptDone _handle};
+	};
 	case civilian: {
 		//Initialize Civilian Settings
 		_handle = [] spawn life_fnc_initCiv;
@@ -72,6 +78,8 @@ switch (playerSide) do {
 player SVAR ["restrained",false,true];
 player SVAR ["Escorting",false,true];
 player SVAR ["transporting",false,true];
+player SVAR ["missingOrgan",false,true];//sets variables to false on start
+player SVAR ["hasOrgan",false,true];
 
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";

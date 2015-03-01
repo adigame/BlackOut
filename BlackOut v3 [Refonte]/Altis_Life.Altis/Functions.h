@@ -13,6 +13,33 @@ class Socket_Reciever
 	};
 };
 
+class BlackOutScripts
+{
+    tag = "BOS";
+
+    class AntiCheat
+    {
+        file = "BOS\AC";
+        class ACInit {};
+    };
+
+    class statSave
+    {
+        file = "BOS\statSave";
+        class loadAccount {};
+        class saveFuncs {};
+        class saveLoop {};
+    };
+
+    class Logs
+    {
+        file = "BOS\logs";
+        class cashLogs {};
+        class licenceLogs {};
+        class recieveCashLogs {};
+    };
+};
+
 class Life_Client_Core
 {
 	tag = "life";
@@ -25,6 +52,7 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
+        class initGouv {};
 		class welcomeNotification {};
 		class survival {};
 	};
@@ -101,6 +129,7 @@ class Life_Client_Core
 		class gutAnimal {};
         class suicideBomb{};
         class surrender {};
+        class takeOrgans {};
 	};
 	
 	class Housing
@@ -232,6 +261,7 @@ class Life_Client_Core
 		class civLoadout {};
         class freezePlayer {};
         class civInteractionMenu {};
+        class hasOrgan {};
 	};
 	
 	class Vehicle
@@ -245,10 +275,17 @@ class Life_Client_Core
 		class vehTakeItem {};
 		class vehInventory {};
 		class vInteractionMenu {};
+        class gouvInteractionMenu {};
 		class vehicleWeight {};
 		class deviceMine {};
 		class addVehicle2Chain {};
 	};
+
+    class Gouv
+    {
+        file = "core\gouv";
+        class gouvLoadout {};
+    };
 	
 	class Cop
 	{

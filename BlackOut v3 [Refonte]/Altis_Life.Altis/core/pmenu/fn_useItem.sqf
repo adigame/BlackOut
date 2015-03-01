@@ -81,7 +81,7 @@ switch (true) do {
 		[] spawn life_fnc_pickAxeUse;
 	};
 	
-	case (EQUAL(_item =="bottledwhiskey")):
+	case (EQUAL(_item,"bottledwhiskey")):
 	{
 		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
 		if(([false,_item,1] call life_fnc_handleInv)) then
@@ -93,7 +93,7 @@ switch (true) do {
 		};
 	};
 	
-	case (EQUAL(_item =="bottleddt420")):
+	case (EQUAL(_item,"bottleddt420")):
 	{
 		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
 		if(([false,_item,1] call life_fnc_handleInv)) then
@@ -105,7 +105,7 @@ switch (true) do {
 		};
 	};
 	
-	case (EQUAL(_item =="bottledbeer")):
+	case (EQUAL(_item,"bottledbeer")):
 	{
 		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
 		if(([false,_item,1] call life_fnc_handleInv)) then
@@ -114,6 +114,17 @@ switch (true) do {
 			life_drink = life_drink + 0.02;
 			if (life_drink < 0.06) exitWith {};
 			[] spawn life_fnc_drinkbeer;
+		};
+	};
+	
+	case (EQUAL(_item,"reins")):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			player setVariable["missingOrgan",false,true];
+			life_thirst = 100;
+			life_hunger = 100;
+			player setFatigue .5;
 		};
 	};
 	

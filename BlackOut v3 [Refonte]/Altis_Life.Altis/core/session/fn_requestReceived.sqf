@@ -49,14 +49,22 @@ switch(playerSide) do {
 	case west: {
 		CONST(life_coplevel, parseNumber(SEL(_this,7)));
 		CONST(life_medicLevel,0);
+		CONST(life_gouvlevel,0);
 		life_blacklisted = SEL(_this,9);
 		life_job = SEL(_this,10);
 	};
 	
+	case east: {
+		CONST(life_gouvlevel, parseNumber(_this select 7));
+		CONST(life_coplevel,0);
+		CONST(life_medicLevel,0);
+	};
+	
 	case civilian: {
 		life_is_arrested = SEL(_this,7);
-		CONST(life_coplevel, 0);
-		CONST(life_medicLevel, 0);
+		CONST(life_coplevel,0);
+		CONST(life_medicLevel,0);
+		CONST(life_gouvlevel,0);
 		
 		life_job = SEL(_this,9);
 		
@@ -78,6 +86,7 @@ switch(playerSide) do {
 	case independent: {
 		CONST(life_medicLevel, parseNumber(SEL(_this,7)));
 		CONST(life_coplevel,0);
+		CONST(life_gouvlevel,0);
 		life_job = SEL(_this,10);
 	};
 };

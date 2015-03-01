@@ -12,7 +12,7 @@ disableSerialization;
 
 waitUntil {!isnull (findDisplay 9000)};
 
-if (CASH <= 6000 ) exitWith { hint "Tu dois avoir $6000 pour envoyer un message."; };
+if (CASH <= 6000 ) exitWith { hint "Tu dois avoir 6000€ pour envoyer un message."; };
 if (playerSide != civilian ) exitWith { hint "Tu n'es pas civil"; };
 CASH = CASH - 6000;
 

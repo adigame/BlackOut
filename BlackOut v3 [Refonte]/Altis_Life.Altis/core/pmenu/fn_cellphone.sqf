@@ -26,7 +26,8 @@ if((FETCH_CONST(life_adminlevel) < 1)) then
 	{
 		switch (side _x) do
 		{
-			case west: {_type = "Cop"};
+			case west: {_type = "Gen"};
+			case east: {_type = "Gouv"};
 			case civilian: {_type = "Civ"};
 			case independent: {_type = "Med"};
 		};

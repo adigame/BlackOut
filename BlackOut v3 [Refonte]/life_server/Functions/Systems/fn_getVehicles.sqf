@@ -21,6 +21,7 @@ if(_pid == "" OR _side == sideUnknown OR _type == "" OR isNull _unit) exitWith {
 _unit = owner _unit;
 _side = switch(_side) do {
 	case west:{"cop"};
+	case east: {"gouv"};
 	case civilian: {"civ"};
 	case independent: {"med"};
 	default {"Error"};

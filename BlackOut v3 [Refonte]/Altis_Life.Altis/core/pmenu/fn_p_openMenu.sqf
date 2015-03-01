@@ -15,6 +15,11 @@ switch(playerSide) do {
 		ctrlShow[2011,false];
 	};
 	
+	case east:
+	{
+		ctrlShow[2011,false]; //GANG MENU
+	};
+	
 	case civilian: {
 		ctrlShow[2012,false];
 	};

@@ -114,8 +114,9 @@ class VirtualItems {
 	VITEMMACRO(blastingcharge, "STR_Item_BCharge", "blastingCharge", 15, 35000, -1, true, -1, "icons\ico_blastingCharge.paa")
 	VITEMMACRO(boltcutter, "STR_Item_BCutter", "boltCutter", 5, 7500, -1, true, -1, "icons\ico_boltcutters.paa")
 	VITEMMACRO(defusekit, "STR_Item_DefuseKit", "defuseKit", 2, 2500, -1, false, -1, "")
-	VITEMMACRO(storagesmall, "STR_Item_StorageBS", "storageSmall", 5, 75000, -1, false, -1, "icons\ico_storageSmall.paa")
-	VITEMMACRO(storagebig, "STR_Item_StorageBL", "storageBig", 10, 150000, -1, false, -1, "icons\ico_storageBig.paa")
+    VITEMMACRO(storagesmall, "STR_Item_StorageBS", "storageSmall", 5, 12000, -1, false, -1, "icons\ico_storageSmall.paa")
+    VITEMMACRO(storagebig, "STR_Item_StorageBL", "storageBig", 10, 20000, -1, false, -1, "icons\ico_storageBig.paa")
+    VITEMMACRO(reins, "STR_Item_Reins", "reins", 12, 20000, 60000, true, -1, "")
 
 	//Mined Items
 	VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 7, -1, -1, false, -1, "")

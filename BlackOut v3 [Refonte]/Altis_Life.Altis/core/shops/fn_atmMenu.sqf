@@ -27,8 +27,9 @@ CONTROL(2700,2701) ctrlSetStructuredText parseText format["<img size='1.7' image
 	if(alive _x && (!(EQUAL(_name,profileName)))) then {
 		switch (side _x) do {
 			case west: {_type = "Gen"};
+			case east: {_type = "Gouv"};
 			case civilian: {_type = "Civ"};
-			case independent: {_type = "INF"};
+			case independent: {_type = "Inf"};
 		};
 		_units lbAdd format["%1 (%2)",_x GVAR ["realname",name _x],_type];
 		_units lbSetData [(lbSize _units)-1,str(_x)];

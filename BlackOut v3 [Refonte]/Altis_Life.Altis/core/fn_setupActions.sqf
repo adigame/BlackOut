@@ -8,6 +8,10 @@ switch (playerSide) do
 {
 	case civilian:
 	{
+		//Take organs
+		life_actions = life_actions + [player addAction["Extraire Organes",life_fnc_takeOrgans,"",0,false,false,"",'
+		!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["missingOrgan",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "hasOrgan") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
+		
 		//Identité
 		life_actions = life_actions + [player addAction["Carte d'identité",life_fnc_civIdentity,"",1,false,true,"",' playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 6 && cursorTarget isKindOf "Man" ']];
 		

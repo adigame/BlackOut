@@ -1637,7 +1637,7 @@
 		<Key ID="STR_NOTF_AbortESC">
 			<Original>Abort available in %1</Original>
 			<German>Abbruch möglich in %1</German>
-			<French>Abandonner disponible dans %1</French>
+			<French>Abandonner dispo dans %1</French>
 			<Italian>Abbandona disponibile in %1</Italian>
 			<Portuguese>Abortar disponível em %1</Portuguese>
 		</Key>

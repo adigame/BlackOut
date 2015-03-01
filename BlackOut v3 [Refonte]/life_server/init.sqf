@@ -80,16 +80,18 @@ onMapSingleClick "if(_alt) then {vehicle player setPos _pos};"; //Local debug fo
 [8,true,12] execFSM "\life_server\FSM\timeModule.fsm";
 
 life_adminLevel = 0;
+life_gouvlevel = 0;
 life_medicLevel = 0;
 life_copLevel = 0;
 CONST(JxMxE_PublishVehicle,"false");
 
 /* Setup radio channels for west/independent/civilian */
-/*
-life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-*/
+
+life_radio_east = radioChannelCreate [[0.61,0.05,0,1], "Gouvernement", "%UNIT_NAME", []];
+life_radio_west = radioChannelCreate [[0.61,0.05,0,1], "Gouvernement", "%UNIT_NAME", []];
+//life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
+//life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Gouvernement", "%UNIT_NAME", []];
+
 /* Set the amount of gold in the federal reserve at mission start */
 fed_bank setVariable ["safe",count playableUnits,true];
 [] spawn TON_fnc_federalUpdate;
