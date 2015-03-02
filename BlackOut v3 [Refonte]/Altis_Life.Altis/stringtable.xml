@@ -3866,7 +3866,7 @@
 		<Key ID="STR_Process_License">
 			<Original>You need $%1 to process without a license!</Original>
 			<German>Du brauchst $%1, um ohne eine Lizenz verarbeiten zu können!</German>
-			<French>Vous devez $1% pour traiter sans permis!</French>
+			<French>Vous devez avoir 1%€ pour traiter sans permis!</French>
 			<Italian>Hai bisogno di €%1 per processare senza la dovuta licenza!</Italian>
 			<Portuguese>Você precisa de R$%1 para processar sem licença!</Portuguese>
 		</Key>
@@ -3880,7 +3880,7 @@
 		<Key ID="STR_Process_Processed2">
 			<Original>You have processed %1 into %2 for $%3</Original>
 			<German>Du hast %1 für $%3 in %2 verarbeitet</German>
-			<French>Vous avez traité %1 en %2 pour $3%</French>
+			<French>Vous avez traité %1 en %2 pour 3%€</French>
 			<Italian>Hai processato %1 in %2 al costo di €%3</Italian>
 			<Portuguese>Você trasformou %1 em %2 por R$%3</Portuguese>
 		</Key>
@@ -3961,7 +3961,7 @@
 		<Key ID="STR_Medic_RevivePay">
 			<Original>%1 has revived you and a fee of $%2 was taken from your bank account for their services.</Original>
 			<German>%1 hat dich wiederbelebt und dafür eine Gebühr von $%2 von deinem Bankkonto eingezogen.</German>
-			<French>%1 vous à réanimé, les fraits de $%2 sont transféré depuit votre compte bancaire pour leurs services.</French>
+			<French>%1 vous a réanimé, les frais de 2€ sont transféré depuit votre compte bancaire pour leurs services.</French>
 			<Italian>%1 ti ha rianimato e sono stati prelevati €%2 dal tuo conto in banca per pagare la prestazione.</Italian>
 			<Portuguese>%1 reviveu você e uma taxa de R$2% foi cobrada da sua conta bancária para os serviços prestados.</Portuguese>
 		</Key>
@@ -3989,7 +3989,7 @@
 		<Key ID="STR_Medic_RevivePayReceive">
 			<Original>You have revived %1 and received $%2 for your services.</Original>
 			<German>Du hast %1 wiederbelebt und $%2 für deine Dienste erhalten.</German>
-			<French>Vous avez réanimé %1 vous avez reçu $%2 pour votre aide</French>
+			<French>Vous avez réanimé %1 vous avez reçu %2€ pour votre aide</French>
 			<Italian>Hai rianimato %1 e hai ricevuto €%2 per la tua prestazione.</Italian>
 			<Portuguese>Você reviveu %1 e recebeu R$%2 de seus serviços prestados.</Portuguese>
 		</Key>
@@ -4012,7 +4012,7 @@
 		<Key ID="STR_NOTF_FRRobbery_Success">
 			<Original>$%1 was stolen from the robbery on the federal reserve</Original>
 			<German>$%1 wurden von den Räubern aus der Zentralbank gestohlen</German>
-			<French>$%1 a été volé à la réserve fédérale.</French>
+			<French>%1€ a été volé à la réserve fédérale.</French>
 			<Italian>€%1 sono stati rubati durante la rapina alla banca</Italian>
 			<Portuguese>R$%1 foi roubado da Reserva Federal.</Portuguese>
 		</Key>
