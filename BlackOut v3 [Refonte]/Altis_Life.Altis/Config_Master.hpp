@@ -214,6 +214,11 @@ class Licenses {
 };
 
 class VirtualShops {
+    class speakeasy {
+        name = "Speakeasy";
+        items[] = { "bottleddt420","bottledwhiskey","bottledbeer" };
+    };
+
 	class market {
 		name = "STR_Shops_Market";
 		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig" };

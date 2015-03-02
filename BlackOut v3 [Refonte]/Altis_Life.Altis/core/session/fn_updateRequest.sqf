@@ -21,24 +21,24 @@ _packet pushBack _array;
 _packet pushBack life_gear;
 switch (playerSide) do {
 	case west: {
-		_packet pushBack _civPosition];
-		_packet pushBack life_is_alive];
+		_packet set[count _packet,_civPosition];
+		_packet set[count _packet,life_is_alive];
 	};
 	
 	case east: {
-		_packet pushBack _civPosition];
-		_packet pushBack life_is_alive];
+		_packet set[count _packet,_civPosition];
+		_packet set[count _packet,life_is_alive];
 	};
 
 	case civilian: {
 		_packet pushBack life_is_arrested;
-		_packet pushBack _civPosition];
-		_packet pushBack life_is_alive];
+		_packet set[count _packet,_civPosition];
+		_packet set[count _packet,life_is_alive];
 	};
 	
 	case independent: {
-		_packet pushBack _civPosition];
-		_packet pushBack life_is_alive];
+		_packet set[count _packet,_civPosition];
+		_packet set[count _packet,life_is_alive];
 	};
 };
 

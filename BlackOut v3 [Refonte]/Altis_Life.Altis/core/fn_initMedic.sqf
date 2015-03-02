@@ -15,7 +15,7 @@ if((FETCH_CONST(life_medicLevel)) < 1) exitWith {
 	sleep 35;
 };
 
-switch (FETCH_CONST(life_donatorlvl)) do 
+switch (FETCH_CONST(life_donator)) do 
 {
 	case 1: { life_paycheck = life_paycheck + 200; }; //Level 1
 	case 2: { life_paycheck = life_paycheck + 600; }; //Level 2

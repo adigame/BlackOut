@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_initCiv.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -14,7 +15,50 @@ civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", ["Land_i_Shop_01_V1_F"
 civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", ["Land_i_Shop_01_V1_F","Land_i_Shop_02_V1_F","Land_i_Shop_03_V1_F","Land_i_Stone_HouseBig_V1_F"],250];
 waitUntil {!(isNull (findDisplay 46))};
 
-switch (FETCH_CONST(life_donatorlvl)) do 
+
+if(!life_is_alive) then {
+	
+	if(life_is_arrested) then {
+		
+		if(life_jail < 1) then {
+		
+			[[player,false,20],"life_fnc_jail",player,false] spawn life_fnc_MP;
+		
+		} else {
+			
+			[[player,false,life_jail],"life_fnc_jail",player,false] spawn life_fnc_MP;
+		};
+
+	} else {
+	
+		[] call life_fnc_spawnMenu;
+		waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
+		waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+	};
+
+} else {
+
+	if(life_is_arrested) then {
+	
+		if(life_jail < 1) then {
+		
+			[[player,false,20],"life_fnc_jail",player,false] spawn life_fnc_MP;
+		
+		} else {
+			
+			[[player,false,life_jail],"life_fnc_jail",player,false] spawn life_fnc_MP;
+		};
+		
+
+	} else {
+
+		player setPos _playerPosition;
+	};
+
+	life_is_alive = true;
+};
+
+switch (FETCH_CONST(life_donator)) do 
 {
 	case 1: { life_paycheck = life_paycheck + 200; }; //Level 1
 	case 2: { life_paycheck = life_paycheck + 600; }; //Level 2
@@ -24,27 +68,5 @@ switch (FETCH_CONST(life_donatorlvl)) do
 	default { life_paycheck = life_paycheck; }; //default for non donators they get nada!
 };
 systemChat format ["Ta paye totale est de %1€",life_paycheck];
-
-if (!life_is_alive) then
-{
-	[] call life_fnc_spawnMenu;
-	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
-	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
-	life_is_alive = true; // Just in-case the player disconnects before choosing a spawn position I guess? Otherwise debug island it is!
-}	
-else 
-{
-	if(life_is_arrested) then
-	{
-		life_is_arrested = false;
-		[player,true] spawn life_fnc_jail;
-	} 
-	else
-	{
-		player setPos _playerPosition;
-		hint format["Tu as été remis à ta dernière position sauvgardée."];
-	};	
-	life_is_alive = true;
-}; 
 
 player addRating 9999999;

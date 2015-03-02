@@ -34,6 +34,7 @@ life_action_gathering = false;
 life_god = false;
 life_frozen = false;
 life_markers = false;
+life_is_alive = false;
 life_vdFoot = viewDistance;
 life_vdCar = viewDistance;
 life_vdAir = viewDistance;
@@ -57,6 +58,7 @@ life_carryWeight = 0; //Represents the players current inventory weight (MUST ST
 life_net_dropped = false;
 life_use_atm = true;
 life_is_arrested = false;
+life_is_alive = false;
 life_delivery_in_progress = false;
 life_thirst = 100;
 life_hunger = 100;
@@ -64,7 +66,6 @@ CASH = 0;
 
 life_job = "";
 life_rebel = 0;
-life_is_alive = false;
 
 life_istazed = false;
 life_vehicles = [];

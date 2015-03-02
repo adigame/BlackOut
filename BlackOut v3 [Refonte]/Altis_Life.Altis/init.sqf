@@ -7,6 +7,7 @@ life_versionInfo = "BlackOut v3";
 //[] execVM "BOS\addKey.sqf";
 //[] execVM "BOS\statusBar.sqf";
 
+/*
 [] spawn 
 {
 	while {true} do 
@@ -16,5 +17,5 @@ life_versionInfo = "BlackOut v3";
 		sleep 101; 
 	}; 
 };
-
+*/
 StartProgress = true;

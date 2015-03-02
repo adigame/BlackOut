@@ -105,14 +105,17 @@ switch (_side) do {
 		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
 		
 		//Save pos.
-		_new = [(_queryResult select 10)] call DB_fnc_mresToArray;
+		_new = [(_queryResult select 9)] call DB_fnc_mresToArray;
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
-		_queryResult set[10,_new];		
+		_queryResult set[9,_new];		
 		
-		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];
+		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
 		// Save pos. end
 		
+		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];
+		
 		_queryResult set[12,([_queryResult select 12,1] call DB_fnc_mresString)];
+		
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
 		_queryResult pushBack (missionNamespace getVariable[format["houses_%1",_uid],[]]);

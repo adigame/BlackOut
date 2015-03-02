@@ -13,33 +13,6 @@ class Socket_Reciever
 	};
 };
 
-class BlackOutScripts
-{
-    tag = "BOS";
-
-    class AntiCheat
-    {
-        file = "BOS\AC";
-        class ACInit {};
-    };
-
-    class statSave
-    {
-        file = "BOS\statSave";
-        class loadAccount {};
-        class saveFuncs {};
-        class saveLoop {};
-    };
-
-    class Logs
-    {
-        file = "BOS\logs";
-        class cashLogs {};
-        class licenceLogs {};
-        class recieveCashLogs {};
-    };
-};
-
 class Life_Client_Core
 {
 	tag = "life";

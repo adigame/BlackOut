@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 File : fn_civIdentity.sqf
 Author: Wawixs
@@ -13,18 +14,20 @@ _ret = _this;
 
 if(playerSide != civilian) exitWith {hint "Tu n'es pas civil...";};
 
-if( isNull _target) then {_target = player;};
+if(!(alive _target)) then {_target = player;};
 
-if( !(_target isKindOf "Man") ) then {_target = player;};
+if(isNull _target) then {_target = player;};
 
-if( !(alive _target) ) then exitWith{};
+if(!(_target isKindOf "Man")) then {_target = player;};
 
-if (license_civ_rebel) then {
-	_message = format["<img size='8' color='#FFFFFF' image='textures\fakeidentity.paa'/><br/><br/><t size='1.5'>%1</t><br/><t size='0.6'>%2</t><br/><t size='0.5'>Civil Bornholm</t>", name player,[_ret select 0] call life_fnc_numberText];
+
+
+if (FETCH_CONST(life_donator)) then {
+	_message = format["<img size='8' color='#FFFFFF' image='textures\fakeidentity.paa'/><br/><br/><t size='1.5'>%1</t><br/><t size='0.6'>%2</t><br/><t size='0.5'>Civil d'Altis</t>", name player,[_ret select 0] call life_fnc_numberText];
 
 	[[player, _message],"life_fnc_civIdentityShown",_target,false] spawn life_fnc_MP;
 } else {
-	_message = format["<img size='8' color='#FFFFFF' image='textures\identity.paa'/><br/><br/><t size='1.5'>%1</t><br/><t size='0.6'>%2</t><br/><t size='0.5'>Civil de Bornholm</t>", name player,[_ret select 0] call life_fnc_numberText];
-
+	_message = format["<img size='8' color='#FFFFFF' image='textures\identity.paa'/><br/><br/><t size='1.5'>%1</t><br/><t size='0.6'>%2</t><br/><t size='0.5'>Civil d'Altis</t>", name player,[_ret select 0] call life_fnc_numberText];
+	
 	[[player, _message],"life_fnc_civIdentityShown",_target,false] spawn life_fnc_MP;
 };
