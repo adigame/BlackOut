@@ -3,7 +3,9 @@
 	File: fn_updateRequest.sqf
 	Author: Tonic
 */
-private["_packet","_array","_flag"];
+private["_packet","_array","_flag","_civPosition"];
+_civPosition = getPos player;
+diag_log format ["%1 <-- Civilian position",_civPosition];
 _packet = [getPlayerUID player,(profileName),playerSide,CASH,BANK];
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case east: {"gouv"}; case civilian: {"civ"}; case independent: {"med"};};
@@ -18,8 +20,25 @@ _packet pushBack _array;
 [] call life_fnc_saveGear;
 _packet pushBack life_gear;
 switch (playerSide) do {
+	case west: {
+		_packet pushBack _civPosition];
+		_packet pushBack life_is_alive];
+	};
+	
+	case east: {
+		_packet pushBack _civPosition];
+		_packet pushBack life_is_alive];
+	};
+
 	case civilian: {
 		_packet pushBack life_is_arrested;
+		_packet pushBack _civPosition];
+		_packet pushBack life_is_alive];
+	};
+	
+	case independent: {
+		_packet pushBack _civPosition];
+		_packet pushBack life_is_alive];
 	};
 };
 

@@ -69,6 +69,8 @@ CREATE TABLE IF NOT EXISTS `players` (
   `donatorlvl` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `civ_gear` text NOT NULL,
   `blacklist` tinyint(1) NOT NULL DEFAULT '0',
+  `civPosition` text,
+  `alive` tinyint(1) NOT NULL DEFAULT '0',
   `rebel` tinyint(1) NOT NULL DEFAULT '0',
   `job` varchar(255),
   PRIMARY KEY (`uid`),

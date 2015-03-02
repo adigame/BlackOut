@@ -23,10 +23,10 @@ _ownerID = owner _ownerID;
 	The other part is well the SQL statement.
 */
 _query = switch(_side) do {
-	case west: {_returnCount = 11; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist, job FROM players WHERE playerid='%1'",_uid];};
-	case east: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, gouv_licenses, gouvlevel, gouv_gear, job FROM players WHERE playerid='%1'",_uid];};
-	case civilian: {_returnCount = 11; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, rebel, job FROM players WHERE playerid='%1'",_uid];};
-	case independent: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, job FROM players WHERE playerid='%1'",_uid];};
+	case west: {_returnCount = 12; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, civPosition, alive, job FROM players WHERE playerid='%1'",_uid];};
+	case east: {_returnCount = 12; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, gouv_licenses, gouvlevel, gouv_gear, civPosition, alive, job FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {_returnCount = 13; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civPosition, alive, rebel, job FROM players WHERE playerid='%1'",_uid];};
+	case independent: {_returnCount = 12; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, civPosition, alive, job FROM players WHERE playerid='%1'",_uid];};
 };
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
@@ -69,26 +69,68 @@ for "_i" from 0 to (count _old)-1 do
 
 _queryResult set[6,_old];
 
+//Take care of the level..
 _new = [(_queryResult select 8)] call DB_fnc_mresToArray;
-if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
-_queryResult set[8,_new];
+		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+		_queryResult set[8,_new];
+		
+//Should be done like this
 //Parse data for specific side.
 switch (_side) do {
 	case west: {
-		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
-		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_mresString)];
+		//Save pos.
+		_new = [(_queryResult select 9)] call DB_fnc_mresToArray;
+		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+		_queryResult set[9,_new];		
+		
+		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
+		// Save pos. end
+		
+		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_mresString)];
+	};
+	
+	case east: {
+		//Save pos.
+		_new = [(_queryResult select 9)] call DB_fnc_mresToArray;
+		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+		_queryResult set[9,_new];		
+		
+		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
+		// Save pos. end
+		
+		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_mresString)];
 	};
 	
 	case civilian: {
 		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
-		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
-		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_mresString)];
+		
+		//Save pos.
+		_new = [(_queryResult select 10)] call DB_fnc_mresToArray;
+		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+		_queryResult set[10,_new];		
+		
+		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];
+		// Save pos. end
+		
+		_queryResult set[12,([_queryResult select 12,1] call DB_fnc_mresString)];
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};
 		_queryResult pushBack (missionNamespace getVariable[format["houses_%1",_uid],[]]);
 		_gangData = _uid spawn TON_fnc_queryPlayerGang;
 		waitUntil{scriptDone _gangData};
 		_queryResult pushBack (missionNamespace getVariable[format["gang_%1",_uid],[]]);
+	};
+	
+	case independent: {
+		//Save pos.
+		_new = [(_queryResult select 9)] call DB_fnc_mresToArray;
+		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+		_queryResult set[9,_new];		
+		
+		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
+		// Save pos. end
+		
+		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_mresString)];
 	};
 };
 

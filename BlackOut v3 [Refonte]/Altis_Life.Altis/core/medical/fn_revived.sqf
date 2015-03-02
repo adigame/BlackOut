@@ -37,9 +37,11 @@ player setPosASL (visiblePositionASL life_corpse);
 life_corpse SVAR ["Revive",nil,TRUE];
 life_corpse SVAR ["name",nil,TRUE];
 [[life_corpse],"life_fnc_corpse",true,false] call life_fnc_MP;
-hideBody life_corpse;
+deleteVehicle life_corpse;
 
 player SVAR ["Revive",nil,TRUE];
 player SVAR ["name",nil,TRUE];
 player SVAR ["Reviving",nil,TRUE];
+life_is_alive = true;
+
 [] call life_fnc_hudUpdate; //Request update of hud.

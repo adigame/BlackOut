@@ -50,14 +50,18 @@ switch(playerSide) do {
 		CONST(life_coplevel, parseNumber(SEL(_this,7)));
 		CONST(life_medicLevel,0);
 		CONST(life_gouvlevel,0);
-		life_blacklisted = SEL(_this,9);
-		life_job = SEL(_this,10);
+		civ_position = SEL(_this,9);
+		life_is_alive = SEL(_this,10);
+		life_job = SEL(_this,11);
 	};
 	
 	case east: {
 		CONST(life_gouvlevel, parseNumber(_this select 7));
 		CONST(life_coplevel,0);
 		CONST(life_medicLevel,0);
+		civ_position = SEL(_this,9);
+		life_is_alive = SEL(_this,10);
+		life_job = SEL(_this,11);
 	};
 	
 	case civilian: {
@@ -66,17 +70,19 @@ switch(playerSide) do {
 		CONST(life_medicLevel,0);
 		CONST(life_gouvlevel,0);
 		
-		life_job = SEL(_this,9);
+		civ_position = SEL(_this,9);
+		life_is_alive = SEL(_this,10);
 		
-		life_rebel = SEL(_this,10);
+		ife_rebel = SEL(_this,11);
+		life_job = SEL(_this,12);
 		
-		life_houses = SEL(_this,11);
+		life_houses = SEL(_this,13);
 		{
 			_house = nearestBuilding (call compile format["%1", SEL(_x,0)]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
-		life_gangData = SEL(_this,12);
+		life_gangData = SEL(_this,14);
 		if(!(EQUAL(count life_gangData,0))) then {
 			[] spawn life_fnc_initGang;
 		};
@@ -87,7 +93,9 @@ switch(playerSide) do {
 		CONST(life_medicLevel, parseNumber(SEL(_this,7)));
 		CONST(life_coplevel,0);
 		CONST(life_gouvlevel,0);
-		life_job = SEL(_this,10);
+		civ_position = SEL(_this,9);
+		life_is_alive = SEL(_this,10);
+		life_job = SEL(_this,11);
 	};
 };
 

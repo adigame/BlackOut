@@ -1,5 +1,4 @@
-/*  File Original: fn_copInteractionMenu.sqf
-    Author: TONIC
+/*  
     File: fn_civInteractionMenu.sqf
     Author: Wawixs
     
@@ -9,7 +8,7 @@
 #define Btn1 37450  //Demenotter
 #define Btn2 37451  //Escorter
 #define Btn3 37452  //Mettre dans le véhicule
-#define Btn4 37453  //Mettre dans le véhicule
+#define Btn4 37453  //Vol d'organes
 #define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4"];
@@ -48,6 +47,11 @@ _Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 _Btn4 ctrlSetText localize "STR_pInAct_Organes";
 _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_takeOrgans;";
 
+//Check that you are near a place to take organs
+if(!((player distance (getMarkerPos "org_gen") < 5))) then 
+{
+	_Btn4 ctrlEnable false;
+};
 
 _Btn5 ctrlShow false;
 _Btn6 ctrlShow false;
