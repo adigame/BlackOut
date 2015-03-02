@@ -22,13 +22,10 @@ if(life_inv_kidney >= 2) exitWith {hint "Tu peux pas prendre plus de 2 organes!"
 
 if(!([true,"kidney",1] call life_fnc_handleInv)) exitWith {hint "Tu n'as pas assez de place!"};//if no room for kidney, you cannot take their kidney, duh, waste not want not
 
-if(!((player distance (getMarkerPos "org_gen") < 15))) then 
-{
-	life_action_inUse = true;//sets action to true as to prevent kidney spammming!!!!!!!!
-	player setVariable["hasOrgan",true,true];//sets variable on thief, so as not to consistently take organs, set to 5 minute cooldown
-	player playMove "AinvPknlMstpSnonWnonDnon_medic";//makes the thief do an animation as to seem like they are doing surgery
-	sleep 3;//length of action, had weird results with any higher - obv not realistic, but whatever
-	_unit setVariable["missingOrgan",true,true];//sets the missing organ variable so effects can take place
-	life_action_inUse = false;//once variables are set, and actions stop, then you can use scrolly wheely
-	[[player], "life_fnc_hasOrgan", _unit, false] spawn life_fnc_MP;//this then calls the fn_hasOrgan.sqf on the thief
-};
+life_action_inUse = true;//sets action to true as to prevent kidney spammming!!!!!!!!
+player setVariable["hasOrgan",true,true];//sets variable on thief, so as not to consistently take organs, set to 5 minute cooldown
+player playMove "AinvPknlMstpSnonWnonDnon_medic";//makes the thief do an animation as to seem like they are doing surgery
+sleep 3;//length of action, had weird results with any higher - obv not realistic, but whatever
+_unit setVariable["missingOrgan",true,true];//sets the missing organ variable so effects can take place
+life_action_inUse = false;//once variables are set, and actions stop, then you can use scrolly wheely
+[[player], "life_fnc_hasOrgan", _unit, false] spawn life_fnc_MP;//this then calls the fn_hasOrgan.sqf on the thief

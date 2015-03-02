@@ -261,6 +261,8 @@ class Life_Client_Core
 		class civLoadout {};
         class freezePlayer {};
         class civInteractionMenu {};
+        class civIdentity {};
+        class civIdentityShown {};
         class hasOrgan {};
 	};
 	
@@ -305,6 +307,8 @@ class Life_Client_Core
 		class radar {};
 		class questionDealer {};
 		class copInteractionMenu {};
+        class copShowLicense {};
+        class copLicenseShown {};
 		class sirenLights {};
 		class licenseCheck {};
 		class licensesRead {};

@@ -8,12 +8,8 @@ switch (playerSide) do
 {
 	case civilian:
 	{
-		//Take organs
-		life_actions = life_actions + [player addAction["Extraire Organes",life_fnc_takeOrgans,"",0,false,false,"",'
-		!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable ["missingOrgan",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "hasOrgan") && !(player getVariable "transporting") && animationState cursorTarget == "Incapacitated"']];
-		
 		//Identité
-		life_actions = life_actions + [player addAction["Carte d'identité",life_fnc_civIdentity,"",1,false,true,"",' playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 6 && cursorTarget isKindOf "Man" ']];
+		life_actions = life_actions + [player addAction["Carte d'identité",life_fnc_civIdentity,"",1,false,false,"",' playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 6 && cursorTarget isKindOf "Man" ']];
 		
 		//Drop fishing net
 		life_actions = [player addAction[localize "STR_pAct_DropFishingNet",life_fnc_dropFishingNet,"",0,false,false,"",'
@@ -42,6 +38,6 @@ switch (playerSide) do
 		//Insigne de police
 		life_actions = life_actions + [player addAction["<t color='#00FF00'>Insigne de police</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == west && !isNull cursorTarget && (player distance cursorTarget) < 6 && (player distance cursorTarget) < 6 && cursorTarget isKindOf "Man" ']];
 		//Saisir Armes et Chargeurs
-		life_actions = life_actions + [player addAction["<t color='#ED7F10'>Saisir Arme</t>",life_fnc_seizePlayerWeapon,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "restrained")']];
+		life_actions = life_actions + [player addAction["<t color='#ED7F10'>Saisir Arme</t>",life_fnc_seizePlayerWeapon,cursorTarget,0,false,false,"",' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "restrained")']];
 	};
 };

@@ -18,7 +18,7 @@ _escSync = {
 		disableSerialization;
 		private["_abortButton","_timeStamp"];
 		_abortButton = CONTROL(49,104);
-		_timeStamp = time + 1;
+		_timeStamp = time + 15;
 		
 		waitUntil {
 			disableSerialization;

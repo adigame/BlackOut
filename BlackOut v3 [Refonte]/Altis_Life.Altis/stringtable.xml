@@ -595,7 +595,7 @@
 		<Key ID="STR_Gang_PriceTxt">
 			<Original>To create a gang it costs $%1</Original>
 			<German>Eine Gang zu erstellen kostet $%1</German>
-			<French>Pour créer un gang ça coute %1$</French>
+			<French>Pour créer un gang ça coute %1€</French>
 			<Italian>Creare una gang costa €%1</Italian>
 			<Portuguese>Criar uma Gangue custa R$%1</Portuguese>
 		</Key>
@@ -616,7 +616,7 @@
 		<Key ID="STR_Gang_MainMenu">
 			<Original>You aren't in a gang currently, what do you want to do?</Original>
 			<German>Du bist in keiner Gang, was möchtest du machen?</German>
-			<French>Tu n'as pas de gang actuellement</French>
+			<French>Tu n'as pas de gang actuellement, que veux-tu faire ?</French>
 			<Italian>Non sei in una gang, cosa intendi fare?</Italian>
 			<Portuguese>Você não está em uma Gangue, o que deseja fazer?</Portuguese>
 		</Key>
@@ -4096,6 +4096,10 @@
 			<French>Démenotter</French>
 			<Italian>Togli Manette</Italian>
 			<Portuguese>Soltar</Portuguese>
+		</Key>
+		<Key ID="STR_pInAct_Organes">
+			<Original>Take organs</Original>
+			<French>Prendre son rein</French>
 		</Key>
 		<Key ID="STR_pInAct_checkLicenses">
 			<Original>Check Licenses</Original>

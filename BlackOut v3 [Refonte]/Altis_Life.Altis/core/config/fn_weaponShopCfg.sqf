@@ -241,7 +241,7 @@ switch(_shop) do
 		};
 	};		
 	
-		case "cop_capitaine":
+	case "cop_capitaine":
 	{
 		switch(true) do
 		{
@@ -585,7 +585,7 @@ switch(_shop) do
 						["V_Rangemaster_belt",nil,50],
 						["16Rnd_9x21_Mag",nil,10],
 						["9Rnd_45ACP_Mag",nil,10],
-						["6Rnd_45ACP_Cylinder",nil,10],
+						["6Rnd_45ACP_Cylinder",nil,10]
 					]
 				];
 			};
