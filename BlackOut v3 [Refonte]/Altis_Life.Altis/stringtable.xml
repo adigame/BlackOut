@@ -4523,21 +4523,21 @@
 		<Key ID="STR_Shop_Unimpound_Success">
 			<Original>You have unimpounded your %1 for $%3</Original>
 			<German>Du hast deinen %1 für $%3 ausgelöst</German>
-			<French>Vous avez sorti votre %1 pour $%3</French>
+			<French>Vous avez sortis votre %1 pour %3€</French>
 			<Italian>Hai ritirato dal sequestro il tuo %1 al costo di €%3</Italian>
 			<Portuguese>Você liberou %1 for R$%3</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Veh_DidntPick">
 			<Original>You did not pick a vehicle!</Original>
 			<German>Du hast kein Fahrzeug ausgewählt!</German>
-			<French>Vous n'avez pas choisi de véhicule!</French>
+			<French>Vous n'avez pas choisis de véhicule!</French>
 			<Italian>Non hai selezionato un veicolo!</Italian>
 			<Portuguese>Você não consegiu roubar o veiculo!</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Veh_NotEnough">
 			<Original>You do not have enough cash to purchase this vehicle.\n\nAmount Lacking: $%1</Original>
 			<German>Du hast nicht genug Geld, um das Fahrzeug zu kaufen.\n\nFehlender Betrag: $%1</German>
-			<French>Vous n'avez pas assez d'argent pour acheter ce véhicule \n\nArgent Manquant: $%1</French>
+			<French>Vous n'avez pas assez d'argent pour acheter ce véhicule \n\nArgent Manquant: %1€</French>
 			<Italian>Non hai fondi sufficienti per comprare questo veicolo.\n\nTi mancano: €%1</Italian>
 			<Portuguese>Você não tem dinheiro suficiente para comprar esse veiculo.\n\nFaltam: R$%1</Portuguese>
 		</Key>
@@ -4558,7 +4558,7 @@
 		<Key ID="STR_Shop_Veh_Bought">
 			<Original>You bought a %1 for $%2</Original>
 			<German>Du kaufst eine(n) %1 für $%2</German>
-			<French>Vous avez acheté un %1 pour $%2</French>
+			<French>Vous avez acheté un %1 pour %2€</French>
 			<Italian>Hai comprato un %1 al costo di €%2</Italian>
 			<Portuguese>Você comprou %1 por R$%2</Portuguese>
 		</Key>
@@ -4747,14 +4747,14 @@
 		<Key ID="STR_Shop_Weapon_BoughtGang">
 			<Original>You bought a %1 for &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; with the gangs funds.</Original>
 			<German>Du hast eine %1 für &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; mit dem Geld der Gang gekauft.</German>
-			<French>Vous avez acheté un %1 pour &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; avec les fonds du gang.</French>
+			<French>Vous avez acheté un %1 pour &lt;t color='#8cff9b'&gt;%2€&lt;/t&gt; avec les fonds du gang.</French>
 			<Italian>Hai comprato un %1 al costo di &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; con i fondi della Gang.</Italian>
 			<Portuguese>Você comprou %1 por &lt;t color='#8cff9b'&gt;R$%2&lt;/t&gt; com o dinheiro da gangue.</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Weapon_BoughtItem">
 			<Original>You bought a %1 for &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt;</Original>
 			<German>Du hast eine %1 für &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; gekauft</German>
-			<French>Vous avez acheté un %1 pour &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt;</French>
+			<French>Vous avez acheté un %1 pour &lt;t color='#8cff9b'&gt;%2€&lt;/t&gt;</French>
 			<Italian>Hai comprato un %1 al costo di &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt;</Italian>
 			<Portuguese>Você comprou %1 por &lt;t color='#8cff9b'&gt;R$%2&lt;/t&gt;</Portuguese>
 		</Key>

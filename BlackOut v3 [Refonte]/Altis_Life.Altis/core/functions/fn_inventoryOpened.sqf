@@ -11,7 +11,7 @@ _unit = SEL(_this,0);
 _container = SEL(_this,1);
 
 _isPack = FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,typeOf _container,"isBackpack");
-if(EQUAL(_isPack,1)) exitWith {
+if(EQUAL(_isPack,1) && !(animationState cursorTarget == "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon") OR !(animationState cursorTarget == "Incapacitated") OR !(cursorTarget getVariable "restrained")) exitWith {
 	hint localize "STR_MISC_Backpack";
 	true;
 };
