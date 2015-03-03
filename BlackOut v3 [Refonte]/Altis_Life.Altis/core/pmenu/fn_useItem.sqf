@@ -117,7 +117,7 @@ switch (true) do {
 		};
 	};
 	
-	case (EQUAL(_item,"reins")):
+	case (EQUAL(_item,"rein")):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{

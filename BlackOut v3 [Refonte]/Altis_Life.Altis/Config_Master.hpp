@@ -116,7 +116,7 @@ class VirtualItems {
 	VITEMMACRO(defusekit, "STR_Item_DefuseKit", "defuseKit", 2, 2500, -1, false, -1, "")
     VITEMMACRO(storagesmall, "STR_Item_StorageBS", "storageSmall", 5, 12000, -1, false, -1, "icons\ico_storageSmall.paa")
     VITEMMACRO(storagebig, "STR_Item_StorageBL", "storageBig", 10, 20000, -1, false, -1, "icons\ico_storageBig.paa")
-    VITEMMACRO(reins, "Reins", "reins", 12, 20000, 60000, true, -1, "")
+    VITEMMACRO(rein, "Rein", "rein", 12, 20000, 60000, true, -1, "")
 
 	//Mined Items
 	VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 7, -1, -1, false, -1, "")
@@ -217,6 +217,11 @@ class VirtualShops {
     class speakeasy {
         name = "Speakeasy";
         items[] = { "bottleddt420","bottledwhiskey","bottledbeer" };
+    };
+
+    class organ {
+        name = "Acheteur d'organes";
+        items[] = { "rein" };
     };
 
 	class market {
