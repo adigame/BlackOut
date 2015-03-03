@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Bouton_Jouer.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Bouton_Jouer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 106</value>
+  </data>
+  <data name="Label_nb_mos.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="Bouton_Jouer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 27.75pt</value>
+  </data>
+  <data name="Bouton_Télécharger.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 360</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Parcourir.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Text_Chemin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Barre_Chargement_Total.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;Barre_Chargement_Fichier.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Barre_Chargement_Fichier.Name" xml:space="preserve">
+    <value>Barre_Chargement_Fichier</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wEYGh5XDCRF4QgfP9kBBQoz////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wEAAAAFRElPsx5Ffv8LNHL/AxAjg////wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////ATw+QpsfPnH/By5u/wkWLtktEQCBKhECcxAHATcAAAAJAQEBHQMC
+        Ah3///8B////Af///wH///8B////ATU1NEd2dnXTTlls/wshSf9FIxj/jTcE/404Bf9pLAXpEw8Rtwka
+        N90jKC/FBwUCHf///wH///8B////AQAAAA+CgoLD09PT/8HDw/9xW1H/jTkH/6NIDP+FUCP/nkoQ/0gn
+        F/8FKmT/LEBg/SQjI3n///8B////Af///wEAAAALb29vucTExP/u7uv/XlqB/ykdif9kPz3/PpWa/35Z
+        Mv9LRTb/BzFs/x5Dff8zNz3JAAAAD////wH///8B////ASIiIj19fXzZgYSt/xonn/8GGcP/SC1Z/1hI
+        Sf9WMi7/KSwk2QcmUO0NLlz5EhcekQAAAAf///8B////Af///wH///8BAQAAJQIGPaUIFHv9GS5//1h5
+        mf85UIL/IS1T/wYIHocBBgs/AggPSwAAAA3///8B////Af///wH///8B////ARckKitIcIXPWIac/3i1
+        0v+ByO7/HDRh/wgXPP8CCifrAAAAP////wH///8B////Af///wH///8B////Af///wEfMUJ1Z6XL/2mh
+        vv9ajK//UIGi/xYrR/8xU3T/RXCP/ylCULcAAAAR////Af///wH///8B////Af///wEAAAAHCBBYsyxK
+        s/8lQ33/NFh6/3Ktyv9onbf/jNP2/4za//9Yjq/zCAsMRf///wH///8B////Af///wH///8B////AQMJ
+        PG0IGZ/xCiKu/zJQm/9XhsT/Xo6o/26mvv9nkaf/fZOg/0tKSr8AAAAV////Af///wH///8B////Af//
+        /wEAAAADBRJRkw0z2v8LKMP/DSG3/ylNx/87X5f/O0BK/6emp/+oqKj9MDAwZ////wH///8B////Af//
+        /wH///8B////AQEEET0KMp7tDkz3/zpYxP9GV8n/HDKp/w8dcP8/Q17/tLSz/0hISIn///8B////Af//
+        /wH///8B////Af///wEAAAADBBc/ewpDuPdDcdr/c4Xb/zM/a+MfISuxV1ha5V9fX68YGBgv////Af//
+        /wH///8B////Af///wH///8B////AQAAAAsDFjlzCzB33xo4c/EJFzN1AAAADwoKCi8EBAQL////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Launcher CoopGamePlays</value>
+  </data>
+  <data name="Bouton_Forum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 21</value>
+  </data>
+  <data name="Bouton_Parcourir.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Bouton_Jouer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="Bouton_Parcourir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 28</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Forum.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Bouton_Forum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>827, 583</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Télécharger.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Propos.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Bouton_Télécharger.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 21.75pt</value>
+  </data>
+  <data name="Bouton_Télécharger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 106</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>801, 21</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Veuillez sélectionner votre dossier ArmA 3</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="Bouton_Parcourir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label_Fichiers_sur_fichiers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 470</value>
+  </data>
+  <data name="&gt;&gt;Text_Chemin.Name" xml:space="preserve">
+    <value>Text_Chemin</value>
+  </data>
+  <data name="&gt;&gt;Text_Chemin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Télécharger.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_nb_mos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Label_Fichiers_sur_fichiers.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="Label_Fichiers_sur_fichiers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 26</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Forum.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Bouton_Propos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Propos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Barre_Chargement_Fichier.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Barre_Chargement_Total.Size" type="System.Drawing.Size, System.Drawing">
+    <value>801, 23</value>
+  </data>
+  <data name="&gt;&gt;Label_fichier_nb_octet.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Barre_Chargement_Fichier.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Bouton_Options.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 551</value>
+  </data>
+  <data name="Barre_Chargement_Fichier.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="Bouton_Télécharger.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;Label_fichier_nb_octet.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_nb_mos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Barre_Chargement_Fichier.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_Fichiers_sur_fichiers.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Bouton_Parcourir.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Label_nb_mos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Text_Chemin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 340</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Parcourir.Name" xml:space="preserve">
+    <value>Bouton_Parcourir</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Parcourir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bouton_Jouer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Label_fichier_nb_octet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 13</value>
+  </data>
+  <data name="Bouton_Forum.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Jouer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Jouer.Name" xml:space="preserve">
+    <value>Bouton_Jouer</value>
+  </data>
+  <data name="&gt;&gt;Label_Fichiers_sur_fichiers.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Label_nb_mos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 23</value>
+  </data>
+  <data name="Label_nb_mos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Options.Name" xml:space="preserve">
+    <value>Bouton_Options</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Options.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Barre_Chargement_Total.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 499</value>
+  </data>
+  <data name="Label_Fichiers_sur_fichiers.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 311</value>
+  </data>
+  <data name="Label_fichier_nb_octet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 531</value>
+  </data>
+  <data name="&gt;&gt;Barre_Chargement_Total.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Options.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Text_Chemin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Label_Fichiers_sur_fichiers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;Barre_Chargement_Total.Name" xml:space="preserve">
+    <value>Barre_Chargement_Total</value>
+  </data>
+  <data name="&gt;&gt;Barre_Chargement_Total.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bouton_Télécharger.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Télécharger.Name" xml:space="preserve">
+    <value>Bouton_Télécharger</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Télécharger.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Options.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Barre_Chargement_Total.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Bouton_Jouer.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="Text_Chemin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="Text_Chemin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>449, 20</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Jouer.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Bouton_Télécharger.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Bouton_Forum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 551</value>
+  </data>
+  <data name="Label_fichier_nb_octet.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Jouer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Bouton_Jouer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 362</value>
+  </data>
+  <data name="Barre_Chargement_Fichier.Size" type="System.Drawing.Size, System.Drawing">
+    <value>801, 23</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Launcher</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>843, 622</value>
+  </data>
+  <data name="Bouton_Propos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>629, 551</value>
+  </data>
+  <data name="Label_fichier_nb_octet.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="Bouton_Propos.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;Label_Fichiers_sur_fichiers.Name" xml:space="preserve">
+    <value>Label_Fichiers_sur_fichiers</value>
+  </data>
+  <data name="&gt;&gt;Label_Fichiers_sur_fichiers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="Barre_Chargement_Total.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="Bouton_Parcourir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>663, 335</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>843, 622</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="Bouton_Parcourir.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="Bouton_Propos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 21</value>
+  </data>
+  <data name="Bouton_Télécharger.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;Label_fichier_nb_octet.Name" xml:space="preserve">
+    <value>Label_fichier_nb_octet</value>
+  </data>
+  <data name="&gt;&gt;Label_fichier_nb_octet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bouton_Forum.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Propos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Propos.Name" xml:space="preserve">
+    <value>Bouton_Propos</value>
+  </data>
+  <data name="Bouton_Options.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Forum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Forum.Name" xml:space="preserve">
+    <value>Bouton_Forum</value>
+  </data>
+  <data name="Barre_Chargement_Fichier.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 526</value>
+  </data>
+  <data name="&gt;&gt;Bouton_Parcourir.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Bouton_Propos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Bouton_Options.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="Bouton_Télécharger.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;Label_nb_mos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_nb_mos.Name" xml:space="preserve">
+    <value>Label_nb_mos</value>
+  </data>
+  <data name="Label_nb_mos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 472</value>
+  </data>
+  <data name="&gt;&gt;Text_Chemin.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Bouton_Options.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 21</value>
+  </data>
+</root>

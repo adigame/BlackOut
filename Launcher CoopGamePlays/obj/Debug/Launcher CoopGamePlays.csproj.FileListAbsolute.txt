@@ -1,0 +1,6 @@
+C:\Users\Mike\Videos\Launcher CoopGamePlays\obj\Debug\Launcher CoopGamePlays.csprojResolveAssemblyReference.cache
+C:\Users\Mike\Videos\Launcher CoopGamePlays\obj\Debug\Launcher_CoopGamePlay_V_0_2.Form2.resources
+C:\Users\Mike\Videos\Launcher CoopGamePlays\obj\Debug\Launcher_CoopGamePlay_V_0_2.Form3.resources
+C:\Users\Mike\Videos\Launcher CoopGamePlays\obj\Debug\Launcher_CoopGamePlay_V_0_2.Launcher.resources
+C:\Users\Mike\Videos\Launcher CoopGamePlays\obj\Debug\Launcher_CoopGamePlay_V_0_2.Properties.Resources.resources
+C:\Users\Mike\Videos\Launcher CoopGamePlays\obj\Debug\Launcher CoopGamePlays.csproj.GenerateResource.Cache
