@@ -16,47 +16,26 @@ civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", ["Land_i_Shop_01_V1_F"
 waitUntil {!(isNull (findDisplay 46))};
 
 
-if(!life_is_alive) then {
-	
-	if(life_is_arrested) then {
-		
-		if(life_jail < 1) then {
-		
-			[[player,false,20],"life_fnc_jail",player,false] spawn life_fnc_MP;
-		
-		} else {
-			
-			[[player,false,life_jail],"life_fnc_jail",player,false] spawn life_fnc_MP;
-		};
-
-	} else {
-	
-		[] call life_fnc_spawnMenu;
-		waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
-		waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
-	};
-
-} else {
-
-	if(life_is_arrested) then {
-	
-		if(life_jail < 1) then {
-		
-			[[player,false,20],"life_fnc_jail",player,false] spawn life_fnc_MP;
-		
-		} else {
-			
-			[[player,false,life_jail],"life_fnc_jail",player,false] spawn life_fnc_MP;
-		};
-		
-
-	} else {
-
+if (!life_is_alive) then
+{
+	[] call life_fnc_spawnMenu;
+	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
+	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+	life_is_alive = true; // Just in-case the player disconnects before choosing a spawn position I guess? Otherwise debug island it is!
+}	
+else 
+{
+	if(life_is_arrested) then
+	{
+		life_is_arrested = false;
+		[player,true] spawn life_fnc_jail;
+	} 
+		else 
+	{
 		player setPos _playerPosition;
-	};
-
+	};	
 	life_is_alive = true;
-};
+}; 
 
 switch (FETCH_CONST(life_donator)) do 
 {

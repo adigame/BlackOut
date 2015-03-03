@@ -49,7 +49,6 @@ else
 {
 	{
 		player setPos _playerPosition;
-		hint format["Tu as été remis à ta dernière position sauvgardée."];
 	};	
 	life_is_alive = true;
 }; 
