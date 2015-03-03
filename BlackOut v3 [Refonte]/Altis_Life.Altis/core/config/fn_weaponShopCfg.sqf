@@ -41,9 +41,7 @@ switch(_shop) do
 				        ["Chemlight_red",nil,300],
 				        ["Chemlight_yellow",nil,300],
 				        ["Chemlight_green",nil,300],
-				        ["Chemlight_blue",nil,300],
-						["C1987_MP7_nwu","MP7",15000],
-						["C1987_40Rnd_46x30_mp7","Chargeur MP7",500]					
+				        ["Chemlight_blue",nil,300]					
 					]
 				];
 			};
@@ -299,8 +297,6 @@ switch(_shop) do
 						["hlc_10rnd_12g_buck_S12","Chargeur SAIGA 12K",500],
 						["R3F_Minimi","MINIMI PARA",30000],
 						["R3F_200Rnd_556x45_MINIMI","Chargeur MINIMI PARA",2500],
-						["C1987_MP7_nwu","MP7",15000],
-						["C1987_40Rnd_46x30_mp7","Chargeur MP7",500],
 						["Cha_Pecheneg","PKP PECHENEG",30000],
 						["Cha_100Rnd_762x54_PK","Chargeur PKP PECHENEG",2500],
 						["hlc_rifle_aek971","ZID",20000],
@@ -403,8 +399,6 @@ switch(_shop) do
 						["R3F_30Rnd_556x45_FAMAS","Chargeur FAMAS G2 M203",100],
 						["R3F_Minimi","MINIMI PARA",600],
 						["R3F_200Rnd_556x45_MINIMI","Chargeur MINIMI PARA",30],
-						["C1987_MP7_nwu","MP7",300],
-						["C1987_40Rnd_46x30_mp7","Chargeur MP7",10],
 						["Cha_Pecheneg","PKP PECHENEG",600],
 						["Cha_100Rnd_762x54_PK","Chargeur PKP PECHENEG",30],
 						["hlc_rifle_aek971","ZID",500],
