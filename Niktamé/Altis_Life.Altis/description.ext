@@ -1,6 +1,5 @@
-author = "Kim, Tony & Mika";
-onLoadName = "AltiCity";
-onLoadMission = "Une naissance, une vie, une mort";
+author = "Jordan, OKAN";
+onLoadName = "BlackOut v3";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 1;
