@@ -50,21 +50,7 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 };
 
 switch (_code) do
-{
-	//Space key for Jumping
-	/*
-	case 57:
-	{
-		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
-		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
-			jumpActionTime = time; //Update the time.
-			[player,true] spawn life_fnc_jumpFnc; //Local execution
-			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution 
-			_handled = true;
-		};
-	};
-	*/
-	
+{	
 	//Map Key
 	case _mapKey:
 	{
@@ -118,11 +104,6 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		
 		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
-		{
-			[] call life_fnc_restrainAction;
-		};
-		
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 && !life_rebel) then
 		{
 			[] call life_fnc_restrainAction;
 		};
@@ -339,16 +320,6 @@ switch (_code) do
             };
         };
     };
-	//Pompes (Shift + Num 8)
-	case 72:
-	{
-	if(_shift) then {_handled = true;};
-
-		if ((_shift) && (vehicle player == player)) then {
-
-			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
-		};
-	};
 };
 
 _handled;

@@ -28,10 +28,11 @@ switch (playerSide) do
 		
 		//Kidnapping KNOCKOUT
         life_actions = [player addAction["<t size='1.3'><t color='#FF0000'>Kidnapper</t></t>",life_fnc_restrainAction,cursorTarget,9999999,false,false,"",'
-        !isNull cursorTarget && player distance cursorTarget < 5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 ']];
+        !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && animationState cursorTarget == "Incapacitated" && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 && life_rebel ']];
 		//Kidnapping SURRENDER
         life_actions = [player addAction["<t size='1.3'><t color='#FF0000'>Kidnapper</t></t>",life_fnc_restrainAction,cursorTarget,9999999,false,false,"",'
-        !isNull cursorTarget && player distance cursorTarget < 5 && isPlayer cursorTarget && animationState cursorTarget == "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 ']];	};
+        !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && animationState cursorTarget == "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 && life_rebel ']];	
+	};
 	
 	case west:
 	{	
