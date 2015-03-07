@@ -1,0 +1,1168 @@
+=====================================================================
+== C:\arma3server\arma3server.exe
+== "C:\arma3server\arma3server.exe"  -mod=@life_server;@extDB;@BlackOut -noPause -noSound -name=DefaultServer -profiles=config -config=config\server.cfg -cfg=config\basic.cfg -port=2306 -ip=195.154.50.144
+
+Original output filename: Arma3Retail_Server
+Exe timestamp: 2015/03/02 15:29:40
+Current time:  2015/03/07 00:41:37
+
+Type: Public
+Branch: Stable
+Version: 1.40.129533
+
+Allocator: C:\arma3server\dll\tbb4malloc_bi.dll
+=====================================================================
+
+ 0:41:37 ManagerConfig()
+ 0:41:37 Item STR_CONTROLS_TOOLTIPS_ACTION_IN_MAP listed twice
+ 0:41:37 Item str_usract_action_in_map listed twice
+ 0:42:11 Item STR_prpl_benelli_desc_short listed twice
+ 0:42:11 Item STR_prpl_benelli18_libdesc listed twice
+ 0:42:11 Conflicting addon caf_ag_equip_me_backpack in 'caf_ag_equip_c\middleeast\backpacks\', previous definition in 'caf_ag_equip_c\easteurope\backpacks\'
+ 0:42:12 Conflicting addon dar_ilpdn in 'dar_ilpdn\', previous definition in 'dar_ilpd3\'
+ 0:42:12 Conflicting addon DAR_Tahoe_F in 'dar_tahoeppv\', previous definition in 'dar_tahoeems\'
+ 0:42:12 Conflicting addon Orel_Airs in 'orel_airs\hang_glider\', previous definition in 'orel_airs\heli_light_01\'
+ 0:42:12 Conflicting addon Orel_Characters in 'orel_characters\headgear\', previous definition in 'orel_characters\vest\'
+ 0:42:12 Conflicting addon Orel_Characters in 'orel_characters\glasses\', previous definition in 'orel_characters\vest\'
+ 0:42:12 Conflicting addon Orel_Characters in 'orel_characters\heads\', previous definition in 'orel_characters\vest\'
+ 0:42:12 Conflicting addon Orel_Characters in 'orel_characters\backpacks\', previous definition in 'orel_characters\vest\'
+ 0:42:12 Conflicting addon Orel_Characters in 'orel_characters\uniforms\', previous definition in 'orel_characters\vest\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\panneaux_objets\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\feu_rouge\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\herse\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\artifice\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\borne_escamotable\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\barriere_chantier\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\cannabis\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\fire\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\evidence_markers\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\guillotine\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\iron_barrier\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\radar\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\football\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\panneaux_pubs\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Objects in 'orel_objects\radar_pedagogique\', previous definition in 'orel_objects\npc\'
+ 0:42:12 Conflicting addon Orel_Soft in 'orel_soft\quad\', previous definition in 'orel_soft\master\'
+ 0:42:12 Conflicting addon Orel_Soft in 'orel_soft\agora\', previous definition in 'orel_soft\master\'
+ 0:42:12 Conflicting addon Orel_Soft in 'orel_soft\clyo\', previous definition in 'orel_soft\master\'
+ 0:42:12 Conflicting addon Orel_Soft in 'orel_soft\beyron\', previous definition in 'orel_soft\master\'
+ 0:42:12 Conflicting addon Orel_Soft in 'orel_soft\monster\', previous definition in 'orel_soft\master\'
+ 0:42:12 Conflicting addon Orel_Soft in 'orel_soft\f308\', previous definition in 'orel_soft\master\'
+ 0:42:12 Conflicting addon Orel_Soft_G1 in 'orel_soft_g1\payenne\', previous definition in 'orel_soft_g1\dingo\'
+ 0:42:12 Conflicting addon Orel_Soft_G1 in 'orel_soft_g1\rangoo\', previous definition in 'orel_soft_g1\dingo\'
+ 0:42:12 Conflicting addon Orel_Structures in 'orel_structures\concessionaire\', previous definition in 'orel_structures\macumba\'
+ 0:42:12 Conflicting addon Orel_Structures in 'orel_structures\paint_car\', previous definition in 'orel_structures\macumba\'
+ 0:42:12 Conflicting addon Orel_Structures in 'orel_structures\pharmacie\', previous definition in 'orel_structures\macumba\'
+ 0:42:12 Conflicting addon Orel_Structures in 'orel_structures\prison\', previous definition in 'orel_structures\macumba\'
+ 0:42:12 Conflicting addon Orel_Weapons in 'orel_weapons\fauche\', previous definition in 'orel_weapons\box_orel\'
+ 0:42:12 Conflicting addon Orel_Weapons in 'orel_weapons\ray_gun\', previous definition in 'orel_weapons\box_orel\'
+ 0:42:12 Conflicting addon Orel_Weapons in 'orel_weapons\matraque\', previous definition in 'orel_weapons\box_orel\'
+ 0:42:12 Conflicting addon Orel_Weapons in 'orel_weapons\baseball_bat\', previous definition in 'orel_weapons\box_orel\'
+ 0:42:12 Conflicting addon Orel_Weapons in 'orel_weapons\flashball\', previous definition in 'orel_weapons\box_orel\'
+ 0:42:12 Conflicting addon PG_Services_PMC_UNITS in 'pg_services_pmc_config\vehicles\', previous definition in 'pg_services_pmc_config\characters\pmc\'
+ 0:42:12 Conflicting addon r3f_armes_c in 'r3f_armes_c_fhq\', previous definition in 'r3f_armes_c\'
+ 0:42:12 Conflicting addon A3_Air_F_Beta_Heli_Transport_01 in 'a3\air_f_beta\heli_transport_01\', previous definition in 'arma3-doors-hotshot-vehs\heli_transport_01\'
+ 0:42:12 Conflicting addon A3_Air_F_Beta_Heli_Transport_02 in 'a3\air_f_beta\heli_transport_02\', previous definition in 'arma3-doors-hotshot-vehs\heli_transport_02\'
+ 0:42:14 Conflicting addon A3_Soft_F_MRAP_01 in 'a3\soft_f\mrap_01\', previous definition in 'arma3-doors-hotshot-vehs\hunter\'
+ 0:42:14 Conflicting addon A3_Soft_F_MRAP_02 in 'a3\soft_f\mrap_02\', previous definition in 'arma3-doors-hotshot-vehs\ifrit\'
+ 0:42:14 Conflicting addon A3_Soft_F_MRAP_03 in 'a3\soft_f_beta\mrap_03\', previous definition in 'arma3-doors-hotshot-vehs\mrap_03\'
+ 0:42:15 Updating base class ->Base, by a3\dubbing_radio_f\config.bin/CfgHQIdentities/PAPA_BEAR/
+ 0:42:15 Updating base class ->Base, by a3\dubbing_radio_f\config.bin/CfgHQIdentities/AirBase/
+ 0:42:15 Updating base class All->Land, by armat_jail2\config.cpp/CfgVehicles/Static/
+ 0:42:15 Updating base class Land->All, by babe_EM\config.bin/CfgVehicles/Static/
+ 0:42:15 Updating base class ->HouseBase, by polizei\config.cpp/CfgVehicles/Ruins/
+ 0:42:15 Updating base class ->LandVehicle, by a3\data_f\config.bin/CfgVehicles/StaticWeapon/
+ 0:42:15 Updating base class ->NonStrategic, by a3\data_f\config.bin/CfgVehicles/HouseBase/
+ 0:42:15 Updating base class ->DestructionEffects, by a3\data_f\config.bin/CfgVehicles/House/DestructionEffects/
+ 0:42:15 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayEditObject/Controls/B_OK/
+ 0:42:15 Updating base class RscSliderH->RscXSliderH, by a3\editor_f\config.bin/RscDisplayEditObject/Slider/
+ 0:42:15 Updating base class RscText->RscPicture, by a3\editor_f\config.bin/RscDisplayEditObject/Preview/
+ 0:42:15 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayMissionLoad/Controls/B_OK/
+ 0:42:15 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayMissionSave/Controls/B_OK/
+ 0:42:16 Updating base class thingX->jbad_misc_market, by jbad_misc\misc_market\config.bin/CfgVehicles/Land_jbad_crates/
+ 0:42:16 Updating base class ->Default, by a3\anims_f\config\sdr\config.bin/CfgMovesBasic/DefaultDie/
+ 0:42:16 Updating base class ->Default, by a3\anims_f\config\sdr\config.bin/CfgMovesMaleSdr/States/Crew/
+ 0:42:16 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoScrollbars/
+ 0:42:16 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoHScrollbars/
+ 0:42:16 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoVScrollbars/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/RscLine/
+ 0:42:16 Updating base class ->RscActiveText, by a3\ui_f\config.bin/RscActivePicture/
+ 0:42:16 Updating base class ->RscButton, by a3\ui_f\config.bin/RscButtonTextOnly/
+ 0:42:16 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscShortcutButtonMain/
+ 0:42:16 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscButtonEditor/
+ 0:42:16 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscIGUIShortcutButton/
+ 0:42:16 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscGearShortcutButton/
+ 0:42:16 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscButtonMenu/
+ 0:42:16 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuOK/
+ 0:42:16 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuCancel/
+ 0:42:16 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuSteam/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/RscLoadingText/
+ 0:42:16 Updating base class ->RscListBox, by a3\ui_f\config.bin/RscIGUIListBox/
+ 0:42:16 Updating base class ->RscListNBox, by a3\ui_f\config.bin/RscIGUIListNBox/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackground/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUI/
+ 0:42:16 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUILeft/
+ 0:42:16 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUIRight/
+ 0:42:16 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUIBottom/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUITop/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUIDark/
+ 0:42:16 Updating base class ->RscPictureKeepAspect, by a3\ui_f\config.bin/RscBackgroundLogo/
+ 0:42:16 Updating base class ->RscMapControl, by a3\ui_f\config.bin/RscMapControlEmpty/
+ 0:42:16 Updating base class ->RscPicture, by a3\ui_f\config.bin/CA_Mainback/
+ 0:42:16 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Back/
+ 0:42:16 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Title_Back/
+ 0:42:16 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Black_Back/
+ 0:42:16 Updating base class ->RscTitle, by a3\ui_f\config.bin/CA_Title/
+ 0:42:16 Updating base class ->RscPictureKeepAspect, by a3\ui_f\config.bin/CA_Logo/
+ 0:42:16 Updating base class ->CA_Logo, by a3\ui_f\config.bin/CA_Logo_Small/
+ 0:42:16 Updating base class ->RscButton, by a3\ui_f\config.bin/CA_RscButton/
+ 0:42:16 Updating base class ->CA_RscButton, by a3\ui_f\config.bin/CA_RscButton_dialog/
+ 0:42:16 Updating base class ->RscActiveText, by a3\ui_f\config.bin/CA_Ok/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_image/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_image2/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_text/
+ 0:42:16 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscVignette/
+ 0:42:16 Updating base class ->RscControlsGroupNoScrollbars, by a3\ui_f\config.bin/RscMapControlTooltip/
+ 0:42:16 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_OK/
+ 0:42:16 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_Cancel/
+ 0:42:16 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_Clear/
+ 0:42:16 Updating base class ->RscText, by a3\ui_f\config.bin/RscDisplayCapture/controls/TimeLines/
+ 0:42:16 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonAverages/
+ 0:42:16 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonSavePreviousData/
+ 0:42:16 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonPreviousData/
+ 0:42:16 Updating base class RscControlsGroup->RscControlsGroupNoHScrollbars, by a3\ui_f\config.bin/RscDisplayMain/controls/ModIcons/
+ 0:42:16 Updating base class RscPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/IconPicture/
+ 0:42:16 Updating base class IconPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/DlcOwnedIconPicture/
+ 0:42:16 Updating base class IconPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/DlcIconPicture/
+ 0:42:16 Updating base class RscListBox->RscCombo, by a3\ui_f\config.bin/RscDisplayCustomizeController/Steepness/
+ 0:42:16 Updating base class ->RscStandardDisplay, by a3\ui_f\config.bin/RscDisplayControlSchemes/
+ 0:42:16 Updating base class ButtonOK->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayControlSchemes/controls/ButtonCancel/
+ 0:42:16 Updating base class RscButton->RscButtonMenuOK, by a3\ui_f\config.bin/RscDisplayControlSchemes/controls/ButtonOK/
+ 0:42:16 Updating base class RscPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayFileSelectImage/controls/OverviewPicture/
+ 0:42:16 Updating base class RscShortcutButton->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayFieldManual/controls/ButtonCancel/
+ 0:42:16 Cannot delete class B_KickOff, it is referenced somewhere (used as a base class probably).
+ 0:42:16 Updating base class RscButton->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayPublishMission/controls/ButtonCancel/
+ 0:42:16 Updating base class RscShortcutButton->RscButtonMenuOK, by a3\ui_f\config.bin/RscDisplayPublishMissionSelectTags/controls/ButtonOK/
+ 0:42:16 Updating base class ButtonOK->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayPublishMissionSelectTags/controls/ButtonCancel/
+ 0:42:16 Updating base class ->RscSubmenu, by a3\ui_f\config.bin/RscMainMenu/
+ 0:42:16 Cannot update non class from class a3\ui_f\config.bin/RscCallSupport/Items/
+ 0:42:16 Cannot update non class from class a3\ui_f\config.bin/RscRadio/Items/
+ 0:42:17 Updating base class ->BulletBase, by a3\weapons_f\config.bin/CfgAmmo/B_762x51_Ball/
+ 0:42:17 Updating base class ->Default, by a3\weapons_f\config.bin/CfgMagazines/CA_Magazine/
+ 0:42:17 Updating base class ->SlotInfo, by a3\weapons_f\config.bin/CowsSlot/
+ 0:42:17 Updating base class ->SlotInfo, by a3\weapons_f\config.bin/PointerSlot/
+ 0:42:17 Updating base class ->RifleCore, by a3\weapons_f\config.bin/cfgWeapons/Rifle/
+ 0:42:17 Updating base class ->Default, by a3\weapons_f\config.bin/cfgWeapons/CarHorn/
+ 0:42:17 Updating base class ->CarHorn, by a3\weapons_f\config.bin/cfgWeapons/BikeHorn/
+ 0:42:17 Updating base class ->Default, by a3\weapons_f\config.bin/cfgWeapons/ItemCore/
+ 0:42:17 Updating base class ->Binocular, by a3\weapons_f\config.bin/cfgWeapons/NVGoggles/
+ 0:42:17 Updating base class ->ReammoBox_F, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/NATO_Box_Base/
+ 0:42:17 Updating base class ->Bag_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_Kitbag_Base/
+ 0:42:17 Updating base class ->B_TacticalPack_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_TacticalPack_oli/
+ 0:42:17 Updating base class ->B_Bergen_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_Bergen_rgr/
+ 0:42:17 Updating base class ->Bag_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_Parachute/
+ 0:42:17 Updating base class ->InventoryItem_Base_F, by a3\weapons_f\items\config.bin/CfgWeapons/InventoryFlashLightItem_Base_F/
+ 0:42:17 Updating base class ->InventoryItem_Base_F, by a3\weapons_f\items\config.bin/CfgWeapons/InventoryMuzzleItem_Base_F/
+ 0:42:17 Updating base class ->InventoryItem_Base_F, by a3\weapons_f\items\config.bin/CfgWeapons/InventoryOpticsItem_Base_F/
+ 0:42:17 Updating base class ->InventoryItem_Base_F, by a3\weapons_f\items\config.bin/CfgWeapons/VestItem/
+ 0:42:17 Updating base class ->EBR_base_F, by a3\weapons_f\longrangerifles\ebr\config.bin/CfgWeapons/srifle_EBR_F/
+ 0:42:17 Updating base class ->Rifle_Long_Base_F, by a3\weapons_f\longrangerifles\m320\config.bin/CfgWeapons/LRR_base_F/
+ 0:42:17 Updating base class ->arifle_MX_F, by a3\weapons_f\rifles\mx_black\config.bin/CfgWeapons/arifle_MX_Black_F/
+ 0:42:17 Updating base class ->arifle_MX_GL_F, by a3\weapons_f\rifles\mx_black\config.bin/CfgWeapons/arifle_MX_GL_Black_F/
+ 0:42:17 Updating base class CircleDustTank->Default, by warfxpe\particleeffects\config.cpp/CfgCloudlets/CircleDustTankL/
+ 0:42:17 Updating base class LeftGrassBig->Default, by warfxpe\particleeffects\config.cpp/CfgCloudlets/RightGrassBig/
+ 0:42:17 Updating base class LeftGrassDryBig->Default, by warfxpe\particleeffects\config.cpp/CfgCloudlets/RightGrassDryBig/
+ 0:42:17 Updating base class BombSmk1->Default, by warfxpe\particleeffects\config.cpp/CfgCloudlets/BombSmk2/
+ 0:42:17 Updating base class BombSmk1->Default, by warfxpe\particleeffects\config.cpp/CfgCloudlets/BombSmk3/
+ 0:42:17 Updating base class FiredLightMed->, by warfxpe\particleeffects\config.cpp/CfgLights/FiredLightCannon/
+ 0:42:17 Updating base class ->Civilian, by a3\characters_f\config.bin/CfgVehicles/Civilian_F/
+ 0:42:17 Updating base class ->CAManBase, by a3\characters_f\config.bin/CfgVehicles/SoldierWB/
+ 0:42:17 Updating base class ->B_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/B_Soldier_02_f/
+ 0:42:17 Updating base class Man->O_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/O_Soldier_F/
+ 0:42:17 Updating base class ->ItemCore, by a3\characters_f\config.bin/cfgWeapons/Uniform_Base/
+ 0:42:17 Updating base class ->ItemCore, by a3\characters_f\config.bin/cfgWeapons/Vest_NoCamo_Base/
+ 0:42:17 Updating base class ->Vest_NoCamo_Base, by a3\characters_f\config.bin/cfgWeapons/V_PlateCarrier1_rgr/
+ 0:42:17 Updating base class ->Vest_Camo_Base, by a3\characters_f\config.bin/cfgWeapons/V_TacVest_khk/
+ 0:42:17 Updating base class ->Vest_NoCamo_Base, by a3\characters_f\config.bin/cfgWeapons/V_TacVestIR_blk/
+ 0:42:17 Updating base class ->Vest_NoCamo_Base, by a3\characters_f\config.bin/cfgWeapons/V_PlateCarrierIA1_dgtl/
+ 0:42:17 Updating base class ->InventoryItem_Base_F, by a3\characters_f\config.bin/cfgWeapons/HeadgearItem/
+ 0:42:17 Updating base class ->H_HelmetB, by a3\characters_f\config.bin/cfgWeapons/H_Booniehat_khk/
+ 0:42:17 Updating base class ItemCore->H_HelmetB_plain_mcamo, by a3\characters_f\config.bin/cfgWeapons/H_HelmetB_plain_blk/
+ 0:42:17 Updating base class ->H_HelmetB, by a3\characters_f\config.bin/cfgWeapons/H_Cap_red/
+ 0:42:17 Updating base class ->H_HelmetB, by a3\characters_f\config.bin/cfgWeapons/H_Bandanna_surfer/
+ 0:42:17 Updating base class ->None, by a3\characters_f\heads\config.bin/CfgGlasses/G_Tactical_Clear/
+ 0:42:17 Updating base class ->muzzle_snds_H, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_L/
+ 0:42:17 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/acc_flashlight/
+ 0:42:17 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/acc_pointer_IR/
+ 0:42:17 Updating base class ->ItemCore, by orel_characters\vest\config.bin/cfgWeapons/Vest_Base/
+ 0:42:17 Updating base class House->NonStrategic, by orel_objects\artifice\config.bin/CfgVehicles/Church/
+ 0:42:17 Updating base class House_F->House, by orel_structures\macumba\config.bin/CfgVehicles/Orel_House/
+ 0:42:17 Updating base class House->House_F, by orel_structures\pharmacie\config.bin/CfgVehicles/Orel_House/
+ 0:42:17 Cannot update non class from class r3f_armes_c\config.bin/CowsSlot/compatibleItems/
+ 0:42:17 Cannot update non class from class r3f_armes_c\config.bin/PointerSlot/compatibleItems/
+ 0:42:17 Cannot update non class from class r3f_armes_c_fhq\config.bin/CowsSlot/compatibleItems/
+ 0:42:17 Cannot update non class from class r3f_armes_c_fhq\config.bin/PointerSlot/compatibleItems/
+ 0:42:17 Updating base class Civilian->Man, by rds_a2port_cman\config.bin/CfgVehicles/Civilian_F/
+ 0:42:17 Updating base class ->Heli_Light_01_unarmed_base_F, by a3\air_f\heli_light_01\config.bin/CfgVehicles/B_Heli_Light_01_F/
+ 0:42:17 Updating base class ->Paraglide, by a3\air_f_beta\config.bin/CfgVehicles/Steerable_Parachute_F/
+ 0:42:17 Updating base class ->Ship_F, by a3\boat_f\config.bin/CfgVehicles/Boat_F/
+ 0:42:17 Updating base class ->MRAP_01_base_F, by a3\soft_f\mrap_01\config.bin/CfgVehicles/B_MRAP_01_F/
+ 0:42:17 Updating base class ->MRAP_02_base_F, by a3\soft_f\mrap_02\config.bin/CfgVehicles/O_MRAP_02_F/
+ 0:42:17 Updating base class ->Offroad_01_base_F, by a3\soft_f\offroad_01\config.bin/CfgVehicles/Offroad_01_armed_base_F/
+ 0:42:18 Updating base class ->Quadbike_01_base_F, by a3\soft_f\quadbike_01\config.bin/CfgVehicles/O_Quadbike_01_F/
+ 0:42:18 Updating base class MainTurret->MainTurret, by arma3-doors-hotshot-vehs\heli_transport_01\config.bin/CfgVehicles/Heli_Transport_01_base_F/Turrets/MainTurret/
+ 0:42:18 Updating base class HitEngine2->HitEngine, by arma3-doors-hotshot-vehs\heli_transport_02\config.bin/CfgVehicles/Heli_Transport_02_base_F/HitPoints/HitEngine/
+ 0:42:18 Updating base class HitEngine1->HitEngine, by arma3-doors-hotshot-vehs\heli_transport_02\config.bin/CfgVehicles/Heli_Transport_02_base_F/HitPoints/HitEngine2/
+ 0:42:18 Updating base class Man->Civilian, by life_server\config.cpp/CfgVehicles/Civilian_F/
+ 0:42:18 Updating base class NVGoggles->Binocular, by lsd_nvg\config.bin/cfgWeapons/NVGoggles_OPFOR/
+ 0:42:18 Updating base class NVGoggles->Binocular, by lsd_nvg\config.bin/cfgWeapons/NVGoggles_INDEP/
+ 0:42:18 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:18 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:18 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:18 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:18 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:18 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:18 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:18 Updating base class Hatchback_01_sport_base_F->Hatchback_01_base_F, by x\cba\addons\xeh_a3\config.bin/CfgVehicles/C_Hatchback_01_sport_F/
+ 0:42:18 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:18 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:18 Updating base class Van_01_civil_fuel_base_F->Van_01_base_F, by x\cba\addons\xeh_a3\config.bin/CfgVehicles/C_Van_01_fuel_F/
+ 0:42:18 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 0:42:19 Initializing Steam Manager
+ 0:42:19 ManagerConfig()
+ 0:42:19 Steam Manager initialized.
+ 0:42:19 
+ 0:42:19 ==== Loaded addons ====
+ 0:42:19 
+ 0:42:19 dta\bin.pbo - unknown
+ 0:42:19 dta\core.pbo - 72362
+ 0:42:19 dta\languagecore_f.pbo - 80021
+ 0:42:19 C:\arma3server\@BlackOut\addons\a3l_bank.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\a3l_carpark.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\a3l_carshop.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\a3l_court.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\a3l_emtmain.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\a3l_factory.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\a3l_nightclub.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\ag_mp9.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\ag_mp9_c.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\alfr_force.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\arma3-doors-hotshot-vehs.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\arma3-pistols-css2.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\armat_jail2.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\as50.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\asdg_jointrails.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\atin_rifle_box.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\babe_em.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\beret.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\blastcore-physics.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\caf_ag_equip.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\caf_ag_equip_c.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\caf_ag_equip_t.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_ai.pbo - 004
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_arrays.pbo - 003
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_common.pbo - 014
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_diagnostic.pbo - 004
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_events.pbo - 003
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_extended_eventhandlers.pbo - 002
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_hashes.pbo - 004
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_help.pbo - 004
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_keybinding.pbo - 007
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_main.pbo - 012
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_main_a3.pbo - 002
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_network.pbo - 012
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_strings.pbo - 002
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_ui.pbo - 017
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_ui_helper.pbo - 002
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_vectors.pbo - 002
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_versioning.pbo - 002
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_xeh.pbo - 011
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_xeh_a2_dummy.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_xeh_a3.pbo - 007
+ 0:42:19 C:\arma3server\@BlackOut\addons\cba_xeh_oa_dummy.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\cha_pkp.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\cl3_anims.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\cl3_mbikes.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\cl3_sounds.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\cl3_vehiclefunctions.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\cl3_wheeled.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_challenger.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_chargerppv.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_cvpi.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_explorerppv.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_ilpd3.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_ilpdn.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_tahoe.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_tahoeems.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_tahoeppv.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dar_taurusppv.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dfs_visiblecrosshairs_v0.10.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\dg_armory.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\fhq_accessories.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\fhq_m4_a3.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\fnfal_a3.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\fr_items.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\gign.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\hlc_core.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\hlc_wp_ak.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\hlc_wp_m60e4.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\jbad_defines.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\jbad_misc.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\jbad_rocks.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\jbad_sounds.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\jbad_structures.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\jbad_veg.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\kio_vfv_mask.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\lsd_nvg.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\m110_arma3.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\mbg_buildings_3.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\mbg_killhouses_a3.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\mp9_peq15.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\murcielago_police.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\oh_round_chute.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\orel_airs.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\orel_characters.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\orel_data.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\orel_objects.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\orel_soft.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\orel_soft_g1.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\orel_structures.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\orel_weapons.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\pg_services_pmc.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\pg_services_pmc_config.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\polizei.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\prpl_benellim4.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\r3f_acc.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\r3f_armes.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\r3f_armes_c.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\r3f_armes_c_fhq.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\rds_a2port_civ.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\rds_a2port_cman.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\rh_de.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\rh_de_cfg.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\rpima.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\shield.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\slts_m27iar.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\srifle_m98b.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\structures.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\ten_fluiddooropening.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\thm_beanie.pbo - unknown
+ 0:42:19 C:\arma3server\@BlackOut\addons\warfxpe.pbo - unknown
+ 0:42:19 C:\arma3server\@life_server\addons\life_server.pbo - unknown
+ 0:42:19 C:\arma3server\heli\addons\air_f_heli.ebo - 79805
+ 0:42:19 C:\arma3server\heli\addons\anims_f_heli.ebo - 79126
+ 0:42:19 C:\arma3server\heli\addons\boat_f_heli.ebo - 79398
+ 0:42:19 C:\arma3server\heli\addons\cargoposes_f_heli.ebo - 79126
+ 0:42:19 C:\arma3server\heli\addons\data_f_heli.ebo - 79642
+ 0:42:19 C:\arma3server\heli\addons\dubbing_f_heli.ebo - 75138
+ 0:42:19 C:\arma3server\heli\addons\functions_f_heli.ebo - 77667
+ 0:42:19 C:\arma3server\heli\addons\languagemissions_f_heli.ebo - 76893
+ 0:42:19 C:\arma3server\heli\addons\language_f_heli.ebo - 79600
+ 0:42:19 C:\arma3server\heli\addons\missions_f_heli.ebo - 79039
+ 0:42:19 C:\arma3server\heli\addons\missions_f_heli_data.ebo - 75977
+ 0:42:19 C:\arma3server\heli\addons\missions_f_heli_video.ebo - 75065
+ 0:42:19 C:\arma3server\heli\addons\modules_f_heli.ebo - 79398
+ 0:42:19 C:\arma3server\heli\addons\music_f_heli.ebo - 76012
+ 0:42:19 C:\arma3server\heli\addons\music_f_heli_music.ebo - 76012
+ 0:42:19 C:\arma3server\heli\addons\soft_f_heli.ebo - 79398
+ 0:42:19 C:\arma3server\heli\addons\sounds_f_heli.ebo - 79398
+ 0:42:19 C:\arma3server\heli\addons\structures_f_heli.ebo - 80293
+ 0:42:19 C:\arma3server\heli\addons\supplies_f_heli.ebo - 79398
+ 0:42:19 C:\arma3server\heli\addons\ui_f_heli.ebo - 76986
+ 0:42:19 C:\arma3server\kart\addons\anims_f_kart.pbo - 79126
+ 0:42:19 C:\arma3server\kart\addons\characters_f_kart.pbo - 79398
+ 0:42:19 C:\arma3server\kart\addons\data_f_kart.pbo - 79601
+ 0:42:19 C:\arma3server\kart\addons\languagemissions_f_kart.pbo - 76770
+ 0:42:19 C:\arma3server\kart\addons\language_f_kart.pbo - 79532
+ 0:42:19 C:\arma3server\kart\addons\missions_f_kart.pbo - 76770
+ 0:42:19 C:\arma3server\kart\addons\missions_f_kart_data.pbo - 75687
+ 0:42:19 C:\arma3server\kart\addons\modules_f_kart.pbo - 79398
+ 0:42:19 C:\arma3server\kart\addons\modules_f_kart_data.pbo - 74588
+ 0:42:19 C:\arma3server\kart\addons\soft_f_kart.pbo - 79398
+ 0:42:19 C:\arma3server\kart\addons\sounds_f_kart.pbo - 79398
+ 0:42:19 C:\arma3server\kart\addons\structures_f_kart.pbo - 80293
+ 0:42:19 C:\arma3server\kart\addons\ui_f_kart.pbo - 73106
+ 0:42:19 C:\arma3server\kart\addons\weapons_f_kart.pbo - 79398
+ 0:42:19 C:\arma3server\curator\addons\data_f_curator.pbo - 79398
+ 0:42:19 C:\arma3server\curator\addons\functions_f_curator.pbo - 78988
+ 0:42:19 C:\arma3server\curator\addons\language_f_curator.pbo - 76769
+ 0:42:19 C:\arma3server\curator\addons\missions_f_curator.pbo - 79649
+ 0:42:19 C:\arma3server\curator\addons\modules_f_curator.pbo - 79398
+ 0:42:19 C:\arma3server\curator\addons\ui_f_curator.pbo - 78347
+ 0:42:19 addons\a3.pbo - unknown
+ 0:42:19 addons\air_f.pbo - 79681
+ 0:42:19 addons\air_f_beta.pbo - 79398
+ 0:42:19 addons\air_f_epb.pbo - 79398
+ 0:42:19 addons\air_f_epc.pbo - 79398
+ 0:42:19 addons\air_f_gamma.pbo - 79398
+ 0:42:19 addons\animals_f.pbo - 79398
+ 0:42:19 addons\animals_f_beta.pbo - 72362
+ 0:42:19 addons\anims_f.pbo - 79482
+ 0:42:19 addons\anims_f_bootcamp.pbo - 72362
+ 0:42:19 addons\anims_f_data.pbo - 79675
+ 0:42:19 addons\anims_f_epa.pbo - 78608
+ 0:42:19 addons\anims_f_epc.pbo - 72362
+ 0:42:19 addons\armor_f.pbo - 79398
+ 0:42:19 addons\armor_f_beta.pbo - 79681
+ 0:42:19 addons\armor_f_epb.pbo - 79681
+ 0:42:19 addons\armor_f_epc.pbo - 79398
+ 0:42:19 addons\armor_f_gamma.pbo - 79681
+ 0:42:19 addons\baseconfig_f.pbo - 73106
+ 0:42:19 addons\boat_f.pbo - 79398
+ 0:42:19 addons\boat_f_beta.pbo - 79398
+ 0:42:19 addons\boat_f_epc.pbo - 79398
+ 0:42:19 addons\boat_f_gamma.pbo - 79398
+ 0:42:19 addons\cargoposes_f.pbo - 78836
+ 0:42:19 addons\characters_f.pbo - 79649
+ 0:42:19 addons\characters_f_beta.pbo - 79398
+ 0:42:19 addons\characters_f_bootcamp.pbo - 79398
+ 0:42:19 addons\characters_f_epa.pbo - 79398
+ 0:42:19 addons\characters_f_epb.pbo - 79398
+ 0:42:19 addons\characters_f_epc.pbo - 79398
+ 0:42:19 addons\characters_f_gamma.pbo - 79398
+ 0:42:19 addons\data_f.pbo - 79651
+ 0:42:19 addons\data_f_bootcamp.pbo - 76960
+ 0:42:19 addons\drones_f.pbo - 79653
+ 0:42:19 addons\dubbing_f.pbo - 73106
+ 0:42:19 addons\dubbing_f_beta.pbo - 73106
+ 0:42:19 addons\dubbing_f_bootcamp.pbo - 73106
+ 0:42:19 addons\dubbing_f_epa.pbo - 73106
+ 0:42:19 addons\dubbing_f_epb.pbo - 76110
+ 0:42:19 addons\dubbing_f_epc.pbo - 73106
+ 0:42:19 addons\dubbing_f_gamma.pbo - 73106
+ 0:42:19 addons\dubbing_radio_f.pbo - 78704
+ 0:42:19 addons\dubbing_radio_f_data.pbo - 78762
+ 0:42:19 addons\editor_f.pbo - 74164
+ 0:42:19 addons\functions_f.pbo - 79623
+ 0:42:19 addons\functions_f_bootcamp.pbo - 78988
+ 0:42:19 addons\functions_f_epa.pbo - 73434
+ 0:42:19 addons\functions_f_epc.pbo - 73106
+ 0:42:19 addons\languagemissions_f.pbo - 76893
+ 0:42:19 addons\languagemissions_f_beta.pbo - 77325
+ 0:42:19 addons\languagemissions_f_bootcamp.pbo - 76770
+ 0:42:19 addons\languagemissions_f_epa.pbo - 76770
+ 0:42:19 addons\languagemissions_f_epb.pbo - 79149
+ 0:42:19 addons\languagemissions_f_epc.pbo - 76770
+ 0:42:19 addons\languagemissions_f_gamma.pbo - 77098
+ 0:42:19 addons\language_f.pbo - 79621
+ 0:42:19 addons\language_f_beta.pbo - 77325
+ 0:42:19 addons\language_f_bootcamp.pbo - 77492
+ 0:42:19 addons\language_f_epa.pbo - 76769
+ 0:42:19 addons\language_f_epb.pbo - 77476
+ 0:42:19 addons\language_f_epc.pbo - 77476
+ 0:42:19 addons\language_f_gamma.pbo - 77365
+ 0:42:19 addons\map_altis.pbo - 80359
+ 0:42:19 addons\map_altis_data.pbo - 79087
+ 0:42:19 addons\map_altis_data_layers.pbo - 79087
+ 0:42:19 addons\map_altis_data_layers_00_00.pbo - 79087
+ 0:42:19 addons\map_altis_data_layers_00_01.pbo - 79087
+ 0:42:19 addons\map_altis_data_layers_01_00.pbo - 79087
+ 0:42:19 addons\map_altis_data_layers_01_01.pbo - 79087
+ 0:42:19 addons\map_altis_scenes_f.pbo - 73106
+ 0:42:19 addons\map_data.pbo - 73001
+ 0:42:19 addons\map_stratis.pbo - 80359
+ 0:42:19 addons\map_stratis_data.pbo - 79082
+ 0:42:19 addons\map_stratis_data_layers.pbo - 79082
+ 0:42:19 addons\map_stratis_scenes_f.pbo - 73106
+ 0:42:19 addons\map_vr.pbo - 77601
+ 0:42:19 addons\map_vr_scenes_f.pbo - 73106
+ 0:42:19 addons\misc_f.pbo - 79398
+ 0:42:19 addons\missions_f.pbo - 78843
+ 0:42:19 addons\missions_f_beta.pbo - 79649
+ 0:42:19 addons\missions_f_beta_data.pbo - 75473
+ 0:42:19 addons\missions_f_beta_video.pbo - 73106
+ 0:42:19 addons\missions_f_bootcamp.pbo - 79463
+ 0:42:19 addons\missions_f_bootcamp_data.pbo - 72362
+ 0:42:19 addons\missions_f_bootcamp_video.pbo - 75065
+ 0:42:19 addons\missions_f_data.pbo - 73106
+ 0:42:19 addons\missions_f_epa.pbo - 79649
+ 0:42:19 addons\missions_f_epa_data.pbo - 73106
+ 0:42:19 addons\missions_f_epa_video.pbo - 73106
+ 0:42:19 addons\missions_f_epb.pbo - 79472
+ 0:42:19 addons\missions_f_epb_data.pbo - 73106
+ 0:42:19 addons\missions_f_epb_video.pbo - 73106
+ 0:42:19 addons\missions_f_epc.pbo - 79065
+ 0:42:19 addons\missions_f_epc_data.pbo - 73106
+ 0:42:19 addons\missions_f_epc_video.pbo - 73106
+ 0:42:19 addons\missions_f_gamma.pbo - 79649
+ 0:42:19 addons\missions_f_gamma_data.pbo - 76877
+ 0:42:19 addons\missions_f_gamma_video.pbo - 73106
+ 0:42:19 addons\missions_f_video.pbo - 73106
+ 0:42:19 addons\modules_f.pbo - 79398
+ 0:42:19 addons\modules_f_beta.pbo - 79398
+ 0:42:19 addons\modules_f_beta_data.pbo - 73635
+ 0:42:19 addons\modules_f_bootcamp.pbo - 79398
+ 0:42:19 addons\modules_f_data.pbo - 73106
+ 0:42:19 addons\modules_f_epb.pbo - 79398
+ 0:42:19 addons\music_f.pbo - 73106
+ 0:42:19 addons\music_f_bootcamp.pbo - 73106
+ 0:42:19 addons\music_f_bootcamp_music.pbo - 73106
+ 0:42:19 addons\music_f_epa.pbo - 73106
+ 0:42:19 addons\music_f_epa_music.pbo - 73106
+ 0:42:19 addons\music_f_epb.pbo - 73106
+ 0:42:19 addons\music_f_epb_music.pbo - 73106
+ 0:42:19 addons\music_f_epc.pbo - 73106
+ 0:42:19 addons\music_f_epc_music.pbo - 73106
+ 0:42:19 addons\music_f_music.pbo - 73106
+ 0:42:19 addons\plants_f.pbo - 80365
+ 0:42:19 addons\roads_f.pbo - 80359
+ 0:42:19 addons\rocks_f.pbo - 80359
+ 0:42:19 addons\signs_f.pbo - 80365
+ 0:42:19 addons\soft_f.pbo - 79398
+ 0:42:19 addons\soft_f_beta.pbo - 79398
+ 0:42:19 addons\soft_f_bootcamp.pbo - 79398
+ 0:42:19 addons\soft_f_epc.pbo - 79398
+ 0:42:19 addons\soft_f_gamma.pbo - 79398
+ 0:42:19 addons\sounds_f.pbo - 79437
+ 0:42:19 addons\sounds_f_bootcamp.pbo - 79398
+ 0:42:19 addons\sounds_f_epb.pbo - 79398
+ 0:42:19 addons\sounds_f_epc.pbo - 79398
+ 0:42:19 addons\sounds_f_vehicles.pbo - 79398
+ 0:42:19 addons\sounds_f_weapons.pbo - 79398
+ 0:42:19 addons\static_f.pbo - 79398
+ 0:42:19 addons\static_f_beta.pbo - 79398
+ 0:42:19 addons\static_f_gamma.pbo - 79420
+ 0:42:19 addons\structures_f.pbo - 80292
+ 0:42:19 addons\structures_f_bootcamp.pbo - 80293
+ 0:42:19 addons\structures_f_data.pbo - 79398
+ 0:42:19 addons\structures_f_epa.pbo - 80293
+ 0:42:19 addons\structures_f_epb.pbo - 80293
+ 0:42:19 addons\structures_f_epc.pbo - 80293
+ 0:42:19 addons\structures_f_households.pbo - 80293
+ 0:42:19 addons\structures_f_ind.pbo - 80292
+ 0:42:19 addons\structures_f_mil.pbo - 80292
+ 0:42:19 addons\structures_f_wrecks.pbo - 80293
+ 0:42:19 addons\uifonts_f.pbo - 73106
+ 0:42:19 addons\uifonts_f_data.pbo - 73106
+ 0:42:19 addons\ui_f.pbo - 79689
+ 0:42:19 addons\ui_f_bootcamp.pbo - 76325
+ 0:42:19 addons\ui_f_data.pbo - 79689
+ 0:42:19 addons\weapons_f.pbo - 79430
+ 0:42:19 addons\weapons_f_beta.pbo - 79398
+ 0:42:19 addons\weapons_f_bootcamp.pbo - 79398
+ 0:42:19 addons\weapons_f_epa.pbo - 79398
+ 0:42:19 addons\weapons_f_epb.pbo - 79398
+ 0:42:19 addons\weapons_f_epc.pbo - 79398
+ 0:42:19 addons\weapons_f_gamma.pbo - 79398
+ 0:42:19 
+ 0:42:19 =======================
+ 0:42:19 
+ 0:42:19 ============================================================================================= List of mods ===============================================================================================
+ 0:42:19 modsReadOnly = true
+ 0:42:19 safeModsActivated = false
+ 0:42:19 customMods = true
+ 0:42:19 hash = 'D221885BE617A2A15BD0266BD239CE71D8D9971F'
+ 0:42:19                                               name |               modDir |    default |               origin |                                     hash | fullPath
+ 0:42:19 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0:42:19                                           BlackOut |            @BlackOut |      false |             GAME DIR | 5be6a5ee266ba279ec48dd710e8f3891b6f6e276 | C:\arma3server\@BlackOut
+ 0:42:19                                             @extDB |               @extDB |      false |             GAME DIR | da39a3ee5e6b4b0d3255bfef95601890afd80709 | C:\arma3server\@extDB
+ 0:42:19                                       @life_server |         @life_server |      false |             GAME DIR | 6381979fd65fe7b29bf5f2f1be388712fa58c230 | C:\arma3server\@life_server
+ 0:42:19                                  Arma 3 DLC Bundle |            dlcbundle |       true |            NOT FOUND |                                          | 
+ 0:42:19                                 Arma 3 Helicopters |                 heli |       true |             GAME DIR | da39a3ee5e6b4b0d3255bfef95601890afd80709 | C:\arma3server\heli
+ 0:42:19                                       Arma 3 Karts |                 kart |       true |             GAME DIR | e7475713fcaaa694d1a6d3154a54f9bbdc7c7b3f | C:\arma3server\kart
+ 0:42:19                                        Arma 3 Zeus |              curator |       true |             GAME DIR | c0d67091cf7c84eac02aace7350f06fc08b7a43b | C:\arma3server\curator
+ 0:42:19                                             Arma 3 |                   A3 |       true |            NOT FOUND |                                          | 
+ 0:42:19 ==========================================================================================================================================================================================================
+ 0:42:19 InitSound ...
+ 0:42:19 InitSound - complete
+ 0:42:19 PhysX3 SDK Init started ...
+ 0:42:19 PhysX3 SDK Init ended.
+ 0:42:19 EPE manager release (0|0|0)
+ 0:42:19 EPE manager release (0|0|0)
+ 0:42:20 Preloaded texture Fireball_03 not found in bin\config.bin/CfgCloudletShapes/
+ 0:42:24 Attempt to override final function - rscminimap_script
+ 0:42:24 Attempt to override final function - rscdisplayloading_script
+ 0:42:24 Attempt to override final function - rscdisplayloading_script
+ 0:42:24 Attempt to override final function - rscdisplayloading_script
+ 0:42:24 Attempt to override final function - rscdiary_script
+ 0:42:24 Attempt to override final function - rscdisplaysinglemission_script
+ 0:42:24 Attempt to override final function - rscdiary_script
+ 0:42:24 Attempt to override final function - rscdisplayremotemissions_script
+ 0:42:24 Attempt to override final function - rscdisplayloading_script
+ 0:42:24 Attempt to override final function - rscdiary_script
+ 0:42:24 Attempt to override final function - rscdiary_script
+ 0:42:24 Attempt to override final function - rscdisplaystrategicmap_script
+ 0:42:24 Attempt to override final function - rscdisplaycommon_script
+ 0:42:24 Attempt to override final function - rscdisplayloading_script
+ 0:42:25 Attempt to override final function - rscdisplaycurator_script
+ 0:42:25 Attempt to override final function - rscdisplayattributes_script
+ 0:42:25 Attempt to override final function - rscdisplayattributes_script
+ 0:42:25 Attempt to override final function - rscdisplayattributes_script
+ 0:42:25 Attempt to override final function - rscdisplaycommon_script
+ 0:42:25 Attempt to override final function - rscdisplaydebriefing_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 Attempt to override final function - rscunitinfo_script
+ 0:42:26 EPE manager release (0|0|0)
+ 0:42:26 EPE manager release (0|0|0)
+ 0:42:28 VoteThreshold must be in 0..1 range. Defaulting to 0.5
+ 0:42:29 Initializing Steam server - Game Port: 2306, Steam Query Port: 2307
+ 0:42:29 Connected to Steam servers
+ 0:43:00 EPE manager release (0|0|0)
+ 0:43:00 EPE manager release (0|0|0)
+ 0:43:00 Item STR_Global_Close listed twice
+ 0:43:00 Item STR_Global_Yes listed twice
+ 0:43:00 Item STR_Global_No listed twice
+ 0:43:00 Item STR_NOTF_ActionCancel listed twice
+ 0:43:00 Item STR_Item_Beer listed twice
+ 0:43:00 Item STR_Item_Battery listed twice
+ 0:43:00 Item STR_Shop_NotaCop listed twice
+ 0:43:00 Unsupported language English in stringtable
+ 0:43:00 EPE manager release (0|0|0)
+ 0:43:00 EPE manager release (0|0|0)
+ 0:43:00 Item STR_Global_Close listed twice
+ 0:43:00 Item STR_Global_Yes listed twice
+ 0:43:00 Item STR_Global_No listed twice
+ 0:43:00 Item STR_NOTF_ActionCancel listed twice
+ 0:43:00 Item STR_Item_Beer listed twice
+ 0:43:00 Item STR_Item_Battery listed twice
+ 0:43:00 Item STR_Shop_NotaCop listed twice
+ 0:43:00 Unsupported language English in stringtable
+ 0:43:10 Mission Altis_Life.Altis: Number of roles (107) is different from 'description.ext::Header::maxPlayer' (64)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:11 Server error: Player without identity Jordan Xplosey (id 222933397)
+ 0:43:18 Starting mission:
+ 0:43:18  Mission file: Altis_Life
+ 0:43:18  Mission world: Altis
+ 0:43:18  Mission directory: mpmissions\Altis_Life.Altis\
+ 0:43:19 EPE manager release (0|0|0)
+ 0:43:19 EPE manager release (0|0|0)
+ 0:43:43 Strange convex component08 in a3\structures_f_epb\civ\garbage\garbagecontainer_closed_f.p3d:geometryView
+ 0:43:43 Strange convex component10 in a3\structures_f_epb\civ\garbage\garbagecontainer_closed_f.p3d:geometryView
+ 0:43:44 Strange convex component145 in a3\plants_f\tree\t_pinuss2s_b_f.p3d:geometryView
+ 0:43:44 Strange convex component149 in a3\plants_f\tree\t_pinuss2s_b_f.p3d:geometryView
+ 0:43:47 Strange convex component01 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+ 0:43:47 Strange convex component02 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+ 0:43:47 Strange convex component03 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+ 0:43:47 Strange convex component04 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+ 0:44:01 EPE manager release (0|0|0)
+ 0:44:01 EPE manager release (0|0|0)
+ 0:44:02 Error in expression <êtes pas Gendarme!"};
+case (FETCH_CONST(life_coplevel) < 2): {"Vous n'êtes pas>
+ 0:44:02   Error position: <(life_coplevel) < 2): {"Vous n'êtes pas>
+ 0:44:02   Error Missing )
+ 0:44:02 File mpmissions\Altis_Life.Altis\core\config\fn_weaponShopCfg.sqf, line 80
+ 0:44:02 Error in expression <êtes pas Gendarme!"};
+case (FETCH_CONST(life_coplevel) < 2): {"Vous n'êtes pas>
+ 0:44:02   Error position: <(life_coplevel) < 2): {"Vous n'êtes pas>
+ 0:44:02   Error Missing )
+ 0:44:02 File mpmissions\Altis_Life.Altis\core\config\fn_weaponShopCfg.sqf, line 80
+ 0:44:02 Error in expression < {_target = player;};
+
+
+
+if (FETCH_CONST(life_donator)) then {
+_message = format>
+ 0:44:02   Error position: <(life_donator)) then {
+_message = format>
+ 0:44:02   Error Missing )
+ 0:44:02 File mpmissions\Altis_Life.Altis\core\civilian\fn_civIdentity.sqf, line 25
+ 0:44:02 Error in expression < {_target = player;};
+
+
+
+if (FETCH_CONST(life_donator)) then {
+_message = format>
+ 0:44:02   Error position: <(life_donator)) then {
+_message = format>
+ 0:44:02   Error Missing )
+ 0:44:02 File mpmissions\Altis_Life.Altis\core\civilian\fn_civIdentity.sqf, line 25
+ 0:44:03 Attempt to override final function - bis_functions_list
+ 0:44:03 Attempt to override final function - bis_functions_listpreinit
+ 0:44:03 Attempt to override final function - bis_functions_listpostinit
+ 0:44:03 Attempt to override final function - bis_functions_listrecompile
+ 0:44:03 [20432,146.255,0,"XEH: PreInit Started. v1.0.9.140907. MISSINIT: missionName=Altis_Life, worldName=Altis, isMultiplayer=true, isServer=true, isDedicated=true"]
+ 0:44:03 [20432,146.646,0,"XEH: PreInit Finished. CACHE DISABLED? (Disable caching with cba_cache_disable.pbo): SLX_XEH_RECOMPILE=false, CBA_COMPILE_RECOMPILE=false, CBA_FUNC_RECOMPILE=false"]
+ 0:44:03 Attempt to override final function - bis_fnc_missiontaskslocal
+ 0:44:03 Attempt to override final function - bis_fnc_missionconversationslocal
+ 0:44:03 Attempt to override final function - bis_fnc_missionflow
+ 0:44:04 Animation tools\anims\hammergather.rtm not found or empty
+ 0:44:05 Warning: looped for animation: cl3_wheeled\proxies\anims\mmt_driver.rtm differs (looped now 1)! MoveName: mmt_driver
+ 0:44:05 Error: Bone cheek_lf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone nose_tip doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_uplb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone jaw_ls doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_uplf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_lc doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_lwlb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_lwlf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone jaw_lm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone zig_lb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_lwm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_upm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone ear_l doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone corr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone tongue_m doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone tongue_f doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eyebrow_lb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eyebrow_lf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eyebrow_lm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone zig_lm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eye_upl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eye_lwl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone cheek_l doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone cheek_lb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone zig_lt doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone nose_l doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone cheek_lm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone nose_r doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone forehead_r doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone forehead_m doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone forehead_l doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone cheek_rb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eye_lwr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone cheek_r doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone zig_rt doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone zig_rm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone cheek_rf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone cheek_rm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eyebrow_rm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eyebrow_rf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eye_upr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone eyebrow_rb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone tongue_b doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone ear_r doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone neck_l doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_uprf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone neck_r doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_uprb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_rc doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_lwrb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone lip_lwrf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone neck_b doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone zig_rb doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone neck_t doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone jaw_rf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone jaw_lf doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone chin doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone jaw_rm doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone jaw_rs doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone jaw doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:05 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnH_rfl.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnH_rfl.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnH_rfl.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOver_rfl.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOn_rfl.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnH_rfl.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\stepOn_rfl.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\jump_rfl.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOver_pst.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOn_pst.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnH_pst.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\stepOn_pst.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\jump_pst.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOver_ua.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOn_ua.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\climbOnH_ua.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\stepOn_ua.rtm
+ 0:44:07 Warning: rightHandIKCurve, size is not n*2 in \babe_EM\animations\jump_ua.rtm
+ 0:44:07 Animation tools\anims\shovel.rtm not found or empty
+ 0:44:07 Warning: looped for animation: a3\cargoposes_f\anim\passenger_scooter_01.rtm differs (looped now 1)! MoveName: passenger_scooter_01
+ 0:44:07 Warning: looped for animation: a3\cargoposes_f\anim\passenger_scooter_02.rtm differs (looped now 1)! MoveName: passenger_scooter_02
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:07 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:20 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 0:44:23 No owner
+ 0:44:23 No speaker given for Spencer Santorum
+ 0:44:23 No owner
+ 0:44:24 No speaker given for Luke Thompson
+ 0:44:24 No owner
+ 0:44:24 No speaker given for Spencer Davis
+ 0:44:24 No owner
+ 0:44:24 No speaker given for Ashton Cooper
+ 0:44:24 No owner
+ 0:44:24 No speaker given for Wallace Robinson
+ 0:44:24 No owner
+ 0:44:24 No speaker given for Ryan Martin
+ 0:44:24 No owner
+ 0:44:24 No speaker given for Imre Ibori
+ 0:44:24 No speaker given for Teshi Azikiwe
+ 0:44:24 No owner
+ 0:44:24 No owner
+ 0:44:24 No owner
+ 0:44:24 No owner
+ 0:44:25 No owner
+ 0:44:25 No owner
+ 0:44:25 No owner
+ 0:44:25 No owner
+ 0:44:25 No speaker given for Kofi Sesse-Seko
+ 0:44:25 No owner
+ 0:44:25 No speaker given for Corey Anderson
+ 0:44:25 No owner
+ 0:44:26 No owner
+ 0:44:26 No speaker given for Nuru Ngige
+ 0:44:26 No speaker given for Dong Tung
+ 0:44:26 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+ 0:44:26 No owner
+ 0:44:26 No speaker given for Imre Okoye
+ 0:44:26 No owner
+ 0:44:26 No speaker given for Ian Lee
+ 0:44:26 No owner
+ 0:44:26 No speaker given for Max Robertson
+ 0:44:26 No owner
+ 0:44:26 No speaker given for Jack Jones
+ 0:44:26 No owner
+ 0:44:26 No speaker given for Tan Tin-Tao
+ 0:44:26 No owner
+ 0:44:26 No speaker given for Liao Yeung
+ 0:44:26 No owner
+ 0:44:26 No owner
+ 0:44:26 No owner
+ 0:44:26 No owner
+ 0:44:26 No owner
+ 0:44:26 No owner
+ 0:44:26 No owner
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Patterson Faulkner
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Jacob White
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Ian Wilson
+ 0:44:27 No speaker given for Mao Tung
+ 0:44:27 No speaker given for Guo Lee
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Harry Faulkner
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Jamie Kelly
+ 0:44:27 No owner
+ 0:44:27 No speaker given for William Hughes
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Thomas Williams
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Imre Osmani
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Conor Stewart
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Quinton Bayh
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Tyler Moore
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Daniel Rollins
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Mobutu Ngige
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Keith MacDonald
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No speaker given for Kirabo Osmani
+ 0:44:27 No speaker given for Liao Sun
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:27 No owner
+ 0:44:31 Strange convex component16 in a3\boat_f_gamma\boat_civil_04\boat_civil_04_f.p3d:geometryView
+ 0:44:31 Strange convex component25 in a3\boat_f_gamma\boat_civil_04\boat_civil_04_f.p3d:geometryView
+ 0:44:31 Strange convex component26 in a3\boat_f_gamma\boat_civil_04\boat_civil_04_f.p3d:geometryView
+ 0:44:31 Strange convex component27 in a3\boat_f_gamma\boat_civil_04\boat_civil_04_f.p3d:geometryView
+ 0:44:31 Strange convex component322 in a3\structures_f\research\dome_big_f.p3d:geometryFire
+ 0:44:31 Strange convex component327 in a3\structures_f\research\dome_big_f.p3d:geometryFire
+ 0:44:32 B_Heli_Light_01_F: AddDoors - unknown animation source AddDoors
+ 0:44:32 B_Heli_Light_01_F: GunL_Revolving - unknown animation source GunL_Revolving
+ 0:44:32 B_Heli_Light_01_F: GunR_Revolving - unknown animation source GunR_Revolving
+ 0:44:32 B_Heli_Light_01_F: AddGunHolder - unknown animation source AddGunHolder
+ 0:44:32 B_Heli_Light_01_F: hidePG_1 - unknown animation source Missiles_revolving
+ 0:44:32 B_Heli_Light_01_F: zaslehROT - unknown animation source Muzzle_flash
+ 0:44:34 SW keep height animation used for a3\structures_f_epb\civ\accessories\woodpile_large_f.p3d
+ 0:44:35 a3\structures_f_heli\vr\helpers\sign_sphere10cm_f.p3d: No geometry and no visual shape
+ 0:44:35 a3\structures_f_heli\vr\helpers\sign_sphere10cm_f.p3d: No geometry and no visual shape
+ 0:44:35 a3\structures_f_heli\vr\helpers\sign_sphere10cm_f.p3d: No geometry and no visual shape
+ 0:44:35 a3\structures_f_heli\vr\helpers\sign_sphere10cm_f.p3d: No geometry and no visual shape
+ 0:44:39 Land_jbad_House_c_3: Lock_1_Unlocked - unknown animation source Lock_1_Hide
+ 0:44:39 SW keep height animation used for a3\structures_f\civ\accessories\timbers_f.p3d
+ 0:44:40 Strange convex component148 in a3l_factory\factory.p3d:geometry
+ 0:44:40 Strange convex component149 in a3l_factory\factory.p3d:geometry
+ 0:44:40 Strange convex component150 in a3l_factory\factory.p3d:geometry
+ 0:44:40 Cannot load surface info ca\Data\Penetration\glass_house.bisurf
+ 0:44:41 a3\structures_f_heli\vr\helpers\sign_sphere10cm_f.p3d: No geometry and no visual shape
+ 0:44:41 a3\structures_f_heli\vr\helpers\sign_sphere10cm_f.p3d: No geometry and no visual shape
+ 0:44:41 Strange convex component53 in a3\structures_f_epb\civ\playground\slidecastle_f.p3d:geometryFire
+ 0:44:41 Strange convex component27 in a3\structures_f_epb\civ\playground\slidecastle_f.p3d:geometryView
+ 0:44:42 Error: Object(2 : 165) not found
+ 0:44:42 c:\w\stable\futura\lib\network\networkserver.cpp NetworkServer::OnClientStateChanged:NOT IMPLEMENTED - briefing!
+ 0:44:42 [20468,185.244,0,"XEH: PostInit Started"]
+ 0:44:42 [20468,185.264,0,"CBA_VERSIONING: cba=1.0.9.140907, "]
+ 0:44:42 [20468,185.364,0,"XEH: PostInit Finished. State: _isClient=false, _isJip=false, _isDedClient=false, _isServer=true, _isDedServer=true, _playerCheckDone=true, _sp=false, _startInitDone=true, _postInitDone=true, _mpRespawn=true, _machineType=0, _sessionId=1, _level=0, _timeOut=false, _game=3, BIS_functions=L Modules:1, group=L Modules"]
+ 0:44:43 ["x\TEN\addons\TEN_fluidDoorOpening\fnc\fn_fluidDoorOpening_init.sqf","CALLED"]
+ 0:44:44 "extDB: Version: 29"
+ 0:44:44 "extDB: Connected to Database"
+ 0:45:43 Error in expression <{[]};
+_return = (_queryResult select 1) select 0;
+if(_multiarr) then {
+_return =>
+ 0:45:43   Error position: <select 0;
+if(_multiarr) then {
+_return =>
+ 0:45:43   Error Generic error in expression
+ 0:45:43 File life_server\Functions\MySQL\fn_asyncCall.sqf, line 49
+ 0:45:47 Error: Object(3 : 19) not found
+ 0:46:06 Ragdoll - loading of ragdoll source "Soldier" started.
+ 0:46:06 Ragdoll - loading of ragdoll source "Soldier" finished successfully.
+ 0:46:06 Error: Object(3 : 20) not found
+ 0:46:06 No owner
+ 0:51:17 EPE manager release (37|0|0)
+ 0:51:17 EPE manager release (0|37|0)
+ 0:51:19 EPE manager release (0|1|0)
+ 0:51:20 EPE manager release (0|0|0)
+ 0:51:20 Deinitialized shape [Class: "Underwear_F"; Shape: "a3\characters_f\common\basicbody.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_1_3_F"; Shape: "a3\characters_f\civil\c_citizen1.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_1_1_F"; Shape: "a3\characters_f\civil\c_citizen1.p3d";]
+ 0:51:20 Deinitialized shape [Class: "B_diver_F"; Shape: "a3\characters_f\common\diver_slotable.p3d";]
+ 0:51:20 Deinitialized shape [Class: "O_Soldier_F"; Shape: "a3\characters_f\opfor\o_soldier_01.p3d";]
+ 0:51:20 Deinitialized shape [Class: "B_RangeMaster_F"; Shape: "a3\characters_f\civil\c_poloshirtpants.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_w_worker_F"; Shape: "a3\characters_f\common\coveralls.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_hunter_1_F"; Shape: "a3\characters_f\civil\c_hunter_f.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_p_beggar_F_afro"; Shape: "a3\characters_f\civil\c_poor.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_p_beggar_F"; Shape: "a3\characters_f\civil\c_poor.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_p_fugitive_F_asia"; Shape: "a3\characters_f\civil\c_poor.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_p_fugitive_F"; Shape: "a3\characters_f\civil\c_poor.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_1"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_polo_3_F"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_polo_1_F_afro"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_polo_1_F"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_shorts_3_F_euro"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_shorts_3_F"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_polo_6_F"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_polo_1_F_asia"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_p_shorts_1_F_afro"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_p_shorts_1_F"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_polo_1_F_euro"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_polo_4_F"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_polo_5_F"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 Deinitialized shape [Class: "C_man_polo_2_F"; Shape: "a3\characters_f\civil\c_poloshirt.p3d";]
+ 0:51:20 c:\w\stable\futura\lib\network\networkserver.cpp ClearNetServer:NOT IMPLEMENTED - briefing!
+ 0:51:21 Extensions:
+ 0:51:21   extDB (C:\arma3server\@extDB\extDB.dll)
